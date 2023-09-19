@@ -1,0 +1,40 @@
+html{
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-size: 100%;
+}
+
+a {
+  color: $color-red-1;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-red-2;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+img {
+  // display: block;
+  max-width: 100%;
+  border: none;
+}
+
+ol, ul, li { 
+  list-style: none; 
+  margin: 0; 
+  padding: 0;
+}
+
+[type=button] {
+  appearance: none;
+}
+
+@include at-least($xxl) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+    max-width: 1296px;
+  }
+}
