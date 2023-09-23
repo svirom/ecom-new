@@ -1,0 +1,43 @@
+.modal {
+  &.modal-main {
+    --bs-modal-width: 768px;
+    --bs-modal-border-width: 0;
+    --bs-modal-border-radius: 2rem;
+    --bs-modal-header-padding: 1.875rem 1.875rem;
+    --bs-modal-header-border-width: 0;
+    --bs-modal-title-line-height: 1.2;
+    --bs-modal-padding: 1rem 6.75rem 6.25rem;
+  
+    .modal-header {
+      .btn-close {
+        --bs-btn-close-opacity: 1;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: 0 0 0 auto;
+        padding: 0;
+      }
+    }
+
+    .modal-title {
+      margin-bottom: 1.25rem;
+      font-size: 2rem;
+      color: $color-blue-1;
+    }
+  }
+
+  @include until($md) {
+    &.modal-main {
+      --bs-modal-border-radius: 1.5rem;
+      --bs-modal-header-padding: 1.25rem 1.25rem 0.75rem;
+      --bs-modal-padding: 0 1rem 3.5rem;
+
+      .modal-title {
+        font-size: 1.5rem;
+      }
+
+      .btn {
+        padding: calc(1.375rem - 1px) calc(2rem - 1px);
+      }
+    }
+  }
+}

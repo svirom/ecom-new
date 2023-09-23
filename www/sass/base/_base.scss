@@ -18,16 +18,15 @@ a {
 }
 
 img {
-  // display: block;
   max-width: 100%;
   border: none;
 }
 
-ol, ul, li { 
-  list-style: none; 
-  margin: 0; 
-  padding: 0;
-}
+// ol, ul, li { 
+//   list-style: none; 
+//   margin: 0; 
+//   padding: 0;
+// }
 
 [type=button] {
   appearance: none;
@@ -37,4 +36,8 @@ ol, ul, li {
   .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
     max-width: 1296px;
   }
+}
+
+.row > * {
+  --bs-gutter-y: 0;
 }

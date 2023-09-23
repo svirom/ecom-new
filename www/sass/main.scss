@@ -9,10 +9,13 @@
 
 // Components
 @import "components/button";
+@import "components/form";
+@import "components/dropdown";
+@import "components/card";
 @import "components/modal";
 
 // Layout
-@import "layout/navbar";
+@import "layout/main";
 @import "layout/header";
 @import "layout/footer";
 
