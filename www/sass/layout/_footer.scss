@@ -1,0 +1,231 @@
+.main-footer {
+  &__cards {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    background: linear-gradient(to right, $color-green-1, $color-green-1 50%, $color-green-2 50%, $color-green-2 100%);
+  }
+
+  &__body {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    background-color: $color-blue-1;
+  }
+
+  &__copyright {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: $color-blue-3;
+    background-color: $color-blue-8;
+
+    .main-footer__copyright-text {
+      font-size: 0.75rem;
+      line-height: 1.2;
+      font-weight: 400;
+    }
+  }
+}
+
+.footer-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+  color: #fff;
+  line-height: 1.2;
+
+  &--left {
+    padding-right: 3rem;
+  }
+
+  &--right {
+    padding-left: 3rem;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+
+    &-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 0 0 2.75rem;
+      width: 2.75rem;
+      height: 2.75rem;
+      border-radius: 50%;
+      background-color: #fff;
+
+      i {
+        font-size: 1.5rem;
+        color: #000;
+      }
+    }
+
+    .footer-card__header-title {
+      padding-left: 1rem;
+      font-size: 1.5rem;
+      line-height: 1.2;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+  }
+
+  .footer-card__content {
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+  }
+}
+
+.footer-list {
+  color: #fff;
+
+  & + .footer-list {
+    margin-top: 2.5rem;
+  }
+
+  .footer-list__title {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-weight: 700;
+  }
+
+  p, li, a {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  ul {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    li {
+      & + li {
+        margin-top: 0.75rem;
+      }
+    }
+  }
+
+  &--bold {
+    p, li, a {
+      font-weight: 500;
+    }
+  }
+
+  .footer-list__phone {
+    font-size: 1.875rem;
+  }
+
+  .footer-list__item-social {
+    position: relative;
+    padding-left: 2rem;
+
+    i {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@include until($xl) {
+  .footer-list {
+    .footer-list__phone {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@include until($lg) {
+  .main-footer {
+    .container, .row {
+      --bs-gutter-x: 3rem;
+    }
+  }
+
+  .footer-card {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  
+    &--left {
+      padding-right: 1.25rem;
+    }
+  
+    &--right {
+      padding-left: 1.25rem;
+    }
+  }
+
+  .footer-list {
+    .footer-list__phone {
+      font-size: 1.875rem;
+    }
+
+    &--products, &--solutions {
+      margin-top: 2.5rem;
+    }
+  }
+}
+
+@include until($md) {
+  .main-footer {
+    .container, .row {
+      --bs-gutter-x: 3rem;
+    }
+
+    &__cards {
+      border-top-left-radius: 1.5rem;
+      border-top-right-radius: 1.5rem;
+      background: linear-gradient(to bottom, $color-green-1, $color-green-1 50%, $color-green-2 50%, $color-green-2 100%);
+
+      &-left {
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+      }
+    }
+
+    &__body {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+  }
+
+  .footer-card {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  
+    &--left {
+      padding-right: 0rem;
+    }
+  
+    &--right {
+      padding-left: 0rem;
+    }
+  }
+}
+
+@include until($sm) {
+  .main-footer {
+    &__cards {
+      background: none;
+
+      &-left {
+        background-color: $color-green-1;
+      }
+
+      &-right {
+        background-color: $color-green-2;
+      }
+    }
+  }
+}
