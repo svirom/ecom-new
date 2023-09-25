@@ -115,6 +115,12 @@
     }
   }
 
+  a {
+    &:hover {
+      color: $color-blue-5;
+    }
+  }
+
   &--bold {
     p, li, a {
       font-weight: 500;

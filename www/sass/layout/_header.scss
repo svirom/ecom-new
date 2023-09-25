@@ -1,0 +1,57 @@
+.main-header {
+  position: sticky;
+  top: 0;
+  background-color: $color-blue-1;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  padding-top: 1.3125rem;
+  padding-bottom: 1.3125rem;
+}
+
+.main-nav {
+  display: flex;
+  // align-items: center;
+  list-style: none;
+  margin-left: 2.5rem;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  &__item {
+    & + .main-nav__item {
+      margin-left: 0.75rem;
+    }
+  }
+
+  .main-nav__link {
+    display: inline-block;
+    padding: 0.5625rem 1rem;
+    font-size: 0.9375rem;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 1rem;
+  }
+
+  .dropdown {
+    .main-nav__link {
+      padding: 0.375rem 0.75rem 0.375rem 1rem;
+
+      &[aria-expanded=true] {
+        background-color: $color-blue-1;
+      }
+    }
+  }
+}
+
+.lang-nav {
+  margin-left: auto;
+}
+
+@include until($xl) {
+  .main-nav {
+    display: none;
+  }
+}
