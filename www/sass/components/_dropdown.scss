@@ -10,10 +10,15 @@
 
 .dropdown {
   .dropdown-menu {
-    min-width: 380px;
-    padding: 2.5rem;
-    border: 0;
-    border-radius: 2rem;
+    --bs-dropdown-min-width: 380px;
+    --bs-dropdown-padding-x: 2.5rem;
+    --bs-dropdown-padding-y: 2.5rem;
+    --bs-dropdown-border-width: 0;
+    --bs-dropdown-border-radius: 2rem;
+    // min-width: 380px;
+    // padding: 2.5rem;
+    // border: 0;
+    // border-radius: 2rem;
     box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
 
     &[data-popper-placement=bottom-start] {
@@ -45,8 +50,11 @@
 
   @include until($md) {
     .dropdown-menu {
-      min-width: 300px;
-      padding: 1.5rem 2rem;
+      --bs-dropdown-min-width: 300px;
+      --bs-dropdown-padding-x: 2rem;
+      --bs-dropdown-padding-y: 1.5rem;
+      // min-width: 300px;
+      // padding: 1.5rem 2rem;
     }
   }
 }

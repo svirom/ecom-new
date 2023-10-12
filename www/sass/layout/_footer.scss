@@ -153,12 +153,6 @@
 }
 
 @include until($lg) {
-  .main-footer {
-    .container, .row {
-      --bs-gutter-x: 3rem;
-    }
-  }
-
   .footer-card {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -185,10 +179,6 @@
 
 @include until($md) {
   .main-footer {
-    .container, .row {
-      --bs-gutter-x: 3rem;
-    }
-
     &__cards {
       border-top-left-radius: 1.5rem;
       border-top-right-radius: 1.5rem;
