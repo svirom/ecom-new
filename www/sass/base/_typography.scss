@@ -52,6 +52,20 @@ p, li, a {
   }
 }
 
+.header-subtitle {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 700;
+  color: $color-red-1;
+}
+
+
+@include until($xl) {
+  .header-subtitle {
+    font-size: 0.875rem;
+  }
+}
+
 @include until($md) {
   h1 {
     font-size: 1.75rem;
@@ -67,5 +81,9 @@ p, li, a {
 
   h4 {
     font-size: 1.125rem;
+  }
+
+  .header-subtitle {
+    font-size: 0.75rem;
   }
 }

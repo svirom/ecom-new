@@ -1,1 +1,1200 @@
-/*# sourceMappingURL=homepage.css.map */
+.main-hero {
+  padding-top: 11.75rem;
+  padding-bottom: 7.5rem;
+  color: #ffffff;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  background-color: #001535;
+  overflow: hidden;
+}
+.main-hero__content {
+  padding-top: 2.75rem;
+}
+.main-hero .main-hero__title {
+  margin-bottom: 2.5rem;
+  font-size: 3.25rem;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+.main-hero ul {
+  margin-bottom: 3.75rem;
+}
+.main-hero__list {
+  list-style-type: none;
+  padding: 0;
+  color: #ffffff;
+}
+.main-hero__list li {
+  position: relative;
+  margin-bottom: 1rem;
+  padding-left: 2.25rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.2px;
+}
+.main-hero__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M21 6.99984L9 18.9998L3.5 13.4998L4.91 12.0898L9 16.1698L19.59 5.58984L21 6.99984Z' fill='white'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.main-hero__images {
+  position: relative;
+  display: flex;
+  padding-top: 81px;
+  padding-left: 65px;
+}
+.main-hero__images-iphone {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  z-index: 1;
+}
+.main-hero__images-iphone img {
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+.main-hero__images-tablet img {
+  filter: drop-shadow(0 55px 46px rgba(50, 50, 93, 0.15));
+}
+.main-hero__images-logos {
+  position: absolute;
+  top: 11px;
+  right: 0;
+}
+.main-hero__images-logos img {
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.main-connect.connect-widget {
+  margin-top: 11.25rem;
+  margin-bottom: 7.5rem;
+}
+
+.main-acquiring {
+  margin-top: 7.5rem;
+  margin-bottom: 7.5rem;
+}
+.main-acquiring .main-acquiring__subtext {
+  margin-bottom: 3.75rem;
+}
+.main-acquiring .info-card {
+  height: 100%;
+  min-height: 10.4375rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.payment-places {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+  background-color: #F3F5F9;
+}
+.payment-places h3 {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+.payment-places h3 ~ p {
+  font-size: 1.25rem;
+  color: #001535;
+}
+
+.payment-tabs {
+  margin-top: 2.5rem;
+  overflow: auto;
+}
+.payment-tabs::-webkit-scrollbar {
+  display: none;
+}
+.payment-tabs .nav {
+  --bs-nav-link-padding-y: calc(1rem - 1px);
+  --bs-nav-link-padding-x: calc(1rem - 1px);
+  --bs-nav-link-color: #17171C;
+  --bs-nav-link-hover-color: #17171C;
+  --bs-nav-link-font-weight: 600;
+  --bs-nav-pills-border-radius: 1rem;
+  --bs-nav-pills-link-active-bg: #001535;
+  flex-wrap: nowrap;
+}
+.payment-tabs .nav-item {
+  flex: 0 0 auto;
+}
+.payment-tabs .nav-item ~ .nav-item {
+  margin-left: 1rem;
+}
+.payment-tabs .nav-link {
+  height: 3.4375rem;
+  font-size: 1.125rem;
+  line-height: 1.3;
+  border: 1px solid #D4DCEC;
+  background-color: #ffffff;
+}
+
+.tab-content {
+  padding-top: 2.5rem;
+}
+
+.payment-card > * {
+  min-height: 489px;
+}
+.payment-card__content, .payment-card__img {
+  height: 100%;
+}
+.payment-card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.payment-card__content .payment-card__title {
+  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.payment-card__content p {
+  margin-bottom: 1.25rem;
+  font-size: 1.125rem;
+}
+.payment-card__content .payment-card__help-text {
+  font-size: 0.75rem;
+  color: #E84F35;
+}
+.payment-card__content .btn {
+  --bs-btn-padding-y: calc(1rem - 1px);
+  --bs-btn-padding-x: calc(1.5rem - 1px);
+}
+.payment-card__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-radius: 1rem;
+  background-color: #E6EBF4;
+}
+.payment-card__img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.info-section {
+  margin-top: 9.375rem;
+  margin-bottom: 9.375rem;
+}
+.info-section__content .info-section__title {
+  font-weight: 600;
+}
+.info-section__img img {
+  max-width: 100%;
+  filter: drop-shadow(0 40px 60px rgba(50, 50, 93, 0.1));
+}
+.info-section--left .info-section__content {
+  padding-right: 3.5rem;
+}
+.info-section--right .info-section__content {
+  padding-left: 3.5rem;
+}
+
+.solutions {
+  margin-top: 11.25rem;
+  margin-bottom: 9.375rem;
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+  color: #ffffff;
+  border-radius: 2rem;
+  background-color: #001535;
+}
+.solutions .solutions__title {
+  margin-bottom: 1.875rem;
+  font-size: 3rem;
+  color: #ffffff;
+}
+.solutions__cards {
+  margin-top: 2.5rem;
+  margin-bottom: 5rem;
+}
+.solutions__cms p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.solutions__logos {
+  margin-top: 2.5rem;
+}
+.solutions__logos-magento {
+  height: 2.5rem;
+}
+.solutions__logos-woocommerce {
+  height: 2.5rem;
+}
+.solutions__logos-shopify {
+  height: 2.5rem;
+}
+.solutions__logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 18.75rem;
+}
+
+.solution-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 13.625rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+.solution-card__img {
+  flex: 0 0 7.5rem;
+  height: 7.5rem;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.solution-card__title {
+  flex-basis: 0;
+  flex-grow: 1;
+  padding: 1rem 1rem 0;
+  color: #001535;
+  background-color: #ffffff;
+}
+.solution-card__title p {
+  line-height: 1.2;
+}
+.solution-card--shop-online .solution-card__img {
+  background-image: url("../img/homepage/solution-card/solution-card1@2x.png");
+}
+.solution-card--restaurant .solution-card__img {
+  background-image: url("../img/homepage/solution-card/solution-card2@2x.png");
+}
+.solution-card--provider .solution-card__img {
+  background-image: url("../img/homepage/solution-card/solution-card3@2x.png");
+}
+.solution-card--utility .solution-card__img {
+  background-image: url("../img/homepage/solution-card/solution-card4@2x.png");
+}
+.solution-card--bank .solution-card__img {
+  background-image: url("../img/homepage/solution-card/solution-card5@2x.png");
+}
+.solution-card--charity .solution-card__img {
+  background-image: url("../img/homepage/solution-card/solution-card6@2x.png");
+}
+
+.pci-dss-section {
+  margin-top: 9.375rem;
+  margin-bottom: 9.375rem;
+}
+
+.pci-dss {
+  padding: 3.75rem;
+  border-radius: 2rem;
+  background-color: #F3F5F9;
+}
+.pci-dss__content {
+  padding-right: 2.25rem;
+}
+.pci-dss__content .pci-dss__title {
+  font-weight: 600;
+}
+.pci-dss__sertificate {
+  width: 13.75rem;
+}
+.pci-dss__sertificate .btn {
+  display: block;
+  margin-top: 2.5rem;
+}
+
+.payment-process {
+  margin-top: 9.375rem;
+  margin-bottom: 11.25rem;
+}
+.payment-process__header {
+  margin-bottom: 5rem;
+}
+.payment-process__header p {
+  font-size: 1rem;
+}
+.payment-process .payment-process__title {
+  margin-bottom: 1.875rem;
+}
+.payment-process__diagram {
+  display: flex;
+}
+.payment-process__content {
+  counter-reset: ordered-counter;
+}
+.payment-process__content h3 {
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+.payment-process__content ol {
+  margin-left: 0;
+}
+.payment-process__content ol > li {
+  list-style: none;
+  counter-increment: ordered-counter;
+  position: relative;
+  padding-left: 3rem;
+  color: #001535;
+}
+.payment-process__content ol > li::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  content: counter(ordered-counter);
+  left: 0;
+  top: 0;
+  width: 2rem;
+  height: 2rem;
+  font-size: 0.625rem;
+  line-height: 1;
+  font-weight: 600;
+  color: #001535;
+  border-radius: 0.5rem;
+  background-color: #E5F2F8;
+}
+.payment-process__content ol ~ p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.payment-process__content .payment-process__content-footer {
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  background-color: #F3F5F9;
+}
+
+.diagram-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 7.5rem;
+  height: 7.5rem;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  color: #001535;
+  text-align: center;
+  border: 1px solid #DFE8F8;
+  border-radius: 2rem;
+  background-color: #ffffff;
+}
+.diagram-card > span ~ img {
+  margin-top: 0.875rem;
+}
+.diagram-card--ipay {
+  border-color: #001535;
+  background-color: #001535;
+  filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.06));
+}
+.diagram-card::before, .diagram-card::after {
+  position: absolute;
+  content: "";
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.diagram-row + .diagram-row {
+  margin-left: 2.5rem;
+}
+.diagram-row--left .diagram-card ~ .diagram-card {
+  margin-top: 4.4375rem;
+}
+.diagram-row--left .diagram-card:first-of-type::after, .diagram-row--left .diagram-card:nth-of-type(2)::after {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0.4375rem;
+  height: 4.4375rem;
+  background-image: url("data:image/svg+xml,%3Csvg width='7' height='72' viewBox='0 0 7 72' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.38672 66.5L3.49996 71.5L0.613213 66.5L2.99996 66.5L2.99996 4.43771C2.13466 4.21725 1.49996 3.43665 1.49996 2.5C1.49996 1.39052 2.39049 0.5 3.49996 0.5C4.60944 0.5 5.49996 1.39052 5.49996 2.5C5.49996 3.43665 4.86527 4.21725 3.99996 4.43771L3.99996 66.5L6.38672 66.5ZM4.49996 2.5C4.49996 1.94281 4.05716 1.5 3.49996 1.5C2.94277 1.5 2.49996 1.94281 2.49996 2.5C2.49996 3.05719 2.94277 3.5 3.49996 3.5C4.05716 3.5 4.49996 3.05719 4.49996 2.5Z' fill='%23DFE8F8'/%3E%3C/svg%3E");
+}
+.diagram-row--left .diagram-card:last-of-type::before, .diagram-row--left .diagram-card:last-of-type::after {
+  left: 100%;
+  width: 2.5rem;
+  height: 9.8125rem;
+  background-image: url("data:image/svg+xml,%3Csvg width='41' height='157' viewBox='0 0 41 157' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M35.5 0.113281L40.5 3.00003L35.5 5.88678V3.50003H30.566C25.2949 3.50003 21.0315 7.79151 21.0662 13.0625L21.9338 144.931C21.9721 150.757 17.26 155.5 11.434 155.5H4.43771C4.21725 156.365 3.43665 157 2.5 157C1.39052 157 0.5 156.109 0.5 155C0.5 153.891 1.39052 153 2.5 153C3.43665 153 4.21725 153.635 4.43771 154.5H11.434C16.7051 154.5 20.9685 150.209 20.9338 144.938L20.0662 13.0691C20.0279 7.24324 24.74 2.50003 30.566 2.50003H35.5V0.113281ZM2.5 154C1.94281 154 1.5 154.443 1.5 155C1.5 155.557 1.94281 156 2.5 156C3.05719 156 3.5 155.557 3.5 155C3.5 154.443 3.05719 154 2.5 154Z' fill='%23DFE8F8'/%3E%3C/svg%3E");
+}
+.diagram-row--left .diagram-card:last-of-type::before {
+  top: -6rem;
+}
+.diagram-row--left .diagram-card:last-of-type::after {
+  bottom: -6rem;
+  transform: scaleY(-1);
+}
+.diagram-row--center {
+  margin-top: 14.3125rem;
+}
+.diagram-row--center .diagram-card ~ .diagram-card {
+  margin-top: 2.0625rem;
+}
+.diagram-row--center .diagram-card:nth-of-type(2)::before, .diagram-row--center .diagram-card:nth-of-type(2)::after {
+  width: 2.5rem;
+  height: 0.4375rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='7' viewBox='0 0 40 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M35 0.613281L40 3.50003L35 6.38678V4.00003H4.43771C4.21725 4.86534 3.43665 5.50003 2.5 5.50003C1.39052 5.50003 0.5 4.60951 0.5 3.50003C0.5 2.39056 1.39052 1.50003 2.5 1.50003C3.43665 1.50003 4.21725 2.13473 4.43771 3.00003H35V0.613281ZM2.5 2.50003C1.94281 2.50003 1.5 2.94284 1.5 3.50003C1.5 4.05722 1.94281 4.50003 2.5 4.50003C3.05719 4.50003 3.5 4.05722 3.5 3.50003C3.5 2.94284 3.05719 2.50003 2.5 2.50003Z' fill='%23DFE8F8'/%3E%3C/svg%3E");
+}
+.diagram-row--center .diagram-card:nth-of-type(2)::before {
+  right: calc(100% + 2px);
+}
+.diagram-row--center .diagram-card:nth-of-type(2)::after {
+  left: 100%;
+}
+.diagram-row--right {
+  margin-top: 23.875rem;
+}
+
+.about-section {
+  margin-top: 11.25rem;
+  margin-bottom: 9.375rem;
+}
+
+.about-cards {
+  margin-top: 1.75rem;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 22.5rem;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+.about-card__content {
+  flex-grow: 1;
+}
+.about-card__content p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.about-card__content .about-card__title {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  font-weight: 600;
+  color: #17171C;
+}
+.about-card__icon {
+  flex: 0 0 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  width: 5rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.about-card__icon [class^=icon-] {
+  font-size: 1.5rem;
+  color: #17171C;
+}
+.about-card--business {
+  background-color: #FAF2EA;
+}
+.about-card--payments {
+  background-color: #E5F2F8;
+}
+
+.info-block {
+  margin-top: 9.375rem;
+  margin-bottom: 9.375rem;
+}
+.info-block p {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.main-slider.homepage-slider {
+  margin-top: 9.375rem;
+  margin-bottom: 9.375rem;
+}
+
+.partners {
+  margin-top: 9.375rem;
+  margin-bottom: 9.375rem;
+}
+.partners .partners__title {
+  margin-bottom: 1.625rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.partners-cards > .row > [class^=col]:not(:nth-last-child(-n+5)) {
+  margin-bottom: 1.875rem;
+}
+
+.partner-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9.375rem;
+  padding: 0.875rem;
+}
+
+@media screen and (max-width: 1399.98px) {
+  .main-hero__images {
+    padding-top: 60px;
+    padding-left: 48px;
+  }
+  .payment-card > * {
+    min-height: 448px;
+  }
+  .info-section,
+  .solutions,
+  .pci-dss-section,
+  .payment-process,
+  .about-section,
+  .info-block,
+  .partners,
+  .main-connect.connect-widget,
+  .main-slider.homepage-slider {
+    margin-top: 7.5rem;
+    margin-bottom: 7.5rem;
+  }
+  .solutions {
+    padding-top: 5.625rem;
+    padding-bottom: 4.375rem;
+  }
+  .solutions__logos {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 1199.98px) {
+  .main-hero {
+    padding-top: 9rem;
+    padding-bottom: 5.1875rem;
+  }
+  .main-hero .main-hero__title {
+    font-size: 2.5rem;
+  }
+  .main-hero__content {
+    padding-top: 1rem;
+    padding-right: 3rem;
+  }
+  .main-hero ul {
+    margin-bottom: 2.5rem;
+  }
+  .main-hero__images {
+    padding-top: 0;
+    padding-left: 0;
+  }
+  .main-hero__images-iphone {
+    position: static;
+  }
+  .main-hero__images-logos {
+    position: static;
+    margin-left: 1.75rem;
+  }
+  .main-acquiring {
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
+  }
+  .main-acquiring .main-acquiring__title {
+    font-size: 2.5rem;
+  }
+  .main-acquiring .main-acquiring__subtext {
+    font-size: 1.125rem;
+  }
+  .main-acquiring .info-card {
+    min-height: 10.125rem;
+  }
+  .payment-places .payment-places__title {
+    font-size: 2rem;
+  }
+  .payment-card > * {
+    min-height: 376px;
+  }
+  .info-section,
+  .solutions,
+  .pci-dss-section,
+  .payment-process,
+  .about-section,
+  .info-block,
+  .partners,
+  .main-connect.connect-widget,
+  .main-slider.homepage-slider {
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
+  }
+  .info-section__img {
+    text-align: center;
+  }
+  .info-section__content {
+    margin-top: 3.75rem;
+  }
+  .info-section--left .info-section__content {
+    padding-right: 0;
+  }
+  .info-section--right .info-section__content {
+    padding-left: 0;
+  }
+  .info-section--important .info-section__content .header-subtitle {
+    font-size: 1rem;
+  }
+  .info-section--important .info-section__content .info-section__title {
+    font-size: 2rem;
+  }
+  .info-section--important .info-section__content p {
+    font-size: 1.125rem;
+  }
+  .solutions {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+  .solutions__cards {
+    margin-top: 1.875rem;
+    margin-bottom: 3.125rem;
+  }
+  .solutions__cards > .row > [class^=col]:nth-of-type(4), .solutions__cards > .row > [class^=col]:nth-of-type(5), .solutions__cards > .row > [class^=col]:nth-of-type(6) {
+    margin-top: 1.5rem;
+  }
+  .solutions__logos {
+    margin-top: 2.5rem;
+  }
+  .solution-card {
+    min-height: 15.625rem;
+  }
+  .solution-card__img {
+    flex-basis: 12.25rem;
+    height: 12.25rem;
+  }
+  .solution-card__title p {
+    font-size: 1.125rem;
+  }
+  .pci-dss__content .pci-dss__title {
+    font-size: 2rem;
+  }
+  .pci-dss__content p {
+    font-size: 1.125rem;
+  }
+  .payment-process .payment-process__title {
+    font-size: 2.5rem;
+  }
+  .payment-process__header {
+    margin-bottom: 1.75rem;
+  }
+  .payment-process__content h3 {
+    font-size: 2rem;
+  }
+  .payment-process__content h3 + p {
+    font-size: 1.125rem;
+  }
+  .payment-process__content ol li {
+    font-size: 1.125rem;
+  }
+  .diagram-row + .diagram-row {
+    margin-left: 2.1875rem;
+  }
+  .diagram-row--left .diagram-card ~ .diagram-card {
+    margin-top: 3.875rem;
+  }
+  .diagram-row--left .diagram-card:first-of-type::after, .diagram-row--left .diagram-card:nth-of-type(2)::after {
+    height: 3.9375rem;
+    background-size: auto 4rem;
+  }
+  .diagram-row--left .diagram-card:last-of-type::before, .diagram-row--left .diagram-card:last-of-type::after {
+    width: 2.1875rem;
+    height: 8.625rem;
+    background-size: auto 8.625rem;
+  }
+  .diagram-row--left .diagram-card:last-of-type::before {
+    top: -5.3125rem;
+  }
+  .diagram-row--left .diagram-card:last-of-type::after {
+    bottom: -5.3125rem;
+  }
+  .diagram-row--center {
+    margin-top: 12.5rem;
+  }
+  .diagram-row--center .diagram-card ~ .diagram-card {
+    margin-top: 1.8125rem;
+  }
+  .diagram-row--center .diagram-card:nth-of-type(2)::before, .diagram-row--center .diagram-card:nth-of-type(2)::after {
+    width: 2.1875rem;
+    background-size: 2.3125rem;
+  }
+  .diagram-row--right {
+    margin-top: 20.875rem;
+  }
+  .diagram-card {
+    width: 6.5625rem;
+    height: 6.5625rem;
+    font-size: 0.75rem;
+  }
+  .diagram-card > span ~ img {
+    margin-top: 0.25rem;
+  }
+  .about-section .header-subtitle {
+    font-size: 1rem;
+  }
+  .about-section .about-section__title {
+    font-size: 2.5rem;
+  }
+  .about-section .about-section__title ~ p {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .main-hero {
+    padding-bottom: 6.25rem;
+  }
+  .main-hero ul li {
+    font-size: 1.125rem;
+    letter-spacing: 0.18px;
+  }
+  .main-hero__content {
+    padding-right: 0;
+  }
+  .main-hero__images-logos {
+    margin-left: 1.625rem;
+  }
+  .main-acquiring .main-acquiring__title {
+    font-size: 2rem;
+  }
+  .main-acquiring .main-acquiring__subtext {
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+  }
+  .main-acquiring .info-card {
+    min-height: 8.25rem;
+  }
+  .payment-places {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .payment-card > * {
+    min-height: auto;
+  }
+  .payment-card__img, .payment-card__content {
+    height: auto;
+  }
+  .payment-card__img {
+    margin-top: 2.5rem;
+  }
+  .solutions .solutions__title {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+  .solutions__logos {
+    margin-top: 3rem;
+  }
+  .solutions__cards {
+    margin-top: 2.5rem;
+    margin-bottom: 3.75rem;
+  }
+  .solutions__cms p {
+    font-size: 0.875rem;
+  }
+  .solution-card {
+    min-height: 12.25rem;
+  }
+  .solution-card__img {
+    flex-basis: 7.5rem;
+    height: 7.5rem;
+  }
+  .pci-dss {
+    padding: 2.5rem;
+  }
+  .pci-dss__content {
+    margin-bottom: 3.1875rem;
+    padding-right: 0;
+  }
+  .pci-dss__content .pci-dss__title {
+    font-size: 1.5rem;
+  }
+  .pci-dss__content p {
+    font-size: 1rem;
+  }
+  .pci-dss__sertificate {
+    width: 100%;
+  }
+  .pci-dss__sertificate img {
+    margin-left: 2.625rem;
+    margin-right: 2.625rem;
+  }
+  .pci-dss__sertificate .btn {
+    margin-top: 0;
+  }
+  .payment-process .payment-process__title {
+    font-size: 2rem;
+  }
+  .payment-process__header {
+    margin-bottom: 3.75rem;
+  }
+  .payment-process__header p {
+    font-size: 0.875rem;
+  }
+  .payment-process__diagram {
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+  .payment-process__content h3 {
+    font-size: 1.5rem;
+  }
+  .payment-process__content h3 + p {
+    font-size: 1rem;
+  }
+  .payment-process__content ol li {
+    font-size: 1rem;
+  }
+  .payment-process__content ol ~ p {
+    font-size: 0.875rem;
+  }
+  .payment-process__content .payment-process__content-footer {
+    font-size: 0.875rem;
+  }
+  .diagram-row + .diagram-row {
+    margin-left: 2.6875rem;
+  }
+  .diagram-row--left {
+    display: flex;
+  }
+  .diagram-row--left .diagram-card ~ .diagram-card {
+    margin-top: 0;
+    margin-left: 2.6875rem;
+  }
+  .diagram-row--left .diagram-card:first-of-type::after, .diagram-row--left .diagram-card:nth-of-type(2)::after {
+    left: 100%;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 2.6875rem;
+    height: 0.5rem;
+    background-image: url("data:image/svg+xml,%3Csvg width='46' height='8' viewBox='0 0 46 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M42.1716 0.464562L45.3536 3.64654C45.5488 3.8418 45.5488 4.15839 45.3536 4.35365L42.1716 7.53563C41.9763 7.73089 41.6597 7.73089 41.4645 7.53563C41.2692 7.34037 41.2692 7.02379 41.4645 6.82852L43.7929 4.5001H3.93771C3.71725 5.3654 2.93665 6.0001 2 6.0001C0.890524 6.0001 0 5.10957 0 4.0001C0 2.89062 0.890524 2.0001 2 2.0001C2.93665 2.0001 3.71725 2.63479 3.93771 3.5001H43.7929L41.4645 1.17167C41.2692 0.976407 41.2692 0.659824 41.4645 0.464562C41.6597 0.2693 41.9763 0.2693 42.1716 0.464562ZM2 3.0001C1.44281 3.0001 1 3.4429 1 4.0001C1 4.55729 1.44281 5.0001 2 5.0001C2.55719 5.0001 3 4.55729 3 4.0001C3 3.4429 2.55719 3.0001 2 3.0001Z' fill='%23DFE8F8'/%3E%3C/svg%3E");
+    background-size: auto;
+  }
+  .diagram-row--left .diagram-card:last-of-type::before, .diagram-row--left .diagram-card:last-of-type::after {
+    width: 2.875rem;
+    height: 5.0625rem;
+    background-image: url("data:image/svg+xml,%3Csvg width='46' height='81' viewBox='0 0 46 81' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M42.1716 0.464562L45.3536 3.64654C45.5488 3.8418 45.5488 4.15839 45.3536 4.35365L42.1716 7.53563C41.9763 7.73089 41.6597 7.73089 41.4645 7.53563C41.2692 7.34037 41.2692 7.02378 41.4645 6.82852L43.7929 4.5001H33.5C28.2533 4.5001 24 8.75339 24 14.0001V69.0001C24 74.7991 19.299 79.5001 13.5 79.5001H3.93771C3.71725 80.3654 2.93665 81.0001 2 81.0001C0.890525 81.0001 0 80.1096 0 79.0001C0 77.8906 0.890525 77.0001 2 77.0001C2.93665 77.0001 3.71725 77.6348 3.93771 78.5001H13.5C18.7467 78.5001 23 74.2468 23 69.0001V14.0001C23 8.2011 27.701 3.5001 33.5 3.5001H43.7929L41.4645 1.17167C41.2692 0.976407 41.2692 0.659824 41.4645 0.464562C41.6597 0.2693 41.9763 0.2693 42.1716 0.464562ZM2 78.0001C1.44281 78.0001 1 78.4429 1 79.0001C1 79.5573 1.44281 80.0001 2 80.0001C2.55719 80.0001 3 79.5573 3 79.0001C3 78.4429 2.55719 78.0001 2 78.0001Z' fill='%23DFE8F8'/%3E%3C/svg%3E");
+    background-size: auto;
+  }
+  .diagram-row--left .diagram-card:last-of-type::before {
+    top: -1.875rem;
+  }
+  .diagram-row--left .diagram-card:last-of-type::after {
+    bottom: -1.875rem;
+  }
+  .diagram-row--center {
+    margin-top: 0;
+  }
+  .diagram-row--center .diagram-card ~ .diagram-card {
+    margin-top: 3.125rem;
+  }
+  .diagram-row--center .diagram-card::after {
+    left: 100%;
+    top: 2.3125rem;
+    width: 6.1875rem;
+    height: 3rem;
+    background-image: url("data:image/svg+xml,%3Csvg width='99' height='28' viewBox='0 0 99 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2 1C1.44281 1 1 1.44281 1 2C1 2.55719 1.44281 3 2 3C2.55719 3 3 2.55719 3 2C3 1.44281 2.55719 1 2 1ZM0 2C0 0.890524 0.890524 0 2 0C2.93665 0 3.71725 0.634695 3.93771 1.5H85C90.799 1.5 95.5 6.20101 95.5 12V25.7929L97.8284 23.4645C98.0237 23.2692 98.3403 23.2692 98.5355 23.4645C98.7308 23.6597 98.7308 23.9763 98.5355 24.1716L95.3536 27.3536C95.1583 27.5488 94.8417 27.5488 94.6464 27.3536L91.4645 24.1716C91.2692 23.9763 91.2692 23.6597 91.4645 23.4645C91.6597 23.2692 91.9763 23.2692 92.1716 23.4645L94.5 25.7929V12C94.5 6.7533 90.2467 2.5 85 2.5H3.93771C3.71725 3.36531 2.93665 4 2 4C0.890524 4 0 3.10948 0 2Z' fill='%23DFE8F8'/%3E%3C/svg%3E");
+  }
+  .diagram-row--center .diagram-card:last-child::after {
+    top: 0.8125rem;
+    transform: scaleY(-1);
+  }
+  .diagram-row--right {
+    margin-top: 0;
+  }
+  .diagram-card {
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+  .diagram-card > span ~ img {
+    margin-top: 0.5rem;
+  }
+  .about-section .header-subtitle {
+    font-size: 0.875rem;
+  }
+  .about-section .about-section__title {
+    font-size: 2rem;
+  }
+  .about-section .about-section__title ~ p {
+    font-size: 1rem;
+  }
+  .about-cards {
+    margin-top: 1.5rem;
+  }
+  .about-card {
+    min-height: 14.625rem;
+    border-radius: 1.5rem;
+  }
+  .about-card__content .about-card__title {
+    font-size: 1.25rem;
+  }
+  .about-card__content p {
+    font-size: 0.875rem;
+  }
+  .about-card__icon {
+    flex-basis: 3.75rem;
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+  .about-card__icon [class^=icon-] {
+    font-size: 1rem;
+  }
+  .info-block p {
+    font-size: 1.25rem;
+  }
+  .partners .partners__title {
+    font-size: 1.5rem;
+  }
+  .partners-cards > .row > [class^=col]:not(:nth-last-child(-n+3)) {
+    margin-bottom: 1.875rem;
+  }
+  .partner-card {
+    height: 8.3125rem;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .main-hero {
+    padding-top: 7.75rem;
+    padding-bottom: 0;
+  }
+  .main-hero .main-hero__title {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+  .main-hero ul li {
+    padding-left: 1.75rem;
+    font-size: 1rem;
+  }
+  .main-hero ul li::before {
+    width: 16px;
+    height: 16px;
+  }
+  .main-hero__content {
+    margin-bottom: 2.5rem;
+    padding-top: 0;
+  }
+  .main-hero__images {
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-bottom: -142px;
+  }
+  .main-hero__images-logos {
+    margin-left: 0;
+    margin-right: 1.5rem;
+  }
+  .main-connect.connect-widget {
+    margin-top: 3.75rem;
+    margin-bottom: 3.75rem;
+  }
+  .main-acquiring {
+    margin-top: 3.75rem;
+    margin-bottom: 3.75rem;
+  }
+  .main-acquiring .main-acquiring__title {
+    font-size: 1.5rem;
+  }
+  .main-acquiring .info-card {
+    min-height: 7rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .payment-card__img {
+    height: 260px;
+  }
+  .info-section {
+    margin-top: 3.75rem;
+    margin-bottom: 3.75rem;
+  }
+  .info-section__content {
+    margin-top: 2rem;
+  }
+  .info-section--important .info-section__content .header-subtitle {
+    font-size: 0.75rem;
+  }
+  .info-section--important .info-section__content .info-section__title {
+    font-size: 1.25rem;
+  }
+  .info-section--important .info-section__content p {
+    font-size: 1rem;
+  }
+  .solutions {
+    margin-bottom: 3.75rem;
+    padding-top: 3.125rem;
+  }
+  .solutions .solutions__title {
+    font-size: 1.75rem;
+  }
+  .solutions__cards {
+    margin-top: 0.625rem;
+  }
+  .solutions__cards > .row {
+    --bs-gutter-x: 0.75rem;
+  }
+  .solutions__cards > .row > [class^=col]:nth-of-type(n) {
+    margin-top: 0.75rem;
+  }
+  .solutions__logos {
+    max-width: 14.625rem;
+    margin-top: 1.5rem;
+  }
+  .solution-card {
+    min-height: 11.625rem;
+    margin-top: 0.75rem;
+  }
+  .pci-dss-section {
+    margin-top: 3.75rem;
+  }
+  .pci-dss {
+    padding: 2rem 1.5rem;
+  }
+  .pci-dss__content {
+    margin-bottom: 2.5625rem;
+  }
+  .pci-dss__content .pci-dss__title {
+    font-size: 1.25rem;
+  }
+  .pci-dss__sertificate img {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 2.0625rem;
+  }
+  .pci-dss__sertificate .btn {
+    --bs-btn-padding-x: calc(2rem - 1px);
+    --bs-btn-padding-y: calc(1.375rem - 1px);
+  }
+  .payment-process .payment-process__title {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .payment-process__header {
+    margin-bottom: 2.5rem;
+  }
+  .payment-process__diagram {
+    flex-wrap: wrap;
+    margin-bottom: 3.75rem;
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+    border-radius: 1.5rem;
+    background-color: #F3F5F9;
+  }
+  .payment-process__content h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+  }
+  .payment-process__content .payment-process__content-footer {
+    padding: 1rem;
+  }
+  .diagram-row {
+    flex-basis: 100%;
+    justify-content: center;
+  }
+  .diagram-row + .diagram-row {
+    margin-left: 0;
+  }
+  .diagram-row--left {
+    flex-wrap: wrap;
+  }
+  .diagram-row--left .diagram-card ~ .diagram-card {
+    margin-left: 1.875rem;
+  }
+  .diagram-row--left .diagram-card ~ .diagram-card--ipay {
+    margin-left: 0;
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+  }
+  .diagram-row--left .diagram-card:first-of-type::after {
+    width: 2rem;
+    background-image: url("data:image/svg+xml,%3Csvg width='33' height='8' viewBox='0 0 33 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M29.1716 0.464562L32.3536 3.64654C32.5488 3.8418 32.5488 4.15839 32.3536 4.35365L29.1716 7.53563C28.9763 7.73089 28.6597 7.73089 28.4645 7.53563C28.2692 7.34037 28.2692 7.02379 28.4645 6.82852L30.7929 4.5001H3.93771C3.71725 5.3654 2.93665 6.0001 2 6.0001C0.890524 6.0001 0 5.10957 0 4.0001C0 2.89062 0.890524 2.0001 2 2.0001C2.93665 2.0001 3.71725 2.63479 3.93771 3.5001H30.7929L28.4645 1.17167C28.2692 0.976407 28.2692 0.659824 28.4645 0.464562C28.6597 0.2693 28.9763 0.2693 29.1716 0.464562ZM2 3.0001C1.44281 3.0001 1 3.4429 1 4.0001C1 4.55729 1.44281 5.0001 2 5.0001C2.55719 5.0001 3 4.55729 3 4.0001C3 3.4429 2.55719 3.0001 2 3.0001Z' fill='%23DFE8F8'/%3E%3C/svg%3E");
+    background-position: left center;
+    background-size: 2rem;
+  }
+  .diagram-row--left .diagram-card:nth-of-type(2)::after {
+    left: 2.0625rem;
+    top: calc(50% - 2px);
+    transform: none;
+    width: 4.8125rem;
+    height: 8.5rem;
+    background-image: url("data:image/svg+xml,%3Csvg width='77' height='136' viewBox='0 0 77 136' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M66 1C65.4428 1 65 1.44281 65 2C65 2.55719 65.4428 3 66 3C66.5572 3 67 2.55719 67 2C67 1.44281 66.5572 1 66 1ZM64 2C64 0.890525 64.8905 0 66 0C66.9405 0 67.7236 0.639876 67.9404 1.51059C72.7064 1.74022 76.5 5.67709 76.5 10.5V122C76.5 127.799 71.799 132.5 66 132.5H2.20711L4.53553 134.828C4.7308 135.024 4.7308 135.34 4.53553 135.536C4.34027 135.731 4.02369 135.731 3.82843 135.536L0.646447 132.354C0.451184 132.158 0.451184 131.842 0.646447 131.646L3.82843 128.464C4.02369 128.269 4.34027 128.269 4.53553 128.464C4.7308 128.66 4.7308 128.976 4.53553 129.172L2.20711 131.5H66C71.2467 131.5 75.5 127.247 75.5 122V10.5C75.5 6.22757 72.1508 2.73738 67.9347 2.51161C67.7103 3.37098 66.9325 4 66 4C64.8905 4 64 3.10948 64 2Z' fill='%23DFE8F8'/%3E%3C/svg%3E");
+  }
+  .diagram-row--left .diagram-card:last-of-type::before, .diagram-row--left .diagram-card:last-of-type::after {
+    width: 4.4375rem;
+    height: 2.0625rem;
+    top: 100%;
+    bottom: auto;
+    background-image: url("data:image/svg+xml,%3Csvg width='71' height='33' viewBox='0 0 71 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2 1C1.44281 1 1 1.44281 1 2C1 2.55719 1.44281 3 2 3C2.55719 3 3 2.55719 3 2C3 1.44281 2.55719 1 2 1ZM0 2C0 0.890524 0.890524 0 2 0C3.10948 0 4 0.890524 4 2C4 2.93665 3.36531 3.71725 2.5 3.93771V7C2.5 12.2467 6.7533 16.5 12 16.5H57C62.799 16.5 67.5 21.201 67.5 27V30.7929L69.8284 28.4645C70.0237 28.2692 70.3403 28.2692 70.5355 28.4645C70.7308 28.6597 70.7308 28.9763 70.5355 29.1716L67.3536 32.3536C67.1583 32.5488 66.8417 32.5488 66.6464 32.3536L63.4645 29.1716C63.2692 28.9763 63.2692 28.6597 63.4645 28.4645C63.6597 28.2692 63.9763 28.2692 64.1716 28.4645L66.5 30.7929V27C66.5 21.7533 62.2467 17.5 57 17.5H12C6.20101 17.5 1.5 12.799 1.5 7V3.93771C0.634695 3.71725 0 2.93665 0 2Z' fill='%23DFE8F8'/%3E%3C/svg%3E");
+  }
+  .diagram-row--left .diagram-card:last-of-type::before {
+    left: 50%;
+  }
+  .diagram-row--left .diagram-card:last-of-type::after {
+    left: -1.125rem;
+    transform: scaleX(-1);
+  }
+  .diagram-row--center {
+    display: flex;
+  }
+  .diagram-row--center .diagram-card {
+    margin-bottom: 1.875rem;
+  }
+  .diagram-row--center .diagram-card ~ .diagram-card {
+    margin-top: 0;
+    margin-left: 1.875rem;
+  }
+  .diagram-row--center .diagram-card::after {
+    top: calc(50% - 2px);
+    width: 21px;
+    height: 83px;
+    background-image: url("data:image/svg+xml,%3Csvg width='21' height='83' viewBox='0 0 21 83' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2 1C1.44281 1 1 1.44281 1 2C1 2.55719 1.44281 3 2 3C2.55719 3 3 2.55719 3 2C3 1.44281 2.55719 1 2 1ZM0 2C0 0.890524 0.890524 0 2 0C2.93665 0 3.71725 0.634695 3.93771 1.5H7C12.799 1.5 17.5 6.20101 17.5 12V80.7929L19.8284 78.4645C20.0237 78.2692 20.3403 78.2692 20.5355 78.4645C20.7308 78.6597 20.7308 78.9763 20.5355 79.1716L17.3536 82.3536C17.1583 82.5488 16.8417 82.5488 16.6464 82.3536L13.4645 79.1716C13.2692 78.9763 13.2692 78.6597 13.4645 78.4645C13.6597 78.2692 13.9763 78.2692 14.1716 78.4645L16.5 80.7929V12C16.5 6.7533 12.2467 2.5 7 2.5H3.93771C3.71725 3.36531 2.93665 4 2 4C0.890524 4 0 3.10948 0 2Z' fill='%23DFE8F8'/%3E%3C/svg%3E");
+  }
+  .diagram-row--center .diagram-card:first-child::after {
+    left: calc(100% - 1px);
+  }
+  .diagram-row--center .diagram-card:last-child::after {
+    left: auto;
+    right: calc(100% - 1px);
+    top: calc(50% - 2px);
+    transform: scaleX(-1);
+  }
+  .diagram-row--right {
+    display: flex;
+  }
+  .about-section .header-subtitle {
+    font-size: 0.75rem;
+  }
+  .about-section .about-section__title {
+    font-size: 1.5rem;
+  }
+  .about-card {
+    padding: 1.5rem;
+  }
+  .about-card__content .about-card__title {
+    font-size: 1.125rem;
+  }
+  .info-block {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .info-block p {
+    font-size: 1.125rem;
+  }
+  .partners {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .partners .partners__title {
+    font-size: 1.25rem;
+  }
+  .partners-cards > .row > [class^=col]:not(:nth-last-child(-n+2)) {
+    margin-bottom: 1.875rem;
+  }
+  .partner-card {
+    height: 6.0625rem;
+  }
+  .main-slider.homepage-slider {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+}/*# sourceMappingURL=homepage.css.map */

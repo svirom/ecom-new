@@ -22,10 +22,17 @@ img {
   border: none;
 }
 
-ol, ul, li { 
+ul > li { 
   list-style: none; 
+}
+
+ol, ul, li { 
   margin: 0; 
   padding: 0;
+}
+
+ol {
+  margin-left: 1.25rem;
 }
 
 [type=button] {

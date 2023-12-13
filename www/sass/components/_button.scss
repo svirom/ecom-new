@@ -130,7 +130,9 @@
   }
 
   @include until($md) {
-    padding: calc(0.875rem - 1px) calc(1rem - 1px);
+    // padding: calc(0.875rem - 1px) calc(1rem - 1px);
+    --bs-btn-padding-x: calc(1rem - 1px);
+    --bs-btn-padding-y: calc(0.875rem - 1px);
 
     &.btn-arrow {
       padding-right: calc(3rem - 1px);

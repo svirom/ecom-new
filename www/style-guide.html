@@ -161,6 +161,7 @@
           <h4>Inter / 1.5rem / 500 / 1.1 / #001535 (h4, .h4)</h4>
           <p class="mb-0">Inter / 1.125rem / 500 / 1.8 / #324F64 (p, li)</p>
           <a href="#">Inter / 1.125rem / 500 / 1.8 / #E84F35 (a)</a>
+          <p class="header-subtitle mb-0">Inter / 1rem / 700 / 1.6 / #E84F35 (.header-subtitle)</p>
         </div>
         <div class="col-12 mt-3">
           <p class="mb-0">max-width: 1199.98px</p>
@@ -170,6 +171,7 @@
           <h4 style="font-size: 1.25rem">Inter / 1.25rem / 500 / 1.1 / #001535 (h4, .h4)</h4>
           <p class="mb-0" style="font-size:1rem">Inter / 1rem / 500 / 1.8 / #324F64 (p, li)</p>
           <a href="#" style="font-size:1rem">Inter / 1rem / 500 / 1.8 / #E84F35 (a)</a>
+          <p class="header-subtitle mb-0" style="font-size:0.875rem">Inter / 0.875rem / 700 / 1.6 / #E84F35 (.header-subtitle)</p>
         </div>
         <div class="col-12 mt-3">
           <p class="mb-0">max-width: 767.98px</p>
@@ -179,6 +181,7 @@
           <h4 style="font-size: 1.125rem">Inter / 1.125rem / 500 / 1.1 / #001535 (h4, .h4)</h4>
           <p class="mb-0" style="font-size:1rem">Inter / 1rem / 500 / 1.8 / #324F64 (p, li)</p>
           <a href="#" style="font-size:1rem">Inter / 1rem / 500 / 1.8 / #E84F35 (a)</a>
+          <p class="header-subtitle mb-0" style="font-size:0.75rem">Inter / 0.75rem / 700 / 1.6 / #E84F35 (.header-subtitle)</p>
         </div>
       </div><!-- /typography -->
       <!-- <div class="row mt-4">
@@ -360,11 +363,32 @@
           <h3><u>List</u></h3>
         </div>
         <div class="col-12">
-          <ul>
-            <li>List item 1</li>
-            <li>List item 1</li>
-            <li>List item 1</li>
-          </ul>
+          <div class="row gy-3 gx-4">
+            <div class="col-auto mt-3 mb-2">
+              <ul>
+                <li>List item 1</li>
+                <li>List item 1</li>
+                <li>List item 1</li>
+              </ul>
+              <p class="mb-0 lh-1"><code>&lt;ul></code></p>
+            </div>
+            <div class="col-auto mt-3 mb-2">
+              <ul class="list-dots">
+                <li>List item 1</li>
+                <li>List item 1</li>
+                <li>List item 1</li>
+              </ul>
+              <p class="mb-0 lh-1"><code>.list-dots</code></p>
+            </div>
+            <div class="col-auto mt-3 mb-2">
+              <ol>
+                <li>List item 1</li>
+                <li>List item 1</li>
+                <li>List item 1</li>
+              </ol>
+              <p class="mb-0 lh-1"><code>&lt;ol></code></p>
+            </div>
+          </div>
         </div>
       </div><!-- /list -->
 

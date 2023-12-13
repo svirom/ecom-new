@@ -42,7 +42,6 @@
 
   @include until($xl) {
     padding: 1rem 1.5rem;
-    border-radius: 1.5rem;
 
     &__content {  
       .info-card__content-title {
@@ -71,7 +70,6 @@
 
   @include until($md) {
     padding: 1rem;
-    border-radius: 1rem;
 
     &__content {  
       .info-card__content-title {

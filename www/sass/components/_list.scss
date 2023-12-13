@@ -1,0 +1,17 @@
+.list-dots {
+  & > li {
+    position: relative;
+    padding-left: 1.25rem;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0.875rem;
+      left: 0.5rem;
+      width: 0.25rem;
+      height: 0.25rem;
+      border-radius: 50%;
+      background-color: $color-blue-2;
+    }
+  }
+}

@@ -1,0 +1,171 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+// splide slider
+
+.homepage-splide {
+  &.splide {
+    position: relative;
+    padding: 3.75rem 5rem;
+    border-radius: 2rem;
+    background-color: $color-gray-1;
+  }
+
+  &__panel {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    left: 0;
+    padding-top: 3.75rem;
+    padding-left: 5rem;
+    z-index: 102;
+  }
+
+  .homepage-splide__title {
+    margin-top: 3.3125rem;
+    margin-bottom: 2.3125rem;
+    font-weight: 600;
+  }
+
+  &__control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 3rem;
+
+    .splide__arrow {
+      padding: 0;
+      appearance: none;
+      border: 0;
+      background: transparent;
+
+      &[disabled] {
+        opacity: 0.1;
+      }
+    }
+  }
+  
+  &__counter {
+    font-size: 2rem;
+    line-height: 1.1;
+    color: rgba($color-blue-1, 0.1);
+  }
+
+  &__current-counter {
+    color: $color-blue-1;
+  }
+
+  &__content {
+    padding-bottom: 3.3125rem;
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 1.5rem;
+    background-color: #fff;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
+
+@include until($xl) {
+  .homepage-splide {
+    .homepage-splide__title {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+
+    &__control {
+      padding-right: 0;
+    }
+
+    &__content {
+      padding-bottom: 1.5rem;
+    }
+
+    &__img {
+      height: 19.375rem;
+      padding: 1.4375rem;
+      border-radius: 1.125rem;
+    }
+  }
+}
+
+@include until($lg) {
+  .homepage-splide {
+    &.splide {
+      padding: 10.125rem 2.5rem 2.5rem;
+      border-radius: 1.5rem;
+    }
+
+    .homepage-splide__title {
+      margin-bottom: 1.625rem;
+      font-size: 1.25rem;
+    }
+
+    &__panel {
+      padding-left: 2.5rem;
+      padding-top: 2.5rem;
+      padding-right: 2.5rem;
+      width: 100%;
+    }
+
+    &__content {
+      padding-bottom: 2.5rem;
+    }
+
+    &__counter {
+      font-size: 1.625rem;
+    }
+
+    .splide__arrow {
+      svg {
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    &__img {
+      height: 28.375rem;
+      padding: 2rem;
+      border-radius: 1.5rem;
+    }
+  }
+}
+
+@include until($md) {
+  .homepage-splide {
+    &.splide {
+      padding: 8.75rem 1.5rem 1.5rem; 
+    }
+
+    .homepage-splide__title {
+      font-size: 1.125rem;
+    }
+
+    &__panel {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-top: 1.5rem;
+    }
+
+    &__content {
+        
+    }
+
+    &__counter {
+      font-size: 1.5rem;
+    }
+
+    &__img {
+      height: 19.375rem;
+    }
+  }
+}

@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="/css/ecom-icons.min.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/homepage.css">
+    <link rel="stylesheet" href="/css/connect-widget.css">
+    <link rel="stylesheet" href="/css/splide-core.min.css">
+    <link rel="stylesheet" href="/css/homepage-slider.css">
 
     <title>Homepage</title>
   </head>
@@ -20,7 +23,7 @@
 
     <div class="main-wrapper">
 
-      <header class="main-header">
+      <header class="main-header"> <!-- .main-header -->
 
         <div class="container">
           <div class="row">
@@ -28,15 +31,13 @@
 
               <nav class="header-nav">
 
-                <a href="#" class="header-nav__logo">
-                  <img src="/img/ipay-logo-light.svg" alt="iPay">
-                </a>
+                <a href="#" class="header-nav__logo"></a>
 
                 <ul class="main-nav">
                   <li class="main-nav__item dropdown">
                     <a href="#" class="main-nav__link main-nav__services dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.926758 1.21739C0.926758 0.894519 1.05502 0.584871 1.28332 0.356566C1.51163 0.12826 1.82128 0 2.14415 0H5.79632C6.1192 0 6.42884 0.12826 6.65715 0.356566C6.88545 0.584871 7.01371 0.894519 7.01371 1.21739V4.86957C7.01371 5.19244 6.88545 5.50209 6.65715 5.73039C6.42884 5.9587 6.1192 6.08696 5.79632 6.08696H2.14415C1.82128 6.08696 1.51163 5.9587 1.28332 5.73039C1.05502 5.50209 0.926758 5.19244 0.926758 4.86957V1.21739ZM0.926758 9.13043C0.926758 8.80756 1.05502 8.49791 1.28332 8.26961C1.51163 8.0413 1.82128 7.91304 2.14415 7.91304H5.79632C6.1192 7.91304 6.42884 8.0413 6.65715 8.26961C6.88545 8.49791 7.01371 8.80756 7.01371 9.13043V12.7826C7.01371 13.1055 6.88545 13.4151 6.65715 13.6434C6.42884 13.8717 6.1192 14 5.79632 14H2.14415C1.82128 14 1.51163 13.8717 1.28332 13.6434C1.05502 13.4151 0.926758 13.1055 0.926758 12.7826V9.13043ZM8.8398 1.21739C8.8398 0.894519 8.96806 0.584871 9.19637 0.356566C9.42467 0.12826 9.73432 0 10.0572 0H13.7094C14.0322 0 14.3419 0.12826 14.5702 0.356566C14.7985 0.584871 14.9268 0.894519 14.9268 1.21739V4.86957C14.9268 5.19244 14.7985 5.50209 14.5702 5.73039C14.3419 5.9587 14.0322 6.08696 13.7094 6.08696H10.0572C9.73432 6.08696 9.42467 5.9587 9.19637 5.73039C8.96806 5.50209 8.8398 5.19244 8.8398 4.86957V1.21739ZM8.8398 9.13043C8.8398 8.80756 8.96806 8.49791 9.19637 8.26961C9.42467 8.0413 9.73432 7.91304 10.0572 7.91304H13.7094C14.0322 7.91304 14.3419 8.0413 14.5702 8.26961C14.7985 8.49791 14.9268 8.80756 14.9268 9.13043V12.7826C14.9268 13.1055 14.7985 13.4151 14.5702 13.6434C14.3419 13.8717 14.0322 14 13.7094 14H10.0572C9.73432 14 9.42467 13.8717 9.19637 13.6434C8.96806 13.4151 8.8398 13.1055 8.8398 12.7826V9.13043Z" fill="white"/>
+                        <path d="M0.926758 1.21739C0.926758 0.894519 1.05502 0.584871 1.28332 0.356566C1.51163 0.12826 1.82128 0 2.14415 0H5.79632C6.1192 0 6.42884 0.12826 6.65715 0.356566C6.88545 0.584871 7.01371 0.894519 7.01371 1.21739V4.86957C7.01371 5.19244 6.88545 5.50209 6.65715 5.73039C6.42884 5.9587 6.1192 6.08696 5.79632 6.08696H2.14415C1.82128 6.08696 1.51163 5.9587 1.28332 5.73039C1.05502 5.50209 0.926758 5.19244 0.926758 4.86957V1.21739ZM0.926758 9.13043C0.926758 8.80756 1.05502 8.49791 1.28332 8.26961C1.51163 8.0413 1.82128 7.91304 2.14415 7.91304H5.79632C6.1192 7.91304 6.42884 8.0413 6.65715 8.26961C6.88545 8.49791 7.01371 8.80756 7.01371 9.13043V12.7826C7.01371 13.1055 6.88545 13.4151 6.65715 13.6434C6.42884 13.8717 6.1192 14 5.79632 14H2.14415C1.82128 14 1.51163 13.8717 1.28332 13.6434C1.05502 13.4151 0.926758 13.1055 0.926758 12.7826V9.13043ZM8.8398 1.21739C8.8398 0.894519 8.96806 0.584871 9.19637 0.356566C9.42467 0.12826 9.73432 0 10.0572 0H13.7094C14.0322 0 14.3419 0.12826 14.5702 0.356566C14.7985 0.584871 14.9268 0.894519 14.9268 1.21739V4.86957C14.9268 5.19244 14.7985 5.50209 14.5702 5.73039C14.3419 5.9587 14.0322 6.08696 13.7094 6.08696H10.0572C9.73432 6.08696 9.42467 5.9587 9.19637 5.73039C8.96806 5.50209 8.8398 5.19244 8.8398 4.86957V1.21739ZM8.8398 9.13043C8.8398 8.80756 8.96806 8.49791 9.19637 8.26961C9.42467 8.0413 9.73432 7.91304 10.0572 7.91304H13.7094C14.0322 7.91304 14.3419 8.0413 14.5702 8.26961C14.7985 8.49791 14.9268 8.80756 14.9268 9.13043V12.7826C14.9268 13.1055 14.7985 13.4151 14.5702 13.6434C14.3419 13.8717 14.0322 14 13.7094 14H10.0572C9.73432 14 9.42467 13.8717 9.19637 13.6434C8.96806 13.4151 8.8398 13.1055 8.8398 12.7826V9.13043Z"/>
                       </svg>
                       <span>Послуги</span>
                     </a>
@@ -234,7 +235,7 @@
                         </div>
                         <div class="col-md-6">
                           <ul class="mobile-menu__list">
-                            <li><a href="#">Відеоверіфікація</a></li>
+                            <li><a href="#">Відеоверифікація</a></li>
                             <li><a href="#">Безпека платежів</a></li>
                             <li><a href="#">Контакти</a></li>
                           </ul>
@@ -283,43 +284,863 @@
           </div>
         </div>
 
-        <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      </header> <!-- /.main-header -->
+
+      <main class="main"> <!-- .main -->
+
+        <div class="main-hero"> <!-- .main-hero -->
           <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown link
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <div class="row">
+              <div class="col-md">
+                <div class="main-hero__content">
+                  <h1 class="main-hero__title">Впровадження онлайн-оплат для вашого бізнесу</h1>
+                  <ul class="main-hero__list">
+                    <li>Безкоштовне підключення</li>
+                    <li>Всі популярні методи оплат</li>
+                    <li>Інтеграція на сайти та в додатки</li>
                   </ul>
-                </li>
-              </ul>
+                  <button class="btn btn-red btn-arrow" data-bs-toggle="modal" data-bs-target="#connectionModal"><span>Замовити підключення</span></button>
+                </div>
+              </div>
+              <div class="col-md-auto">
+                <div class="main-hero__images">
+                  <div class="main-hero__images-iphone">
+                    <img src="img/homepage/hero/hero-iphone.png" srcset="img/homepage/hero/hero-iphone.png 252w, img/homepage/hero/hero-iphone@2x.png 504w" sizes="(max-width: 767.98px) 231px, (max-width: 991.98px) 170px, (max-width: 1399.98px) 188px, 252px" alt="gift"/>
+                  </div>
+                  <div class="main-hero__images-tablet d-none d-xl-block">
+                    <img src="img/homepage/hero/hero-tablet.png" srcset="img/homepage/hero/hero-tablet.png 619w, img/homepage/hero/hero-tablet@2x.png 1238w" sizes="(max-width: 1399.98px) 462px, 619px" alt="gift"/>
+                  </div>
+                  <div class="main-hero__images-logos d-none d-xl-block">
+                    <img src="img/homepage/hero/hero-logos.png" srcset="img/homepage/hero/hero-logos.png 408w, img/homepage/hero/hero-logos@2x.png 816w" sizes="(max-width: 1399.98px) 304px, 408px" alt="logos"/>
+                  </div>
+                  <div class="main-hero__images-logos d-xl-none">
+                    <img src="img/homepage/hero/hero-logos-v.png" srcset="img/homepage/hero/hero-logos-v.png 79w, img/homepage/hero/hero-logos-v@2x.png 158w" sizes="(max-width: 991.98px) 72px, 79px" alt="logos"/>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </nav> -->
+        </div> <!-- /.main-hero -->
 
-      </header>
+        <div class="main-connect connect-widget"> <!-- .connect-widget -->
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="connect-widget__title mb-3 mb-md-4">Як під’єднати інтернет-еквайринг до себе на сайт?</h2>
+                <p class="connect-widget__subtext">Процес складається з декількох етапів:</p>
+                <div class="row">
+                  <div class="col-md-6 col-lg-4 mb-3 mb-md-4 mb-lg-0">
+                    <div class="connect-widget__card">
+                      <div class="connect-widget__card-text">
+                        <h4>Залиште заявку</h4>
+                        <p class="mb-0">Ми проконсультуємо з тарифів та можливостей для вас</p>
+                      </div>
+                      <div class="connect-widget__card-link">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#connectionModal">Замовити підключення</a>
+                        <div class="connect-widget__card-link-icon">
+                          <i class="icon-document"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 mb-3 mb-md-4 mb-lg-0">
+                    <div class="connect-widget__card">
+                      <div class="connect-widget__card-text">
+                        <h4>Підпишить договір</h4>
+                        <p class="mb-0">Підписуйте договір про співробітництво з ТОВ «УПР» (новим клієнтам необхідно надати пакет документів)</p>
+                      </div>
+                      <div class="connect-widget__card-link">
+                        <a href="#">Перелік документів</a>
+                        <div class="connect-widget__card-link-icon">
+                          <i class="icon-pencil"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <div class="connect-widget__card">
+                      <div class="connect-widget__card-text">
+                        <h4>Інтегруйте платіжне рішення</h4>
+                        <p class="mb-0">Допоможемо інтегрувате платіжне рішення до вас на сайт або додаток</p>
+                      </div>
+                      <div class="connect-widget__card-link">
+                        <a href="#">API</a>
+                        <div class="connect-widget__card-link-icon">
+                          <i class="icon-settings"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="connect-widget__form">
+                  <h3 class="text-center">Залишити заявку</h3>
+                  <form>
+                    <div class="connect-widget__form-body row">
+                      <div class="col-lg">
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="form-name" name="name" autocomplete="off" placeholder="Ваше ім’я" aria-required="true">
+                          <label class="form-label" for="form-name">Ім’я</label>
+                        </div>
+                      </div>
+                      <div class="col-lg">
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="form-phone" name="name" autocomplete="off" placeholder="Ваш телефон" aria-required="true">
+                          <label class="form-label" for="form-phone">Телефон</label>
+                        </div>
+                      </div>
+                      <div class="col-lg">
+                        <div class="form-group">
+                        <input type="text" class="form-control" id="form-company" name="name" autocomplete="off" placeholder="Ваша компанія" aria-required="true">
+                        <label class="form-label" for="form-company">Сайт/компанія</label>
+                        </div>
+                      </div>
+                      <div class="col-lg-auto">
+                        <button type="submit" class="btn btn-red"><span>Замовити підключення</span></button>
+                      </div>
+                    </div>
+                    <p class="connect-widget__form-agreement text-center mb-0">Надсилаючи цю форму, я підтверджую, що прочитав і приймаю <a href="#">Політику конфіденційності</a></p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.connect-widget -->
 
-      <main class="main"></main>
+        <div  class="main-acquiring"> <!-- .main-acquiring -->
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-9 col-xxl-7">
+                <h2 class="main-acquiring__title mb-3 mb-md-4">Інтернет-еквайринг від iPay.ua</h2>
+                <p class="main-acquiring__subtext">Комплексна інтеграція платіжної системи на сайт дозволяє здійснювати всі <br class="d-none d-md-inline">популярні види платежів. З еквайрингом від iPay.ua доступні:</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-lg-4 mb-3 mb-md-4">
+                <div class="info-card">
+                  <div class="info-card__content">
+                    <h4 class="info-card__content-title">Apple Pay</h4>
+                    <p class="mb-0">для власників ґаджетів Apple</p>
+                  </div>
+                  <div class="info-card__icon">
+                    <img src="/img/icons/icon-applepay.svg" alt="Applepay">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-3 mb-md-4">
+                <div class="info-card">
+                  <div class="info-card__content">
+                    <h4 class="info-card__content-title">Google Pay</h4>
+                    <p class="mb-0">для покупців, авторизованих у системі Google</p>
+                  </div>
+                  <div class="info-card__icon">
+                    <img src="/img/icons/icon-gpay.svg" alt="Googlepay">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-3 mb-md-4">
+                <div class="info-card">
+                  <div class="info-card__content">
+                    <h4 class="info-card__content-title">Masterpass</h4>
+                    <p class="mb-0">е-гаманець від mastercard</p>
+                  </div>
+                  <div class="info-card__icon">
+                    <img src="img/icons/icon-mastercard.svg" alt="Mastercard">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-3 mb-md-4">
+                <div class="info-card">
+                  <div class="info-card__content">
+                    <h4 class="info-card__content-title">Платіжні сторінки</h4>
+                    <p class="mb-0">Інтеграція на ваш сайт</p>
+                  </div>
+                  <div class="info-card__icon">
+                    <i class="icon-card"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-3 mb-md-4">
+                <div class="info-card">
+                  <div class="info-card__content">
+                    <h4 class="info-card__content-title">Онлайн-інвойсінг</h4>
+                    <p class="mb-0">виставляйте рахунки без сайту</p>
+                  </div>
+                  <div class="info-card__icon">
+                    <i class="icon-p2p"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-3 mb-md-4">
+                <div class="info-card">
+                  <div class="info-card__content">
+                    <h4 class="info-card__content-title">Оплата за QR</h4>
+                    <p class="mb-0">оплата через чат-боти</p>
+                  </div>
+                  <div class="info-card__icon">
+                    <i class="icon-qr"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-3 mb-md-4 mb-lg-0">
+                <div class="info-card">
+                  <div class="info-card__content">
+                    <h4 class="info-card__content-title">POS постермінали</h4>
+                    <p class="mb-0">для офлайн бізнесу</p>
+                  </div>
+                  <div class="info-card__icon">
+                    <i class="icon-terminal"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-3 mb-md-4 mb-lg-0">
+                <div class="info-card">
+                  <div class="info-card__content">
+                    <h4 class="info-card__content-title">Рекурентні платежі</h4>
+                    <p class="mb-0">автоматичні й регулярні списання</p>
+                  </div>
+                  <div class="info-card__icon">
+                    <i class="icon-calendar"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="info-card">
+                  <div class="info-card__content">
+                    <h4 class="info-card__content-title">VTS/MDES</h4>
+                    <p class="mb-0">повторна оплата в один клік</p>
+                  </div>
+                  <div class="info-card__icon">
+                    <i class="icon-arrow-circle"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.main-acquiring -->
 
-      <footer class="main-footer"><!-- .main-footer -->
+        <div class="payment-places"> <!-- .payment-places -->
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h3 class="payment-places__title">Приймайте оплату, там де ваш клієнт</h3>
+                <p class="mb-0">Дозвольте вашим покупцям платити скрізь, незалежно від платформи або формату. Приймайти оплати на сайті або без нього з iPay.ua</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="payment-tabs"> <!-- .payment-tabs -->
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  
+                  <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-site-tab" data-bs-toggle="pill" data-bs-target="#pills-site" type="button" role="tab" aria-controls="pills-site" aria-selected="true">На сайті</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-app-tab" data-bs-toggle="pill" data-bs-target="#pills-app" type="button" role="tab" aria-controls="pills-app" aria-selected="false">В додатку</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-social-tab" data-bs-toggle="pill" data-bs-target="#pills-social" type="button" role="tab" aria-controls="pills-social" aria-selected="false">В соцмережах</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-bot-tab" data-bs-toggle="pill" data-bs-target="#pills-bot" type="button" role="tab" aria-controls="pills-bot" aria-selected="false">В чат-боті</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-qr-tab" data-bs-toggle="pill" data-bs-target="#pills-qr" type="button" role="tab" aria-controls="pills-qr" aria-selected="false">Через QR-код</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-terminal-tab" data-bs-toggle="pill" data-bs-target="#pills-terminal" type="button" role="tab" aria-controls="pills-terminal" aria-selected="false">Терміналом</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div> <!-- /.payment-tabs -->
+
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="tab-content" id="pills-tabContent"> <!-- .tab-content -->
+
+                  <div class="tab-pane fade show active" id="pills-site" role="tabpanel" aria-labelledby="pills-site-tab" tabindex="0">
+                    <div class="payment-card">
+                      <div class="row h-100">
+                        <div class="col-lg-6">
+                          <div class="payment-card__content">
+                            <h4 class="payment-card__title">Інтегруйте платіжні інструменти на ваш сайт</h4>
+                            <p>iPay.ua дозволяє інтегрувати платіжні кнопки Apple Pay, Google Pay, гаманець Masterpass, Visacheckout, а також введення карткових даних до вашого сайту або інтернет-магазину. Ваші клієнти легко зможуть почати оплачувати за товари та послуги зручним їм методом.</p>
+                            <button type="button" class="btn btn-red" data-bs-toggle="modal" data-bs-target="#connectionModal"><span>Замовити підключення</span></button>
+                          </div>
+                        </div>
+                        <div class="col-lg">
+                          <div class="payment-card__img">
+                            <img src="img/homepage/payment-card/payment-card1.png" srcset="img/homepage/payment-card/payment-card1.png 1x, img/homepage/payment-card/payment-card1@2x.png 2x" alt="Image">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="pills-app" role="tabpanel" aria-labelledby="pills-app-tab" tabindex="0">
+                    <div class="payment-card">
+                      <div class="row h-100">
+                        <div class="col-lg-6">
+                          <div class="payment-card__content">
+                            <h4 class="payment-card__title">Приймайте платежі в додатку</h4>
+                            <p>Інтегруємо платіжні швидкі кнопки Apple Pay, Google Pay у ваш додаток. Налаштуємо оплату гаманцями Masterpass та Visa Checkout, Впровадимо опалту карткою прямо в додатку.</p>
+                            <button type="button" class="btn btn-red" data-bs-toggle="modal" data-bs-target="#connectionModal"><span>Замовити підключення</span></button>
+                          </div>
+                        </div>
+                        <div class="col-lg">
+                          <div class="payment-card__img">
+                            <img src="img/homepage/payment-card/payment-card2.png" srcset="img/homepage/payment-card/payment-card2.png 1x, img/homepage/payment-card/payment-card2@2x.png 2x" alt="Image">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="pills-social" role="tabpanel" aria-labelledby="pills-social-tab" tabindex="0">
+                    <div class="payment-card">
+                      <div class="row h-100">
+                        <div class="col-lg-6">
+                          <div class="payment-card__content">
+                            <h4 class="payment-card__title"></h4>
+                            <p></p>
+                            <button type="button" class="btn btn-red" data-bs-toggle="modal" data-bs-target="#connectionModal"><span>Замовити підключення</span></button>
+                          </div>
+                        </div>
+                        <div class="col-lg">
+                          <div class="payment-card__img"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="pills-bot" role="tabpanel" aria-labelledby="pills-bot-tab" tabindex="0">
+                    <div class="payment-card">
+                      <div class="row h-100">
+                        <div class="col-lg-6">
+                          <div class="payment-card__content">
+                            <h4 class="payment-card__title"></h4>
+                            <p></p>
+                            <button type="button" class="btn btn-red" data-bs-toggle="modal" data-bs-target="#connectionModal"><span>Замовити підключення</span></button>
+                          </div>
+                        </div>
+                        <div class="col-lg">
+                          <div class="payment-card__img"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="pills-qr" role="tabpanel" aria-labelledby="pills-qr-tab" tabindex="0">
+                    <div class="payment-card">
+                      <div class="row h-100">
+                        <div class="col-lg-6">
+                          <div class="payment-card__content">
+                            <h4 class="payment-card__title"></h4>
+                            <p></p>
+                            <button type="button" class="btn btn-red" data-bs-toggle="modal" data-bs-target="#connectionModal"><span>Замовити підключення</span></button>
+                          </div>
+                        </div>
+                        <div class="col-lg">
+                          <div class="payment-card__img"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="pills-terminal" role="tabpanel" aria-labelledby="pills-terminal-tab" tabindex="0">
+                    <div class="payment-card">
+                      <div class="row h-100">
+                        <div class="col-lg-6">
+                          <div class="payment-card__content">
+                            <h4 class="payment-card__title">Платіжні термінали</h4>
+                            <p>Нашатовуємо прийом платежів за ваші товари та/або послуги пластиковими картами Visa/Mastercard/Простір і будь-якими платіжними інструментами (смарт-годинник, мобільні телефони з технологією NFC тощо).</p>
+                            <p class="fw-bold">Установка терміналу для вашого бізнесу в середньому збільшує середній чек на 20%*</p>
+                            <p class="payment-card__help-text">*згідно зі статистику порівняння операцій з використанням готівкового і безготівкового розрахунку.</p>
+                            <button type="button" class="btn btn-red" data-bs-toggle="modal" data-bs-target="#connectionModal"><span>Замовити підключення</span></button>
+                          </div>
+                        </div>
+                        <div class="col-lg">
+                          <div class="payment-card__img"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div> <!-- /.tab-content -->
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- /.payment-places -->
+
+        <div class="info-section info-section--left"> <!-- .info-section -->
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-xl-6 col-xxl-5 order-last order-xl-first">
+                <div class="info-section__content">
+                  <p class="header-subtitle mb-3 mb-md-4">Отримайте більше з iPay.ua</p>
+                  <h3 class="info-section__title mb-3 mb-md-4">Сторінка оплати у дизайні вашого cайту чи додатку</h3>
+                  <p>Єдиний стиль сайту та платіжної сторінки дозволяє користувачеві безперешкодно оплачувати товари та послуги, збільшує довіру до сервісу та конверсію оплати.</p>
+                  <p class="mb-0">Ми адаптуємо стиль сторінки під ваш бізнес, щоб ваши користувачі мали неймовірний досвід оплат.</p>
+                </div>
+              </div>
+              <div class="col-xl-6 col-xxl-7">
+                <div class="info-section__img">
+                  <img src="img/homepage/info-section1.png" srcset="img/homepage/info-section1.png 1x, img/homepage/info-section1@2x.png 2x" alt="Image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.info-section -->
+
+        <div class="info-section info-section--right info-section--important"> <!-- .info-section -->
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-xl-6 col-xxl-7">
+                <div class="info-section__img">
+                  <img src="img/homepage/info-section2.png" srcset="img/homepage/info-section2.png 1x, img/homepage/info-section2@2x.png 2x" alt="Image">
+                </div>
+              </div>
+              <div class="col-xl-6 col-xxl-5">
+                <div class="info-section__content">
+                  <p class="header-subtitle mb-3 mb-md-4">Керуйте та аналізуйте</p>
+                  <h3 class="info-section__title mb-3 mb-md-4">Аналітика та інформація про платежі 24/7</h3>
+                  <p>Слідкуйте за ключовими платіжними показниками вашого проекту у персональній бізнес-панелі, щоб дізнатися більше про своїх клієнтів та приймати ефективні бізнес-рішення.</p>
+                  <ul class="list-dots">
+                    <li>Слідкуйте за надходженнями та фільтруйте звіти</li>
+                    <li>Оформлюйте повернення</li>
+                    <li>Отримуйте детальну інформацію по платежам</li>
+                    <li>Створюйте інвойс-посилання без необхідності інтеграції на сайт</li>
+                    <li>Ведіть декілька юросіб в одному кабінеті</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.info-section -->
+
+        <div class="solutions"> <!-- .solutions -->
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="solutions__title">Які є готові рішення від iPay.ua?</h2>
+                <div class="row">
+                  <div class="col-lg-8 col-xl-6">
+                    <p class="pe-3 mb-0">В залежності від сфери діяльності та мети вашого бізнесу провайдер iPay.ua пропонує комплексний підхід для:</p>
+                  </div>
+                </div>
+                <div class="solutions__cards">
+                  <div class="row">
+                    <div class="col-6 col-md-4 col-xl-2">
+                      <div class="solution-card solution-card--shop-online">
+                        <div class="solution-card__img"></div>
+                        <div class="solution-card__title">
+                          <p>Інтернет-магазинів</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-2">
+                      <div class="solution-card solution-card--restaurant">
+                        <div class="solution-card__img"></div>
+                        <div class="solution-card__title">
+                          <p>Ресторанів і кафе</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-2">
+                      <div class="solution-card solution-card--provider">
+                        <div class="solution-card__img"></div>
+                        <div class="solution-card__title">
+                          <p>Інтернет-провайдерів</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-2">
+                      <div class="solution-card solution-card--utility">
+                        <div class="solution-card__img"></div>
+                        <div class="solution-card__title">
+                          <p>Комунальних підприємств</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-2">
+                      <div class="solution-card solution-card--bank">
+                        <div class="solution-card__img"></div>
+                        <div class="solution-card__title">
+                          <p>Банків та фінансових установ</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-2">
+                      <div class="solution-card solution-card--charity">
+                        <div class="solution-card__img"></div>
+                        <div class="solution-card__title">
+                          <p>Благодійних фондів</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="solutions__cms">
+                  <div class="row">
+                    <div class="col-xxl-6">
+                      <p class="mb-0">Також розроблені готові CMS модулі для різних вебконструкторів, щоб швидко налаштувати та приєднати приймання платежів на сайті.</p>
+                    </div>
+                  </div>
+                  <div class="solutions__logos">
+                    <img src="img/homepage/magento-icon.svg" class="solutions__logos-magento" alt="Magento">
+                    <img src="img/homepage/woocommerce-icon.svg" class="solutions__logos-woocommerce" alt="Woocommerce">
+                    <img src="img/homepage/shopify-icon.svg" class="solutions__logos-shopify" alt="Shopify">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.solutions -->
+
+        <div class="pci-dss-section"> <!-- .pci-dss-section -->
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="pci-dss">
+                  <div class="row">
+                    <div class="col-lg">
+                      <div class="pci-dss__content text-center text-md-start">
+                        <h3 class="pci-dss__title mb-3 mb-lg-4">Високий рівень захисту ваших платежів</h3>
+                        <p>iPay.ua щорічно успішно проходить незалежні аудити PCI DSS з забезпечення безпеки даних власників платіжних карток відповідно до вимог міжнародного стандарту безпеки Payment Card Industry Data Security Standard (PCI DSS)</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-auto">
+                      <div class="pci-dss__sertificate text-center">
+                        <div class="row align-items-center">
+                          <div class="col-12 col-md-auto col-lg-12">
+                            <img src="img/homepage/pci-dss.svg" alt="PCI DSS">
+                          </div>
+                          <div class="col-12 col-md col-lg-12">
+                            <a href="#" class="btn btn-white" download><span>Сертифікат</span></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.pci-dss-section -->
+
+        <div class="payment-process"> <!-- .payment-process -->
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="payment-process__header">
+                  <h2 class="payment-process__title">Що таке інтернет-еквайринг?</h2>
+                  <p>Це технологічна послуга, за допомогою якої інтернет-магазини, служби доставки, фонди можуть організувати приймання платежів на сайті. Користувач може оплатити покупку в будь-який час, ввівши дані своєї картки або скориставшись електронним гаманцем (Apple Pay, Google Pay).</p>
+                  <p>Альтернатива еквайрингу — оплата за реквізитами. Якщо не приєднати платіжну систему до сайту, продавцю необхідно буде виставити рахунок, а клієнту ввести повні реквізити у спеціальній формі. Термін зарахування збільшується до 3 днів, на покупця покладається комісія за переказ коштів.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-auto col-xl-5">
+                <div class="payment-process__diagram">
+                  <div class="diagram-row diagram-row--left">
+                    <div class="diagram-card">
+                      <span>Покупець</span>
+                      <img src="img/homepage/payment-avatar.png" srcset="img/homepage/payment-avatar.png 128w" sizes="(max-width: 1199.98px) 56px, (max-width: 991.98px) 48px, 64px" alt="Image">
+                    </div>
+                    <div class="diagram-card">
+                      <span>Інтернет-магазин</span>
+                    </div>
+                    <div class="w-100 d-md-none"></div>
+                    <div class="diagram-card diagram-card--ipay">
+                      <img src="img/ipay-logo-light.svg" srcset="img/ipay-logo-light.svg 107w" sizes="68px" alt="iPay">
+                    </div>
+                  </div>
+                  <div class="diagram-row diagram-row--center">
+                    <div class="diagram-card">
+                      <span>Банк-еквайр</span>
+                    </div>
+                    <div class="diagram-card d-none d-lg-flex">
+                      <span>Банк-еквайр</span>
+                    </div>
+                    <div class="diagram-card">
+                      <span>Банк-еквайр</span>
+                    </div>
+                  </div>
+                  <div class="diagram-row diagram-row--right">
+                    <div class="diagram-card">
+                      <span>Платіжні системи</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg col-xl-7">
+                <div class="payment-process__content">
+                  <h3>Як влаштований процес приймання платежів?</h3>
+                  <p>Щоб приймати платёжі на сайті від фізичних осіб, потрібен надійний провайдер. Для платника процес відбувається практично миттєво, але процедура складається з декількох кроків та учасників:</p>
+                  <div class="row">
+                    <div class="col-md-6 col-lg-12 pt-md-3">
+                      <ol class="mb-1">
+                        <li>Сторінка оплати</li>
+                      </ol>
+                      <p class="mb-md-4">На сторінці оплати покупець вводить дані картки, які надходять платіжному провайдеру.</p>
+                    </div>
+                    <div class="col-md-6 col-lg-12 pt-0 pt-md-3 pt-lg-0">
+                      <ol class="mb-1">
+                        <li>Запит у банк-емітент</li>
+                      </ol>
+                      <p class="mb-md-4">Платіжна система передає запит у банк-емітент, який випустив картку клієнта. Він перевіряє рахунок та верифікує платіж</p>
+                    </div>
+                    <div class="col-md-6 col-lg-12">
+                      <ol class="mb-1">
+                        <li>Запит у банк-еквайр</li>
+                      </ol>
+                      <p class="mb-md-4">Провайдер адресує запит на списання вказаної суми у банк-еквайр, який потім спрямовує його на платіжні системи України</p>
+                    </div>
+                    <div class="col-md-6 col-lg-12">
+                      <ol class="mb-1">
+                        <li>Якщо верифікація успішна</li>
+                      </ol>
+                      <p class="mb-md-4">Процес запускається у зворотному порядку. З картки покупця знімаються кошти. На екрані зображується сповіщення про успішне завершення.</p>
+                    </div>
+                  </div>
+                  <p class="payment-process__content-footer mb-0">Кожен учасник процесу може відхилити запит на будь-якому з етапів. Платіжний провайдер співпрацює з багатьма банками України. Коли перший банк-еквайр не доступний, система автоматично звертається до другого, третього й так далі. Процес відбувається непомітно для платника, але шанси на успіх транзакції значно збільшуються.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.payment-process -->
+
+        <div class="about-section"> <!-- .about-section -->
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-10">
+                <p class="header-subtitle mb-3 mb-md-4">Про iPay.ua</p>
+                <h2 class="about-section__title mb-3 mb-md-4">iPay.ua — це національний платіжний провайдер, який працює з 2009 року</h2>
+                <p>Сьогодні діяльність провайдера складається з 2 основних напрямків:</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="about-cards">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="about-card about-card--business">
+                        <div class="about-card__content">
+                          <h4 class="about-card__title mb-3">Пропозиції для різних сфер бізнесу</h4>
+                          <p>онлайн-еквайринг для інтернет-провайдерів, АЗС, комунальних підприємств, магазинів, ресторанів, транспортних компаній та багатьох інших</p>
+                        </div>
+                        <div class="about-card__icon mt-2 mt-lg-1">
+                          <i class="icon-connection"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 mt-4 mt-lg-0">
+                      <div class="about-card about-card--payments">
+                        <div class="about-card__content">
+                          <h4 class="about-card__title mb-3">Інтернет-платформа для моментальних переказів та платежів</h4>
+                          <p>iPay.ua - сайт для кінцевих споживачів, що об’єднує в собі послуги операторів надання комунальних послуг, інтернету, мобільного зв’язку, телебачення, благодінойсті, страховки, тощо</p>
+                        </div>
+                        <div class="about-card__icon mt-2 mt-lg-1">
+                          <i class="icon-online-meeting"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.about-section -->
+
+        <div class="info-block"> <!-- .info-block -->
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-xxl-10">
+                <p class="text-lg-center mb-0">iPay.ua співпрацює з міжнародними платіжними системами Visa, Mastercard та національною Простір. Серед партнерів сервісу — більшість українських банків, комунальних сервісів, різноманітних компаній та державних установ</p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.info-block -->
+
+        <div class="main-slider homepage-slider"> <!-- .homepage-slider -->
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <section class="splide homepage-splide" aria-label="Splide Basic HTML Example">
+
+                  <div class="homepage-splide__panel">
+                    <h4 class="homepage-splide__title">Наші нагороди</h4>
+
+                    <div class="homepage-splide__control">
+                      <div class="homepage-splide__counter"><span class="homepage-splide__current-counter" id="splide-current-index">1</span> &mdash; <span class="homepage-splide__all-counter" id="splide-all-count"></span></div>
+                      <div class="splide__arrows splide__arrows--ltr">
+                        <button class="splide__arrow splide__arrow--prev">
+                          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.39027 19.7808C6.39027 19.5024 6.50777 19.2533 6.72777 19.0483L16.5128 9.23411C16.7911 8.95577 17.0403 8.85327 17.3036 8.85327C17.8603 8.85327 18.2703 9.26327 18.2703 9.80577C18.2703 10.0841 18.1828 10.3324 18.0069 10.5224L13.6269 14.9474L9.30527 18.9608L12.7036 18.7991H32.6261C33.1828 18.7991 33.5928 19.2099 33.5928 19.7808C33.5928 20.3524 33.1828 20.7624 32.6261 20.7624H12.7036L9.29111 20.6016L13.6269 24.6149L18.0069 29.0391C18.1819 29.2141 18.2703 29.4783 18.2703 29.7416C18.2703 30.2833 17.8603 30.6941 17.3036 30.6941C17.0403 30.6941 16.8053 30.6058 16.5861 30.4008L6.72777 20.5133C6.50777 20.3083 6.39027 20.0591 6.39027 19.7808Z" fill="#001535"/>
+                          </svg>
+                        </button>
+                        <button class="splide__arrow splide__arrow--next">
+                          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M33.5931 19.7808C33.5931 19.5024 33.4756 19.2533 33.2556 19.0483L23.4706 9.23411C23.1923 8.95577 22.9431 8.85327 22.6798 8.85327C22.1231 8.85327 21.7131 9.26327 21.7131 9.80577C21.7131 10.0841 21.8006 10.3324 21.9765 10.5224L26.3565 14.9474L30.6781 18.9608L27.2798 18.7991H7.35729C6.80063 18.7991 6.39062 19.2099 6.39062 19.7808C6.39062 20.3524 6.80063 20.7624 7.35729 20.7624H27.2798L30.6923 20.6016L26.3565 24.6149L21.9765 29.0391C21.8015 29.2141 21.7131 29.4783 21.7131 29.7416C21.7131 30.2833 22.1231 30.6941 22.6798 30.6941C22.9431 30.6941 23.1781 30.6058 23.3973 30.4008L33.2556 20.5133C33.4756 20.3083 33.5931 20.0591 33.5931 19.7808Z" fill="#001535"/>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
+                        <div class="row align-items-end">
+                          <div class="col-lg-6">
+                            <div class="homepage-splide__content">
+                              <h2 class="homepage-splide__slide-title mb-3 mb-md-4">The best partner of 2019 from Mastercard</h2>
+                              <p class="mb-0">Habitasse mauris odio semper id nibh nisl</p>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="homepage-splide__img">
+                              <img src="img/homepage/slider/slider-award@1x.png" srcset="img/homepage/slider/slider-award@1x.png 1x, img/homepage/slider/slider-award@2x.png 2x" alt="">
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="row align-items-end">
+                          <div class="col-lg-6">
+                            <div class="homepage-splide__content">
+                              <h2 class="homepage-splide__slide-title mb-3 mb-md-4">The best partner of 2020 from Mastercard</h2>
+                              <p class="mb-0">Habitasse mauris odio semper id nibh nisl</p>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="homepage-splide__img">
+                              <img src="img/homepage/slider/slider-award@1x.png" srcset="img/homepage/slider/slider-award@1x.png 1x, img/homepage/slider/slider-award@2x.png 2x" alt="">
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="row align-items-end">
+                          <div class="col-lg-6">
+                            <div class="homepage-splide__content">
+                              <h2 class="homepage-splide__slide-title mb-3 mb-md-4">The best partner of 2021 from Mastercard</h2>
+                              <p class="mb-0">Habitasse mauris odio semper id nibh nisl</p>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="homepage-splide__img">
+                              <img src="img/homepage/slider/slider-award@1x.png" srcset="img/homepage/slider/slider-award@1x.png 1x, img/homepage/slider/slider-award@2x.png 2x" alt="">
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.homepage-slider -->
+
+        <div class="partners"> <!-- .partners -->
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h3 class="partners__title">Наші партнери</h3>
+                <div class="partners-cards">
+                  <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5">
+                    <div class="col">
+                      <div class="partner-card">
+                        <img src="img/homepage/partner-card/partners1.png" srcset="img/homepage/partner-card/partners1.png 1x, img/homepage/partner-card/partners1@2x.png 2x" alt="Ukrsibbank">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="partner-card">
+                        <img src="img/homepage/partner-card/partners2.png" srcset="img/homepage/partner-card/partners2.png 1x, img/homepage/partner-card/partners2@2x.png 2x" alt="Otpbank">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="partner-card">
+                        <img src="img/homepage/partner-card/partners3.png" srcset="img/homepage/partner-card/partners3.png 1x, img/homepage/partner-card/partners3@2x.png 2x" alt="Sushiya">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="partner-card">
+                        <img src="img/homepage/partner-card/partners4.png" srcset="img/homepage/partner-card/partners4.png 1x, img/homepage/partner-card/partners4@2x.png 2x" alt="Pivdenniy Bank">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="partner-card">
+                        <img src="img/homepage/partner-card/partners5.png" srcset="img/homepage/partner-card/partners5.png 1x, img/homepage/partner-card/partners5@2x.png 2x" alt="WOG">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="partner-card">
+                        <img src="img/homepage/partner-card/partners6.png" srcset="img/homepage/partner-card/partners6.png 1x, img/homepage/partner-card/partners6@2x.png 2x" alt="Lanet">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="partner-card">
+                        <img src="img/homepage/partner-card/partners7.png" srcset="img/homepage/partner-card/partners7.png 1x, img/homepage/partner-card/partners7@2x.png 2x" alt="Globus Bank">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="partner-card">
+                        <img src="img/homepage/partner-card/partners8.png" srcset="img/homepage/partner-card/partners8.png 1x, img/homepage/partner-card/partners8@2x.png 2x" alt="Parter UA">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="partner-card">
+                        <img src="img/homepage/partner-card/partners9.png" srcset="img/homepage/partner-card/partners9.png 1x, img/homepage/partner-card/partners9@2x.png 2x" alt="Eldorado">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="partner-card">
+                        <img src="img/homepage/partner-card/partners10.png" srcset="img/homepage/partner-card/partners10.png 1x, img/homepage/partner-card/partners10@2x.png 2x" alt="KredoBank">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="partner-card">
+                        <img src="img/homepage/partner-card/partners11.png" srcset="img/homepage/partner-card/partners11.png 1x, img/homepage/partner-card/partners11@2x.png 2x" alt="Money BOOM">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="partner-card">
+                        <img src="img/homepage/partner-card/partners12.png" srcset="img/homepage/partner-card/partners12.png 1x, img/homepage/partner-card/partners12@2x.png 2x" alt="Oshchadbank">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="partner-card">
+                        <img src="img/homepage/partner-card/partners13.png" srcset="img/homepage/partner-card/partners13.png 1x, img/homepage/partner-card/partners13@2x.png 2x" alt="IdeaBank">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="partner-card">
+                        <img src="img/homepage/partner-card/partners14.png" srcset="img/homepage/partner-card/partners14.png 1x, img/homepage/partner-card/partners14@2x.png 2x" alt="Arsenal">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="partner-card">
+                        <img src="img/homepage/partner-card/partners15.png" srcset="img/homepage/partner-card/partners15.png 1x, img/homepage/partner-card/partners15@2x.png 2x" alt="Maximum">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.partners -->
+
+      </main> <!-- /.main -->
+
+      <footer class="main-footer">
 
         <div class="main-footer__cards"><!-- .main-footer__cards -->
           <div class="container">
@@ -539,11 +1360,80 @@
           </div>
         </div>
 
-      </footer><!-- /.main-footer -->
+      </footer> <!-- /.main-footer -->
 
-    </div>
+    </div> <!-- /.main-wrapper -->
+
+    <div class="sticky-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <ul class="sticky-footer__nav">
+              <li>
+                <a href="+380445025072" class="sticky-footer__link">
+                  <span>+380 44 502 50 72</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="sticky-footer__link sticky-footer__link--telegram">
+                  <i class="icon-telegram"></i>
+                  <span><span class="d-none d-lg-inline">Написати в </span>Telegram</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="sticky-footer__link sticky-footer__link--viber">
+                  <i class="icon-viber"></i>
+                  <span><span class="d-none d-lg-inline">Написати в </span>Viber</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="btn btn-red btn-sm" data-bs-toggle="modal" data-bs-target="#connectionModal"><span>Залишити заявку</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> <!-- /.sticky-footer -->
+
+    <!-- connection modal -->
+    <div class="modal modal-main fade" id="connectionModal" tabindex="-1" aria-labelledby="connectionModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="modal-title text-center">Заявка на підключення</p>
+            <form action="">
+              <div class="form-group">
+                <input type="text" class="form-control" id="nameForm" placeholder="Ваше ім’я">
+                <label for="nameForm" class="form-label">Ім’я</label>
+              </div>
+              <div class="form-group">
+                <input type="tel" class="form-control" id="telForm" placeholder="Ваш телефон">
+                <label for="telForm" class="form-label">Телефон</label>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="emailForm" placeholder="Ваш e-mail">
+                <label for="emailForm" class="form-label">E-mail</label>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="companyForm" placeholder="Ваша компанія">
+                <label for="companyForm" class="form-label">Сайт/компанія</label>
+              </div>
+              <div class="d-grid mb-3">
+                <button type="submit" class="btn btn-red">Замовити підключення</button>
+              </div>
+              <p class="text-center mb-0 pt-1 fs-6 lh-sm fw-normal color-title">Надсилаючи цю форму, я підтверджую, що прочитав і приймаю <a href="#" class="fs-6 lh-sm"><u>Політику конфіденційності</u></a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div><!-- /connection modal -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="/js/main.js"></script>
+    <script src="/js/splide.min.js"></script>
+    <script src="/js/slider.js"></script>
   </body>
 </html>

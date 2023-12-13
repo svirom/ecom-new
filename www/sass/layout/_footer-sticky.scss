@@ -1,0 +1,59 @@
+.sticky-footer {
+  position: fixed;
+  width: 100%;
+  max-height: 0;
+  left: 0;
+  bottom: 0;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  filter: drop-shadow(0 -6px 24px rgba(0, 0, 0, 0.15));
+  background-color: #ffffff;
+  transition: max-height 0.3s ease-in-out;
+  z-index: 1050;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    li {
+      & + li {
+        margin-left: 2.625rem;
+      }
+
+      &:last-child {
+        margin-left: auto;
+      }
+    }
+
+    .sticky-footer__link {
+      display: flex;
+      align-items: center;
+      color: $color-blue-1;
+
+      i {
+        margin-right: 0.625rem;
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+@include until($lg) {
+  .sticky-footer {
+    &__nav {
+      li {
+        & + li {
+          margin-left: 1.125rem;
+        }
+      }
+    }
+  }
+}
+
+@include until($md) {
+  .sticky-footer {
+    display: none;
+  }
+}
