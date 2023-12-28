@@ -208,6 +208,12 @@
       padding-left: 0rem;
     }
   }
+
+  .footer-list {
+    &--connection {
+      margin-top: 2.5rem;
+    }
+  }
 }
 
 @include until($sm) {

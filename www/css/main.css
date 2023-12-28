@@ -1031,6 +1031,9 @@ textarea.form-control::-webkit-scrollbar-thumb {
   .footer-card--right {
     padding-left: 0rem;
   }
+  .footer-list--connection {
+    margin-top: 2.5rem;
+  }
 }
 @media screen and (max-width: 575.98px) {
   .main-footer__cards {
