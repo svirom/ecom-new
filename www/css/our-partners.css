@@ -1,0 +1,40 @@
+.partners .partners__title {
+  margin-bottom: 1.625rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.partners-cards > .row > [class^=col]:not(:nth-last-child(-n+5)) {
+  margin-bottom: 1.875rem;
+}
+
+.partner-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9.375rem;
+  padding: 0.875rem;
+}
+
+@media screen and (max-width: 991.98px) {
+  .partners .partners__title {
+    font-size: 1.5rem;
+  }
+  .partners-cards > .row > [class^=col]:not(:nth-last-child(-n+3)) {
+    margin-bottom: 1.875rem;
+  }
+  .partner-card {
+    height: 8.3125rem;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .partners .partners__title {
+    font-size: 1.25rem;
+  }
+  .partners-cards > .row > [class^=col]:not(:nth-last-child(-n+2)) {
+    margin-bottom: 1.875rem;
+  }
+  .partner-card {
+    height: 6.0625rem;
+  }
+}/*# sourceMappingURL=our-partners.css.map */

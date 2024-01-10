@@ -57,6 +57,22 @@ document.addEventListener('DOMContentLoaded', function() {
       mobileMenu.classList.remove('show');
       document.querySelector('body').classList.remove('overflow-hidden');
     }
+  });
+
+  // play button
+  const infoVideo = document.querySelectorAll('.info-video');
+
+  infoVideo.forEach(function(video) {
+    const playButton = video.querySelector('.info-video__button');
+    const playVideo = video.querySelector('.info-video__player');
+    const playBkgr = video.querySelector('.info-video__bkgr');
+    
+    playButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      playVideo.play();
+      playButton.classList.add('d-none');
+      playBkgr.classList.add('d-none');
+    })
   })
 
 })

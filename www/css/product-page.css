@@ -1,0 +1,362 @@
+.page-hero {
+  color: #ffffff;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  background-color: #001535;
+  overflow: hidden;
+}
+.page-hero__content {
+  position: relative;
+}
+.page-hero .page-hero__title {
+  font-size: 3.25rem;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+.page-hero .page-hero__subtitle {
+  margin-bottom: 2.5rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+}
+.page-hero__images {
+  position: relative;
+  display: flex;
+}
+
+.page-section {
+  margin-top: 9.375rem;
+  margin-bottom: 9.375rem;
+}
+.page-section__header {
+  margin-bottom: 3.75rem;
+}
+.page-section--top-short {
+  margin-top: 5rem;
+}
+.page-section--bottom-short {
+  margin-bottom: 5rem;
+}
+.page-section--dark {
+  padding-top: 7.5rem;
+  padding-bottom: 7.625rem;
+  color: #ffffff;
+  border-radius: 2rem;
+  background-color: #001535;
+}
+.page-section--dark .page-section__header {
+  color: #ffffff;
+}
+.page-section--dark .page-section__header h1, .page-section--dark .page-section__header h2, .page-section--dark .page-section__header h3, .page-section--dark .page-section__header h4, .page-section--dark .page-section__header .h1, .page-section--dark .page-section__header .h2, .page-section--dark .page-section__header .h3, .page-section--dark .page-section__header .h4 {
+  color: #ffffff;
+}
+
+.info-section__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info-section__img img {
+  max-width: 100%;
+  border-radius: 1.5rem;
+}
+.info-section__img video {
+  max-width: 554px;
+  border-radius: 1.75rem;
+}
+.info-section__img.bkgr-grey {
+  padding: 4.3125rem 5.5rem;
+  border-radius: 2rem;
+  background-color: #F3F5F9;
+}
+.info-section__content--pl {
+  padding-left: 3.5rem;
+}
+
+.info-video {
+  position: relative;
+  display: flex;
+}
+.info-video__button {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  transition: box-shadow 0.2s ease;
+  z-index: 2;
+}
+.info-video__button:hover {
+  box-shadow: 2px 2px 12px 0 rgba(232, 79, 53, 0.75);
+}
+.info-video__bkgr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.75rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.frame-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 33rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.frame-card__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 21.0625rem;
+  height: 21.0625rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.frame-card__img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.frame-card__content {
+  flex-basis: 0;
+  flex-grow: 1;
+  padding: 2.5rem 3rem;
+  color: #324F64;
+}
+
+.page-methods .frame-card.page-methods__page .frame-card__img {
+  background-color: #9298CD;
+}
+.page-methods .frame-card.page-methods__app .frame-card__img {
+  align-items: flex-start;
+  background-color: #B0C8EB;
+}
+.page-methods .frame-card__content h4 {
+  font-weight: 600;
+  color: #17171C;
+}
+
+.page-more .page-section__header h2 {
+  margin-bottom: 1.5rem;
+}
+.page-more .product-card {
+  height: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .page-hero .page-hero__title {
+    font-size: 2.5rem;
+  }
+  .page-hero .page-hero__subtitle {
+    font-size: 1.125rem;
+    line-height: 1.2;
+  }
+  .page-section {
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
+  }
+  .page-section__header {
+    margin-bottom: 2.5rem;
+  }
+  .page-section--top-short {
+    margin-top: 3.75rem;
+  }
+  .page-section--bottom-short {
+    margin-bottom: 3.75rem;
+  }
+  .info-section__img {
+    text-align: center;
+  }
+  .info-section__img.bkgr-grey {
+    padding: 2.9375rem 3.6875rem;
+  }
+  .info-section__content {
+    margin-bottom: 3.75rem;
+  }
+  .info-section__content--pl {
+    padding-left: 0;
+  }
+  .info-section .info-section__title {
+    font-weight: 600;
+  }
+  .page-more .page-section__header h2 {
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .page-section--dark {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+  .frame-card {
+    min-height: auto;
+  }
+  .page-more .page-section__header {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .page-hero .page-hero__title {
+    font-size: 2rem;
+  }
+  .page-hero .page-hero__subtitle {
+    font-size: 1rem;
+  }
+  .page-section {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .page-section__header {
+    margin-bottom: 1.875rem;
+  }
+  .page-section--dark {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .info-section__content {
+    margin-bottom: 2rem;
+  }
+  .frame-card {
+    border-radius: 1.5rem;
+  }
+  .frame-card__img {
+    flex: 0 0 11.8125rem;
+    height: 11.8125rem;
+  }
+  .page-methods .page-section__header {
+    margin-bottom: 2rem;
+  }
+  .page-methods .frame-card.page-methods__page .frame-card__img {
+    padding: 1.3125rem;
+  }
+  .page-methods .frame-card.page-methods__app .frame-card__img {
+    align-items: flex-end;
+  }
+  .page-methods .frame-card__content {
+    padding: 1.5rem;
+  }
+}
+/*
+-----
+applepay
+-----
+*/
+.page-hero.applepay-hero {
+  position: relative;
+  padding-top: 8.5rem;
+  padding-bottom: 3.375rem;
+}
+.page-hero.applepay-hero .apple-bkgr {
+  position: absolute;
+  bottom: -164px;
+  left: calc(50% - 24px);
+  width: 549px;
+  height: 543px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgb(232, 79, 53), rgb(232, 79, 53));
+  filter: blur(260px);
+}
+.page-hero.applepay-hero .page-hero__content {
+  max-width: 438px;
+  padding-top: 4.125rem;
+}
+.page-hero.applepay-hero .page-hero__images {
+  padding-left: 143px;
+  padding-right: 193px;
+}
+.page-hero.applepay-hero .applepay-hero__images-watch, .page-hero.applepay-hero .applepay-hero__images-logo {
+  position: absolute;
+}
+.page-hero.applepay-hero .applepay-hero__images-watch {
+  bottom: 44px;
+  left: 0;
+}
+.page-hero.applepay-hero .applepay-hero__images-logo {
+  top: 30px;
+  right: 60px;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .page-hero.applepay-hero .page-hero__images {
+    padding-right: 92px;
+  }
+  .page-hero.applepay-hero .applepay-hero__images-logo {
+    right: 0;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .page-hero.applepay-hero {
+    padding-top: 9.125rem;
+    padding-bottom: 4rem;
+  }
+  .page-hero.applepay-hero .apple-bkgr {
+    bottom: -94px;
+    width: 415px;
+    height: 409px;
+  }
+  .page-hero.applepay-hero .page-hero__content {
+    padding-top: 2.625rem;
+  }
+  .page-hero.applepay-hero .page-hero__images {
+    padding-left: 85px;
+    padding-right: 57px;
+  }
+  .page-hero.applepay-hero .applepay-hero__images-watch {
+    bottom: 60px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .page-hero.applepay-hero {
+    padding-top: 7.625rem;
+    padding-bottom: 0;
+  }
+  .page-hero.applepay-hero .apple-bkgr {
+    bottom: -160px;
+    left: 0;
+  }
+  .page-hero.applepay-hero .page-hero__content {
+    padding-top: 0;
+    padding-bottom: 3.75rem;
+  }
+  .page-hero.applepay-hero .page-hero__images {
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .page-hero.applepay-hero .applepay-hero__images-phone {
+    margin-bottom: -38px;
+  }
+  .page-hero.applepay-hero .applepay-hero__images-watch {
+    align-self: flex-end;
+    position: relative;
+    bottom: 0;
+    margin-right: -24px;
+    margin-bottom: 50px;
+  }
+  .page-hero.applepay-hero .applepay-hero__images-logo {
+    position: relative;
+    top: 0;
+    margin-top: 32px;
+    margin-right: -52px;
+  }
+}/*# sourceMappingURL=product-page.css.map */

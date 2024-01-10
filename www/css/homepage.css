@@ -85,7 +85,7 @@
 .main-acquiring .main-acquiring__subtext {
   margin-bottom: 3.75rem;
 }
-.main-acquiring .info-card {
+.main-acquiring .product-card {
   height: 100%;
   min-height: 10.4375rem;
   padding-top: 1.25rem;
@@ -520,26 +520,9 @@
   margin-bottom: 9.375rem;
 }
 
-.partners {
+.homepage .partners {
   margin-top: 9.375rem;
   margin-bottom: 9.375rem;
-}
-.partners .partners__title {
-  margin-bottom: 1.625rem;
-  font-size: 2rem;
-  font-weight: 600;
-}
-
-.partners-cards > .row > [class^=col]:not(:nth-last-child(-n+5)) {
-  margin-bottom: 1.875rem;
-}
-
-.partner-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 9.375rem;
-  padding: 0.875rem;
 }
 
 @media screen and (max-width: 1399.98px) {
@@ -556,7 +539,7 @@
   .payment-process,
   .about-section,
   .info-block,
-  .partners,
+  .homepage .partners,
   .main-connect.connect-widget,
   .main-slider.homepage-slider {
     margin-top: 7.5rem;
@@ -606,7 +589,7 @@
   .main-acquiring .main-acquiring__subtext {
     font-size: 1.125rem;
   }
-  .main-acquiring .info-card {
+  .main-acquiring .product-card {
     min-height: 10.125rem;
   }
   .payment-places .payment-places__title {
@@ -621,7 +604,7 @@
   .payment-process,
   .about-section,
   .info-block,
-  .partners,
+  .homepage .partners,
   .main-connect.connect-widget,
   .main-slider.homepage-slider {
     margin-top: 6.25rem;
@@ -766,7 +749,7 @@
     font-size: 1rem;
     margin-bottom: 2.5rem;
   }
-  .main-acquiring .info-card {
+  .main-acquiring .product-card {
     min-height: 8.25rem;
   }
   .payment-places {
@@ -945,15 +928,6 @@
   .info-block p {
     font-size: 1.25rem;
   }
-  .partners .partners__title {
-    font-size: 1.5rem;
-  }
-  .partners-cards > .row > [class^=col]:not(:nth-last-child(-n+3)) {
-    margin-bottom: 1.875rem;
-  }
-  .partner-card {
-    height: 8.3125rem;
-  }
 }
 @media screen and (max-width: 767.98px) {
   .main-hero {
@@ -996,7 +970,7 @@
   .main-acquiring .main-acquiring__title {
     font-size: 1.5rem;
   }
-  .main-acquiring .info-card {
+  .main-acquiring .product-card {
     min-height: 7rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -1180,18 +1154,9 @@
   .info-block p {
     font-size: 1.125rem;
   }
-  .partners {
+  .homepage .partners {
     margin-top: 5rem;
     margin-bottom: 5rem;
-  }
-  .partners .partners__title {
-    font-size: 1.25rem;
-  }
-  .partners-cards > .row > [class^=col]:not(:nth-last-child(-n+2)) {
-    margin-bottom: 1.875rem;
-  }
-  .partner-card {
-    height: 6.0625rem;
   }
   .main-slider.homepage-slider {
     margin-top: 5rem;

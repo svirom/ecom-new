@@ -109,7 +109,7 @@
     margin-bottom: 3.75rem;
   }
 
-  .info-card {
+  .product-card {
     height: 100%;
     min-height: 10.4375rem;
     padding-top: 1.25rem;
@@ -663,31 +663,10 @@
   }
 }
 
-.partners {
+// partners widget
+.homepage .partners {
   margin-top: 9.375rem;
   margin-bottom: 9.375rem;
-
-  .partners__title {
-    margin-bottom: 1.625rem;
-    font-size: 2rem;
-    font-weight: 600;
-  }
-}
-
-.partners-cards {
-  & > .row {
-    & > [class^=col]:not(:nth-last-child(-n+5)) {
-      margin-bottom: 1.875rem;
-    }
-  }
-}
-
-.partner-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 9.375rem;
-  padding: 0.875rem;
 }
 
 @include until($xxl) {
@@ -710,7 +689,7 @@
   .payment-process,
   .about-section,
   .info-block,
-  .partners,
+  .homepage .partners,
   .main-connect.connect-widget,
   .main-slider.homepage-slider {
     margin-top: 7.5rem;
@@ -773,7 +752,7 @@
       font-size: 1.125rem;
     }
 
-    .info-card {
+    .product-card {
       min-height: 10.125rem;
     }
   }
@@ -796,7 +775,7 @@
   .payment-process,
   .about-section,
   .info-block,
-  .partners,
+  .homepage .partners,
   .main-connect.connect-widget,
   .main-slider.homepage-slider {
     margin-top: 6.25rem;
@@ -1029,7 +1008,7 @@
       margin-bottom: 2.5rem;
     }
 
-    .info-card {
+    .product-card {
       min-height: 8.25rem;
     }
   }
@@ -1290,24 +1269,6 @@
       font-size: 1.25rem;
     }
   }
-
-  .partners {
-    .partners__title {
-      font-size: 1.5rem;
-    }
-  }
-
-  .partners-cards {
-    & > .row {
-      & > [class^=col]:not(:nth-last-child(-n+3)) {
-        margin-bottom: 1.875rem;
-      }
-    }
-  }
-
-  .partner-card {
-    height: 8.3125rem;
-  }
 }
 
 @include until($md) {
@@ -1363,7 +1324,7 @@
       font-size: 1.5rem;
     }
 
-    .info-card {
+    .product-card {
       min-height: 7rem;
       padding-top: 1rem;
       padding-bottom: 1rem;
@@ -1624,25 +1585,9 @@
     }
   }
 
-  .partners {
+  .homepage .partners {
     margin-top: 5rem;
     margin-bottom: 5rem;
-
-    .partners__title {
-      font-size: 1.25rem;
-    }
-  }
-
-  .partners-cards {
-    & > .row {
-      & > [class^=col]:not(:nth-last-child(-n+2)) {
-        margin-bottom: 1.875rem;
-      }
-    }
-  }
-
-  .partner-card {
-    height: 6.0625rem;
   }
 
   .main-slider.homepage-slider {
