@@ -205,6 +205,11 @@
     background-color: #ffffff;
   }
 
+  &.light:not(.light-product) {
+    border-color: $color-gray-1;
+    background-color: #ffffff;
+  }
+
   &.scrolled, &.light {
     .header-nav__logo {
       background-image: url("../img/ipay-logo.svg");

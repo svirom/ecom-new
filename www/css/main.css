@@ -722,6 +722,10 @@ textarea.form-control::-webkit-scrollbar-thumb {
   border-color: #7C9CAC;
   background-color: #ffffff;
 }
+.main-header.light:not(.light-product) {
+  border-color: #F3F5F9;
+  background-color: #ffffff;
+}
 .main-header.scrolled .header-nav__logo, .main-header.light .header-nav__logo {
   background-image: url("../img/ipay-logo.svg");
 }
