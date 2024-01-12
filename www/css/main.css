@@ -722,53 +722,53 @@ textarea.form-control::-webkit-scrollbar-thumb {
   border-color: #7C9CAC;
   background-color: #ffffff;
 }
-.main-header.scrolled .header-nav__logo {
+.main-header.scrolled .header-nav__logo, .main-header.light .header-nav__logo {
   background-image: url("../img/ipay-logo.svg");
 }
-.main-header.scrolled .main-nav .dropdown .main-nav__link {
+.main-header.scrolled .main-nav .dropdown .main-nav__link, .main-header.light .main-nav .dropdown .main-nav__link {
   color: #324F64;
 }
-.main-header.scrolled .main-nav .dropdown .main-nav__link.dropdown-toggle:not(.main-nav__services) > svg path {
+.main-header.scrolled .main-nav .dropdown .main-nav__link.dropdown-toggle:not(.main-nav__services) > svg path, .main-header.light .main-nav .dropdown .main-nav__link.dropdown-toggle:not(.main-nav__services) > svg path {
   stroke: #324F64;
 }
-.main-header.scrolled .main-nav .dropdown .main-nav__link[aria-expanded=true] {
+.main-header.scrolled .main-nav .dropdown .main-nav__link[aria-expanded=true], .main-header.light .main-nav .dropdown .main-nav__link[aria-expanded=true] {
   color: #ffffff;
 }
-.main-header.scrolled .main-nav .dropdown .main-nav__link[aria-expanded=true].dropdown-toggle:not(.main-nav__services) > svg path {
+.main-header.scrolled .main-nav .dropdown .main-nav__link[aria-expanded=true].dropdown-toggle:not(.main-nav__services) > svg path, .main-header.light .main-nav .dropdown .main-nav__link[aria-expanded=true].dropdown-toggle:not(.main-nav__services) > svg path {
   stroke: #ffffff;
 }
-.main-header.scrolled .main-nav .dropdown .main-nav__services {
+.main-header.scrolled .main-nav .dropdown .main-nav__services, .main-header.light .main-nav .dropdown .main-nav__services {
   border-color: #F3F5F9;
   background-color: #F3F5F9;
 }
-.main-header.scrolled .main-nav .dropdown .main-nav__services > svg path {
+.main-header.scrolled .main-nav .dropdown .main-nav__services > svg path, .main-header.light .main-nav .dropdown .main-nav__services > svg path {
   fill: #7C9CAC;
 }
-.main-header.scrolled .main-nav .dropdown .main-nav__services[aria-expanded=true] {
+.main-header.scrolled .main-nav .dropdown .main-nav__services[aria-expanded=true], .main-header.light .main-nav .dropdown .main-nav__services[aria-expanded=true] {
   border-color: #001535;
   background-color: #001535;
 }
-.main-header.scrolled .main-nav .dropdown .main-nav__services[aria-expanded=true] > svg path {
+.main-header.scrolled .main-nav .dropdown .main-nav__services[aria-expanded=true] > svg path, .main-header.light .main-nav .dropdown .main-nav__services[aria-expanded=true] > svg path {
   fill: #ffffff;
 }
-.main-header.scrolled .lang-nav .lang-nav__link {
+.main-header.scrolled .lang-nav .lang-nav__link, .main-header.light .lang-nav .lang-nav__link {
   color: #324F64;
 }
-.main-header.scrolled .lang-nav .lang-nav__link > svg path {
+.main-header.scrolled .lang-nav .lang-nav__link > svg path, .main-header.light .lang-nav .lang-nav__link > svg path {
   stroke: #324F64;
 }
-.main-header.scrolled .lang-nav .lang-nav__link[aria-expanded=true] {
+.main-header.scrolled .lang-nav .lang-nav__link[aria-expanded=true], .main-header.light .lang-nav .lang-nav__link[aria-expanded=true] {
   color: #ffffff;
   border-color: #001535;
   background-color: #001535;
 }
-.main-header.scrolled .lang-nav .lang-nav__link[aria-expanded=true] > svg path {
+.main-header.scrolled .lang-nav .lang-nav__link[aria-expanded=true] > svg path, .main-header.light .lang-nav .lang-nav__link[aria-expanded=true] > svg path {
   stroke: #ffffff;
 }
-.main-header.scrolled .mobile-nav__button {
+.main-header.scrolled .mobile-nav__button, .main-header.light .mobile-nav__button {
   border-color: #001535;
 }
-.main-header.scrolled .mobile-nav__button > svg path {
+.main-header.scrolled .mobile-nav__button > svg path, .main-header.light .mobile-nav__button > svg path {
   fill: #001535;
 }
 

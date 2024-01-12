@@ -32,6 +32,15 @@
     position: relative;
     display: flex;
   }
+
+  &.light {
+    color: $color-blue-2;
+    background-color: $color-gray-1;
+
+    .page-hero__title {
+      color: $color-blue-1;
+    }
+  }
 }
 
 // page section
@@ -95,6 +104,10 @@
   &__content--pl {
     padding-left: 3.5rem;
   }
+
+  &__content--pr {
+    padding-right: 3.5rem;
+  }
 }
 
 .info-video {
@@ -136,8 +149,8 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  min-height: 33rem;
-  border-radius: 2rem;
+  min-height: 24.6875rem;
+  border-radius: 1.5rem;
   overflow: hidden;
   background-color: #ffffff;
 
@@ -145,10 +158,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 0 0 21.0625rem;
-    height: 21.0625rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    flex: 0 0 14.1875rem;
+    height: 14.1875rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -162,7 +175,7 @@
   &__content {
     flex-basis: 0;
     flex-grow: 1;
-    padding: 2.5rem 3rem;
+    padding: 1.5rem 2rem;
     color: $color-blue-2;    
   }
 }
@@ -170,6 +183,9 @@
 // page methods
 .page-methods {
   .frame-card {
+    min-height: 33rem;
+    border-radius: 2rem;
+
     &.page-methods__page {
       .frame-card__img {
         background-color: #9298CD;
@@ -183,7 +199,16 @@
       }
     }
 
+    &__img {
+      flex: 0 0 21.0625rem;
+      height: 21.0625rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+
     &__content {
+      padding: 2.5rem 3rem;
+
       h4 {
         font-weight: 600;
         color: $color-black-1;
@@ -255,6 +280,10 @@
       padding-left: 0;
     }
 
+    &__content--pr {
+      padding-right: 0;
+    }
+
     .info-section__title {
       font-weight: 600;
     }
@@ -320,11 +349,9 @@
   }
 
   .frame-card {
-    border-radius: 1.5rem;
-
     &__img {
-      flex: 0 0 11.8125rem;
-      height: 11.8125rem;
+      // flex: 0 0 11.8125rem;
+      // height: 11.8125rem;
     }
   }
 
@@ -334,6 +361,9 @@
     }
 
     .frame-card {
+      min-height: auto;
+      border-radius: 1.5rem;
+
       &.page-methods__page {
         .frame-card__img {
           padding: 1.3125rem;
@@ -345,6 +375,11 @@
           align-items: flex-end;
         }
       }
+
+      &__img {
+        flex: 0 0 11.8125rem;
+        height: 11.8125rem;
+      }
   
       &__content {
         padding: 1.5rem;
@@ -354,13 +389,13 @@
 }
 
 /*
------
-applepay
------
+*
+* applepay
+*
 */
 // hero
-.page-hero {
-  &.applepay-hero {
+.applepay-hero {
+  &.page-hero {
     position: relative;
     padding-top: 8.5rem;
     padding-bottom: 3.375rem;
@@ -403,8 +438,8 @@ applepay
 }
 
 @include until($xl) {
-  .page-hero {
-    &.applepay-hero {
+  .applepay-hero {
+    &.page-hero {
       .page-hero__images {
         padding-right: 92px;
       }
@@ -417,8 +452,8 @@ applepay
 }
 
 @include until($lg) {
-  .page-hero {
-    &.applepay-hero {
+  .applepay-hero {
+    &.page-hero {
       padding-top: 9.125rem;
       padding-bottom: 4rem;
 
@@ -445,8 +480,8 @@ applepay
 }
 
 @include until($md) {
-  .page-hero {
-    &.applepay-hero {
+  .applepay-hero {
+    &.page-hero {
       padding-top: 7.625rem;
       padding-bottom: 0;
 
@@ -486,6 +521,138 @@ applepay
         margin-top: 32px;
         margin-right: -52px;
       }
+    }
+  }
+}
+
+/*
+*
+* tips
+*
+*/
+// hero
+.tips-hero {
+  &.page-hero {
+    position: relative;
+    padding-top: 169px;
+
+    .page-hero__content {
+      max-width: 569px;
+      padding-top: 2rem;
+    }
+
+    .page-hero__subtitle {
+      margin-bottom: 3.75rem;
+    }
+
+    .page-hero__images {
+      align-items: flex-end;
+      padding-left: 140px;
+    }
+
+    .tips-hero__images-card {
+      position: absolute;
+      top: 51px;
+      left: 0;
+    }
+  }
+}
+
+.tips {
+  .info-card {
+    height: 23.5625rem;
+
+    &__text {
+      p {
+        color: $color-blue-8;
+      }
+    }
+  }
+
+  .frame-card {
+    background-color: $color-gray-1;
+
+    &__content {
+      color: $color-blue-8;
+    }
+
+    &--tips-1 {
+      .frame-card__img {
+        background-image: url("../img/tips/advantages-card/advantages-card-1.png");
+      }
+    }
+
+    &--tips-2 {
+      .frame-card__img {
+        background-image: url("../img/tips/advantages-card/advantages-card-2.png");
+      }
+    }
+
+    &--tips-3 {
+      .frame-card__img {
+        background-image: url("../img/tips/advantages-card/advantages-card-3.png");
+      }
+    }
+  }
+}
+
+@include until($xl) {
+  .tips-hero {
+    &.page-hero {
+      .page-hero__subtitle {
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
+}
+
+@include until($lg) {
+  .tips-hero {
+    &.page-hero {
+      padding-top: 7.625rem;
+
+      .page-hero__content {
+        padding-top: 0;
+      }
+
+      .page-hero__images {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .tips {
+    .info-card {
+      height: auto;
+      min-height: 15.875rem;
+    }
+  }
+}
+
+@include until($md) {
+  .tips-hero {
+    &.page-hero {
+      .page-hero__content {
+        padding-bottom: 3.75rem;
+      }
+
+      .page-hero__images {
+        justify-content: center;
+        padding-top: 2.1875rem;
+        padding-left: 1.5rem;
+      }
+
+      .tips-hero__images-card {
+        top: 0;
+        left: auto;
+        right: calc(50% - 0.75rem);
+      }
+    }
+  }
+
+  .tips {
+    .info-card {
+      min-height: auto;
     }
   }
 }

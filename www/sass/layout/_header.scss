@@ -203,7 +203,9 @@
   &.scrolled {
     border-color: $color-blue-3;
     background-color: #ffffff;
+  }
 
+  &.scrolled, &.light {
     .header-nav__logo {
       background-image: url("../img/ipay-logo.svg");
     }
