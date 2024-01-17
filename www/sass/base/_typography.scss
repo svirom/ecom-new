@@ -4,25 +4,29 @@ body {
   color: $color-blue-2;
 }
 
-h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.1;
   color: $color-blue-1;
 }
 
-h1 {
+h1, .h1 {
   font-size: 4rem;
 }
 
-h2 {
+h2, .h2 {
   font-size: 2.5rem;
 }
 
-h3 {
+h3, .h3 {
   font-size: 2rem;
 }
 
-h4 {
+h4, .h4 {
   font-size: 1.5rem;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
 }
 
 p, li, a {
@@ -31,20 +35,24 @@ p, li, a {
 }
 
 @include until($xl) {
-  h1 {
+  h1, .h1 {
     font-size: 2.5rem;
   }
 
-  h2 {
+  h2, .h2 {
     font-size: 2rem;
   }
 
-  h3 {
+  h3, .h3 {
     font-size: 1.5rem;
   }
 
-  h4 {
+  h4, .h4 {
     font-size: 1.25rem;
+  }
+
+  h5, .h5 {
+    font-size: 1.125rem;
   }
 
   p, li, a {
@@ -67,20 +75,24 @@ p, li, a {
 }
 
 @include until($md) {
-  h1 {
+  h1, .h1 {
     font-size: 1.75rem;
   }
 
-  h2 {
+  h2, .h2 {
     font-size: 1.5rem;
   }
 
-  h3 {
+  h3, .h3 {
     font-size: 1.25rem;
   }
 
-  h4 {
+  h4, .h4 {
     font-size: 1.125rem;
+  }
+
+  h5, .h5 {
+    font-size: 1rem;
   }
 
   .header-subtitle {

@@ -67,7 +67,6 @@
 }
 .info-section__img img {
   max-width: 100%;
-  border-radius: 1.5rem;
 }
 .info-section__img video {
   max-width: 554px;
@@ -77,6 +76,9 @@
   padding: 4.3125rem 5.5rem;
   border-radius: 2rem;
   background-color: #F3F5F9;
+}
+.info-section__img.img-shadow img {
+  filter: drop-shadow(0 40px 60px rgba(50, 50, 93, 0.1));
 }
 .info-section__content--pl {
   padding-left: 3.5rem;
@@ -256,6 +258,13 @@
   .page-section--dark {
     padding-top: 3rem;
     padding-bottom: 3rem;
+    border-radius: 1.5rem;
+  }
+  .page-section--top-short {
+    margin-top: 3.75rem;
+  }
+  .page-section--bottom-short {
+    margin-bottom: 3.75rem;
   }
   .info-section__content {
     margin-bottom: 2rem;
@@ -279,197 +288,5 @@
   }
   .page-methods .frame-card__content {
     padding: 1.5rem;
-  }
-}
-/*
-*
-* applepay
-*
-*/
-.applepay-hero.page-hero {
-  position: relative;
-  padding-top: 8.5rem;
-  padding-bottom: 3.375rem;
-}
-.applepay-hero.page-hero .apple-bkgr {
-  position: absolute;
-  bottom: -164px;
-  left: calc(50% - 24px);
-  width: 549px;
-  height: 543px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgb(232, 79, 53), rgb(232, 79, 53));
-  filter: blur(260px);
-}
-.applepay-hero.page-hero .page-hero__content {
-  max-width: 438px;
-  padding-top: 4.125rem;
-}
-.applepay-hero.page-hero .page-hero__images {
-  padding-left: 143px;
-  padding-right: 193px;
-}
-.applepay-hero.page-hero .applepay-hero__images-watch, .applepay-hero.page-hero .applepay-hero__images-logo {
-  position: absolute;
-}
-.applepay-hero.page-hero .applepay-hero__images-watch {
-  bottom: 44px;
-  left: 0;
-}
-.applepay-hero.page-hero .applepay-hero__images-logo {
-  top: 30px;
-  right: 60px;
-}
-
-@media screen and (max-width: 1199.98px) {
-  .applepay-hero.page-hero .page-hero__images {
-    padding-right: 92px;
-  }
-  .applepay-hero.page-hero .applepay-hero__images-logo {
-    right: 0;
-  }
-}
-@media screen and (max-width: 991.98px) {
-  .applepay-hero.page-hero {
-    padding-top: 9.125rem;
-    padding-bottom: 4rem;
-  }
-  .applepay-hero.page-hero .apple-bkgr {
-    bottom: -94px;
-    width: 415px;
-    height: 409px;
-  }
-  .applepay-hero.page-hero .page-hero__content {
-    padding-top: 2.625rem;
-  }
-  .applepay-hero.page-hero .page-hero__images {
-    padding-left: 85px;
-    padding-right: 57px;
-  }
-  .applepay-hero.page-hero .applepay-hero__images-watch {
-    bottom: 60px;
-  }
-}
-@media screen and (max-width: 767.98px) {
-  .applepay-hero.page-hero {
-    padding-top: 7.625rem;
-    padding-bottom: 0;
-  }
-  .applepay-hero.page-hero .apple-bkgr {
-    bottom: -160px;
-    left: 0;
-  }
-  .applepay-hero.page-hero .page-hero__content {
-    padding-top: 0;
-    padding-bottom: 3.75rem;
-  }
-  .applepay-hero.page-hero .page-hero__images {
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: flex-start;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .applepay-hero.page-hero .applepay-hero__images-phone {
-    margin-bottom: -38px;
-  }
-  .applepay-hero.page-hero .applepay-hero__images-watch {
-    align-self: flex-end;
-    position: relative;
-    bottom: 0;
-    margin-right: -24px;
-    margin-bottom: 50px;
-  }
-  .applepay-hero.page-hero .applepay-hero__images-logo {
-    position: relative;
-    top: 0;
-    margin-top: 32px;
-    margin-right: -52px;
-  }
-}
-/*
-*
-* tips
-*
-*/
-.tips-hero.page-hero {
-  position: relative;
-  padding-top: 169px;
-}
-.tips-hero.page-hero .page-hero__content {
-  max-width: 569px;
-  padding-top: 2rem;
-}
-.tips-hero.page-hero .page-hero__subtitle {
-  margin-bottom: 3.75rem;
-}
-.tips-hero.page-hero .page-hero__images {
-  align-items: flex-end;
-  padding-left: 140px;
-}
-.tips-hero.page-hero .tips-hero__images-card {
-  position: absolute;
-  top: 51px;
-  left: 0;
-}
-
-.tips .info-card {
-  height: 23.5625rem;
-}
-.tips .info-card__text p {
-  color: #000F26;
-}
-.tips .frame-card {
-  background-color: #F3F5F9;
-}
-.tips .frame-card__content {
-  color: #000F26;
-}
-.tips .frame-card--tips-1 .frame-card__img {
-  background-image: url("../img/tips/advantages-card/advantages-card-1.png");
-}
-.tips .frame-card--tips-2 .frame-card__img {
-  background-image: url("../img/tips/advantages-card/advantages-card-2.png");
-}
-.tips .frame-card--tips-3 .frame-card__img {
-  background-image: url("../img/tips/advantages-card/advantages-card-3.png");
-}
-
-@media screen and (max-width: 1199.98px) {
-  .tips-hero.page-hero .page-hero__subtitle {
-    margin-bottom: 2.5rem;
-  }
-}
-@media screen and (max-width: 991.98px) {
-  .tips-hero.page-hero {
-    padding-top: 7.625rem;
-  }
-  .tips-hero.page-hero .page-hero__content {
-    padding-top: 0;
-  }
-  .tips-hero.page-hero .page-hero__images {
-    padding-left: 0;
-  }
-  .tips .info-card {
-    height: auto;
-    min-height: 15.875rem;
-  }
-}
-@media screen and (max-width: 767.98px) {
-  .tips-hero.page-hero .page-hero__content {
-    padding-bottom: 3.75rem;
-  }
-  .tips-hero.page-hero .page-hero__images {
-    justify-content: center;
-    padding-top: 2.1875rem;
-    padding-left: 1.5rem;
-  }
-  .tips-hero.page-hero .tips-hero__images-card {
-    top: 0;
-    left: auto;
-    right: calc(50% - 0.75rem);
-  }
-  .tips .info-card {
-    min-height: auto;
   }
 }/*# sourceMappingURL=product-page.css.map */

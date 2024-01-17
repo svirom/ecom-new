@@ -54,25 +54,29 @@ body {
   color: #324F64;
 }
 
-h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.1;
   color: #001535;
 }
 
-h1 {
+h1, .h1 {
   font-size: 4rem;
 }
 
-h2 {
+h2, .h2 {
   font-size: 2.5rem;
 }
 
-h3 {
+h3, .h3 {
   font-size: 2rem;
 }
 
-h4 {
+h4, .h4 {
   font-size: 1.5rem;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
 }
 
 p, li, a {
@@ -81,17 +85,20 @@ p, li, a {
 }
 
 @media screen and (max-width: 1199.98px) {
-  h1 {
+  h1, .h1 {
     font-size: 2.5rem;
   }
-  h2 {
+  h2, .h2 {
     font-size: 2rem;
   }
-  h3 {
+  h3, .h3 {
     font-size: 1.5rem;
   }
-  h4 {
+  h4, .h4 {
     font-size: 1.25rem;
+  }
+  h5, .h5 {
+    font-size: 1.125rem;
   }
   p, li, a {
     font-size: 1rem;
@@ -110,17 +117,20 @@ p, li, a {
   }
 }
 @media screen and (max-width: 767.98px) {
-  h1 {
+  h1, .h1 {
     font-size: 1.75rem;
   }
-  h2 {
+  h2, .h2 {
     font-size: 1.5rem;
   }
-  h3 {
+  h3, .h3 {
     font-size: 1.25rem;
   }
-  h4 {
+  h4, .h4 {
     font-size: 1.125rem;
+  }
+  h5, .h5 {
+    font-size: 1rem;
   }
   .header-subtitle {
     font-size: 0.75rem;
@@ -513,6 +523,125 @@ textarea.form-control::-webkit-scrollbar-thumb {
   }
 }
 
+.accordion.accordion--type-1 {
+  --bs-accordion-color: #324F64;
+  --bs-accordion-border-color: #DFE8F8;
+  --bs-accordion-border-radius: 2rem;
+  --bs-accordion-inner-border-radius: calc(var(--bs-accordion-border-radius) - (var(--bs-border-width)));
+  --bs-accordion-btn-focus-border-color: #F3F5F9;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-active-bg: #F3F5F9;
+  --bs-accordion-btn-padding-x: 2rem;
+  --bs-accordion-btn-padding-y: 2rem;
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.8623 12.1239L8.37679 6.63837C8.26716 6.53853 8.17867 6.41771 8.11657 6.28307C8.05446 6.14843 8.02 6.00269 8.01522 5.85449C8.01045 5.70629 8.03545 5.55864 8.08876 5.42027C8.14206 5.28191 8.22259 5.15564 8.32556 5.04896C8.42854 4.94227 8.55187 4.85732 8.68826 4.79915C8.82465 4.74098 8.97132 4.71076 9.1196 4.71029C9.26788 4.70981 9.41474 4.73909 9.5515 4.79639C9.68826 4.85369 9.81213 4.93784 9.91579 5.04387L9.94279 5.07087L16.2128 11.3394C16.4206 11.5472 16.5374 11.8292 16.5374 12.1231C16.5374 12.4171 16.4206 12.699 16.2128 12.9069L9.94429 19.1754C9.84314 19.2801 9.72236 19.3638 9.58884 19.4218C9.45532 19.4798 9.31169 19.511 9.16613 19.5135C9.02058 19.516 8.87595 19.4898 8.74052 19.4364C8.60508 19.3831 8.48149 19.3035 8.37679 19.2024C8.27209 19.1012 8.18835 18.9804 8.13033 18.8469C8.07231 18.7134 8.04116 18.5698 8.03865 18.4242C8.03614 18.2787 8.06233 18.134 8.11572 17.9986C8.1691 17.8632 8.24864 17.7396 8.34979 17.6349L8.37679 17.6079L13.8623 12.1239Z' fill='%23ACC5D2' stroke='%23ACC5D2' stroke-width='0.5'/%3E%3C/svg%3E");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.8623 12.1239L8.37679 6.63837C8.26716 6.53853 8.17867 6.41771 8.11657 6.28307C8.05446 6.14843 8.02 6.00269 8.01522 5.85449C8.01045 5.70629 8.03545 5.55864 8.08876 5.42027C8.14206 5.28191 8.22259 5.15564 8.32556 5.04896C8.42854 4.94227 8.55187 4.85732 8.68826 4.79915C8.82465 4.74098 8.97132 4.71076 9.1196 4.71029C9.26788 4.70981 9.41474 4.73909 9.5515 4.79639C9.68826 4.85369 9.81213 4.93784 9.91579 5.04387L9.94279 5.07087L16.2128 11.3394C16.4206 11.5472 16.5374 11.8292 16.5374 12.1231C16.5374 12.4171 16.4206 12.699 16.2128 12.9069L9.94429 19.1754C9.84314 19.2801 9.72236 19.3638 9.58884 19.4218C9.45532 19.4798 9.31169 19.511 9.16613 19.5135C9.02058 19.516 8.87595 19.4898 8.74052 19.4364C8.60508 19.3831 8.48149 19.3035 8.37679 19.2024C8.27209 19.1012 8.18835 18.9804 8.13033 18.8469C8.07231 18.7134 8.04116 18.5698 8.03865 18.4242C8.03614 18.2787 8.06233 18.134 8.11572 17.9986C8.1691 17.8632 8.24864 17.7396 8.34979 17.6349L8.37679 17.6079L13.8623 12.1239Z' fill='%23001535' stroke='%23001535' stroke-width='0.5'/%3E%3C/svg%3E");
+  --bs-accordion-btn-icon-width: 1.5rem;
+  --bs-accordion-btn-icon-transform: rotate(90deg);
+  --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out, padding 0.2s ease-in-out;
+}
+.accordion.accordion--type-1 .accordion-item {
+  border-radius: var(--bs-accordion-border-radius);
+  overflow: hidden;
+  border-color: transparent;
+}
+.accordion.accordion--type-1 .accordion-item:not(:first-of-type) {
+  border-top: var(--bs-accordion-border-width) solid transparent;
+  border-top-left-radius: var(--bs-accordion-border-radius);
+  border-top-right-radius: var(--bs-accordion-border-radius);
+}
+.accordion.accordion--type-1 .accordion-item + .accordion-item {
+  margin-top: 1rem;
+}
+.accordion.accordion--type-1 .accordion-item .accordion-button {
+  justify-content: space-between;
+  font-weight: 600;
+  color: #001535;
+  border: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+  border-radius: var(--bs-accordion-inner-border-radius);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease, padding 0.15s ease;
+}
+.accordion.accordion--type-1 .accordion-item .accordion-button:not(.collapsed) {
+  padding-bottom: 1.5rem;
+  border-color: var(--bs-accordion-active-bg);
+  border-bottom-color: transparent;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: none;
+  background-color: var(--bs-accordion-active-bg);
+}
+.accordion.accordion--type-1 .accordion-item .accordion-button:not(.collapsed) ~ .accordion-collapse {
+  border-color: var(--bs-accordion-active-bg);
+  border-top-color: transparent;
+  background-color: var(--bs-accordion-active-bg);
+}
+.accordion.accordion--type-1 .accordion-item .accordion-button::after {
+  margin-left: 3rem;
+}
+.accordion.accordion--type-1 .accordion-item .accordion-collapse {
+  border: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+  border-top: 0;
+  border-bottom-left-radius: var(--bs-accordion-inner-border-radius);
+  border-bottom-right-radius: var(--bs-accordion-inner-border-radius);
+}
+.accordion.accordion--type-1 .accordion-item .accordion-body {
+  padding: 0 var(--bs-accordion-btn-padding-x) var(--bs-accordion-btn-padding-y);
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+.accordion.accordion--type-2 {
+  --bs-accordion-color: #7C9CAC;
+  --bs-accordion-border-width: 0;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-active-bg: #FFFFFF;
+  --bs-accordion-btn-padding-x: 0;
+  --bs-accordion-btn-padding-y: 1.5rem;
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3Csvg width='25' height='26' viewBox='0 0 25 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.4399 13.1285L8.72586 7.4144C8.61166 7.3104 8.51949 7.18455 8.4548 7.0443C8.3901 6.90404 8.35421 6.75223 8.34923 6.59786C8.34426 6.44348 8.3703 6.28968 8.42583 6.14555C8.48136 6.00142 8.56524 5.86989 8.6725 5.75876C8.77977 5.64763 8.90824 5.55914 9.05031 5.49855C9.19238 5.43795 9.34517 5.40647 9.49962 5.40598C9.65408 5.40549 9.80706 5.43598 9.94952 5.49567C10.092 5.55535 10.221 5.64301 10.329 5.75346L10.3571 5.78158L16.8884 12.3113C17.1049 12.5278 17.2265 12.8215 17.2265 13.1277C17.2265 13.4339 17.1049 13.7275 16.8884 13.9441L10.3587 20.4738C10.2533 20.5828 10.1275 20.6701 9.98842 20.7305C9.84934 20.7909 9.69972 20.8234 9.54809 20.826C9.39647 20.8286 9.24582 20.8013 9.10475 20.7457C8.96367 20.6901 8.83492 20.6073 8.72586 20.5019C8.6168 20.3965 8.52957 20.2707 8.46913 20.1316C8.4087 19.9926 8.37625 19.8429 8.37363 19.6913C8.37102 19.5397 8.3983 19.389 8.45391 19.248C8.50952 19.1069 8.59237 18.9781 8.69774 18.8691L8.72586 18.841L14.4399 13.1285Z' fill='%237C9CAC' stroke='%237C9CAC' stroke-width='0.5'/%3E%3C/svg%3E");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3Csvg width='25' height='26' viewBox='0 0 25 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.4399 13.1285L8.72586 7.4144C8.61166 7.3104 8.51949 7.18455 8.4548 7.0443C8.3901 6.90404 8.35421 6.75223 8.34923 6.59786C8.34426 6.44348 8.3703 6.28968 8.42583 6.14555C8.48136 6.00142 8.56524 5.86989 8.6725 5.75876C8.77977 5.64763 8.90824 5.55914 9.05031 5.49855C9.19238 5.43795 9.34517 5.40647 9.49962 5.40598C9.65408 5.40549 9.80706 5.43598 9.94952 5.49567C10.092 5.55535 10.221 5.64301 10.329 5.75346L10.3571 5.78158L16.8884 12.3113C17.1049 12.5278 17.2265 12.8215 17.2265 13.1277C17.2265 13.4339 17.1049 13.7275 16.8884 13.9441L10.3587 20.4738C10.2533 20.5828 10.1275 20.6701 9.98842 20.7305C9.84934 20.7909 9.69972 20.8234 9.54809 20.826C9.39647 20.8286 9.24582 20.8013 9.10475 20.7457C8.96367 20.6901 8.83492 20.6073 8.72586 20.5019C8.6168 20.3965 8.52957 20.2707 8.46913 20.1316C8.4087 19.9926 8.37625 19.8429 8.37363 19.6913C8.37102 19.5397 8.3983 19.389 8.45391 19.248C8.50952 19.1069 8.59237 18.9781 8.69774 18.8691L8.72586 18.841L14.4399 13.1285Z' fill='%237C9CAC' stroke='%237C9CAC' stroke-width='0.5'/%3E%3C/svg%3E");
+  --bs-accordion-btn-icon-width: 1.5625rem;
+  --bs-accordion-btn-icon-transform: rotate(90deg);
+}
+.accordion.accordion--type-2 .accordion-item {
+  border-bottom: 1px solid #DFE8F8;
+}
+.accordion.accordion--type-2 .accordion-item .accordion-button {
+  justify-content: space-between;
+  font-weight: 600;
+  color: #324F64;
+}
+.accordion.accordion--type-2 .accordion-item .accordion-button::after {
+  margin-left: 3rem;
+}
+.accordion.accordion--type-2 .accordion-item .accordion-body {
+  padding: 0 0 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .accordion.accordion--type-1 .accordion-body {
+    font-size: 1rem;
+  }
+  .accordion.accordion--type-2 .accordion-item .accordion-body {
+    padding-right: 4.5rem;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .accordion.accordion--type-1 {
+    --bs-accordion-btn-padding-y: 1.5rem;
+  }
+  .accordion.accordion--type-2 .accordion-item .accordion-body {
+    padding: 0 0 1.5rem;
+    font-size: 0.875rem;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .accordion.accordion--type-1 {
+    --bs-accordion-btn-padding-x: 1.5rem;
+  }
+  .accordion.accordion--type-2 .accordion-item .accordion-body {
+    padding-right: 0;
+  }
+}
 .modal.modal-main {
   --bs-modal-width: 768px;
   --bs-modal-border-width: 0;

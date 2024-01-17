@@ -1,0 +1,137 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+// hero
+.tips-hero {
+  &.page-hero {
+    position: relative;
+    padding-top: 169px;
+
+    .page-hero__content {
+      max-width: 569px;
+      padding-top: 2rem;
+    }
+
+    .page-hero__subtitle {
+      margin-bottom: 3.75rem;
+    }
+
+    .page-hero__images {
+      align-items: flex-end;
+      padding-left: 140px;
+    }
+
+    .tips-hero__images-card {
+      position: absolute;
+      top: 51px;
+      left: 0;
+    }
+  }
+}
+
+.tips {
+  .info-card {
+    height: 23.5625rem;
+
+    &__text {
+      p {
+        color: $color-blue-8;
+      }
+    }
+  }
+
+  .frame-card {
+    background-color: $color-gray-1;
+
+    &__content {
+      color: $color-blue-8;
+    }
+
+    &--tips-1 {
+      .frame-card__img {
+        background-image: url("../img/tips/advantages-card/advantages-card-1.png");
+      }
+    }
+
+    &--tips-2 {
+      .frame-card__img {
+        background-image: url("../img/tips/advantages-card/advantages-card-2.png");
+      }
+    }
+
+    &--tips-3 {
+      .frame-card__img {
+        background-image: url("../img/tips/advantages-card/advantages-card-3.png");
+      }
+    }
+  }
+}
+
+@include until($xl) {
+  .tips-hero {
+    &.page-hero {
+      .page-hero__subtitle {
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
+}
+
+@include until($lg) {
+  .tips-hero {
+    &.page-hero {
+      padding-top: 7.625rem;
+
+      .page-hero__content {
+        padding-top: 0;
+      }
+
+      .page-hero__images {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .tips {
+    .info-card {
+      height: auto;
+      min-height: 15.875rem;
+    }
+  }
+
+  .tips-advantages {
+    .page-section__header {
+      h3 {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@include until($md) {
+  .tips-hero {
+    &.page-hero {
+      .page-hero__content {
+        padding-bottom: 3.75rem;
+      }
+
+      .page-hero__images {
+        justify-content: center;
+        padding-top: 2.1875rem;
+        padding-left: 1.5rem;
+      }
+
+      .tips-hero__images-card {
+        top: 0;
+        left: auto;
+        right: calc(50% - 0.75rem);
+      }
+    }
+  }
+
+  .tips {
+    .info-card {
+      min-height: auto;
+    }
+  }
+}

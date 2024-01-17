@@ -159,6 +159,7 @@
           <h2>Inter / 2.5rem / 500 / 1.1 / #001535 (h2, .h2)</h2>
           <h3>Inter / 2rem / 500 / 1.1 / #001535 (h3, .h3)</h3>
           <h4>Inter / 1.5rem / 500 / 1.1 / #001535 (h4, .h4)</h4>
+          <h5>Inter / 1.25rem / 500 / 1.1 / #001535 (h5, .h5)</h5>
           <p class="mb-0">Inter / 1.125rem / 500 / 1.8 / #324F64 (p, li)</p>
           <a href="#">Inter / 1.125rem / 500 / 1.8 / #E84F35 (a)</a>
           <p class="header-subtitle mb-0">Inter / 1rem / 700 / 1.6 / #E84F35 (.header-subtitle)</p>
@@ -169,6 +170,7 @@
           <h2 style="font-size: 2rem">Inter / 2rem / 500 / 1.1 / #001535 (h2, .h2)</h2>
           <h3 style="font-size: 1.5rem">Inter / 1.5rem / 500 / 1.1 / #001535 (h3, .h3)</h3>
           <h4 style="font-size: 1.25rem">Inter / 1.25rem / 500 / 1.1 / #001535 (h4, .h4)</h4>
+          <h5 style="font-size: 1.125rem">Inter / 1.125rem / 500 / 1.1 / #001535 (h5, .h5)</h5>
           <p class="mb-0" style="font-size:1rem">Inter / 1rem / 500 / 1.8 / #324F64 (p, li)</p>
           <a href="#" style="font-size:1rem">Inter / 1rem / 500 / 1.8 / #E84F35 (a)</a>
           <p class="header-subtitle mb-0" style="font-size:0.875rem">Inter / 0.875rem / 700 / 1.6 / #E84F35 (.header-subtitle)</p>
@@ -179,6 +181,7 @@
           <h2 style="font-size: 1.5rem">Inter / 1.5rem / 500 / 1.1 / #001535 (h2, .h2)</h2>
           <h3 style="font-size: 1.25rem">Inter / 1.25rem / 500 / 1.1 / #001535 (h3, .h3)</h3>
           <h4 style="font-size: 1.125rem">Inter / 1.125rem / 500 / 1.1 / #001535 (h4, .h4)</h4>
+          <h5 style="font-size: 1rem">Inter / 1rem / 500 / 1.1 / #001535 (h5, .h5)</h5>
           <p class="mb-0" style="font-size:1rem">Inter / 1rem / 500 / 1.8 / #324F64 (p, li)</p>
           <a href="#" style="font-size:1rem">Inter / 1rem / 500 / 1.8 / #E84F35 (a)</a>
           <p class="header-subtitle mb-0" style="font-size:0.75rem">Inter / 0.75rem / 700 / 1.6 / #E84F35 (.header-subtitle)</p>
@@ -780,6 +783,110 @@
           <a href="#" class="btn btn-red" data-bs-toggle="modal" data-bs-target="#connectionModal">Open Modal</a>
         </div>
       </div><!-- /modal -->
+
+      <div class="w-100"><hr></div>
+
+      <!-- accordion -->
+      <div class="row mt-4">
+        <div class="col-12 mb-3">
+          <h3><u>Accordion</u></h3>
+        </div>
+        <div class="col-12 mt-3">
+          <h4>Accordion Type 1</h4>
+        </div>
+        <div class="col-md-8 col-lg-6 mb-3">
+          <div class="accordion accordion--type-1" id="accordionFaqs">
+            <div class="accordion-item">
+              <h5 class="accordion-button h5 mb-0" role="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                Що необхідно для співпраці?
+              </h5>
+              <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionFaqs">
+                <div class="accordion-body">
+                  Залишити заявку про співпрацю у нас на сайті. Наші представники зв’яжуться з вами, уточнять деталі, дадуть відповіді на всі Ваші запитання та передадуть запит в банк.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h5 class="accordion-button h5 mb-0 collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                Як налаштувати термінали для прийому електронних чайових?
+              </h5>
+              <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionFaqs">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h5 class="accordion-button h5 mb-0 collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                Яка вартість налаштування електронних чайових?
+              </h5>
+              <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionFaqs">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div> <!--  ./accordion -->
+        </div>
+        
+        <div class="col-12 mt-5">
+          <h4>Accordion Type 2</h4>
+        </div>
+        <div class="col-md-8 col-lg-6 mb-3">
+          <div class="accordion accordion--type-2" id="accordionServices">
+            <div class="accordion-item">
+              <h5 class="accordion-button h5 mb-0" role="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="true" aria-controls="collapse11">
+                Онлайн-інвойсинг
+              </h5>
+              <div id="collapse11" class="accordion-collapse collapse show" data-bs-parent="#accordionServices">
+                <div class="accordion-body">
+                  Створення для покупця персонального посилання на оплату. Після оплати або за заданий час інвойс стає неактивним. Це зручно для магазинів без власного веб-порталу (інстаграм-магазини, онлайн-чати)
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h5 class="accordion-button h5 mb-0 collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                Токенізація карт
+              </h5>
+              <div id="collapse12" class="accordion-collapse collapse" data-bs-parent="#accordionServices">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h5 class="accordion-button h5 mb-0 collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                Регулярні платежі
+              </h5>
+              <div id="collapse13" class="accordion-collapse collapse" data-bs-parent="#accordionServices">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h5 class="accordion-button h5 mb-0 collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                Оплата за QR
+              </h5>
+              <div id="collapse14" class="accordion-collapse collapse" data-bs-parent="#accordionServices">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h5 class="accordion-button h5 mb-0 collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                Поділ платежів
+              </h5>
+              <div id="collapse15" class="accordion-collapse collapse" data-bs-parent="#accordionServices">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- /accordion -->
 
       <div class="w-100 mb-5"><hr></div>
 

@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/our-partners.css">
     <link rel="stylesheet" href="/css/product-page.css">
-    <link rel="stylesheet" href="/css/tips-page.css">
+    <link rel="stylesheet" href="/css/internet-acquiring-page.css">
 
-    <title>Tips</title>
+    <title>Internet Acquiring</title>
   </head>
   <body>
 
@@ -285,302 +285,390 @@
 
       </header> <!-- /.main-header -->
 
-      <main class="main tips">
+      <main class="main internet-acquiring">
 
-        <div class="page-hero tips-hero light">
+        <div class="page-hero internet-acquiring-hero light">
           <div class="container">
-            <div class="row">
+            <div class="row align-items-center">
               <div class="col-md">
-                <div class="page-hero__content">
-                  <h1 class="page-hero__title mb-4">Оплата чайових безготівково</h1>
-                  <p class="page-hero__subtitle">Сервіс CashlessTips від iPay.ua дозволяє офіціантам швидко та зручно приймати чайові без готівки</p>
+                <div class="page-hero__content pe-4 pe-lg-0">
+                  <h1 class="page-hero__title mb-4">Онлайн оплата у вашому інтернет-магазині</h1>
+                  <p class="page-hero__subtitle">Приймайте оплати карткою, Apple Pay, Google Pay у вашому магазині або програмі</p>
                   <button class="btn btn-red btn-arrow" data-bs-toggle="modal" data-bs-target="#connectionModal"><span>Замовити підключення</span></button>
                 </div>
               </div>
               <div class="col-md-auto">
                 <div class="page-hero__images">
-                  <img src="img/tips/hero/hero-card.svg" srcset="img/tips/hero/hero-card.svg 257w" sizes="(max-width: 767.98px) 180px, 257px" class="tips-hero__images-card d-md-none d-xl-inline" alt="card"/>
-
-                  <img src="img/tips/hero/hero-phone.png" srcset="img/tips/hero/hero-phone.png 1x, img/tips/hero/hero-phone@2x.png 2x" class="tips-hero__images-phone d-none d-xl-inline" alt="phone"/>
-                  <img src="img/tips/hero/hero-phone-md.png" srcset="img/tips/hero/hero-phone-md.png 1x, img/tips/hero/hero-phone-md@2x.png 2x" class="tips-hero__images-phone d-none d-md-inline d-xl-none" alt="phone"/>
-                  <img src="img/tips/hero/hero-phone-sm.png" srcset="img/tips/hero/hero-phone-sm.png 1x, img/tips/hero/hero-phone-sm@2x.png 2x" class="tips-hero__images-phone d-md-none" alt="phone"/>
+                  <img src="img/internet-acquiring/hero/hero-image-lg.png" srcset="img/internet-acquiring/hero/hero-image-lg.png 640w, img/internet-acquiring/hero/hero-image-lg@2x.png 1280w" sizes="(max-width: 1199.98px) 520px, (max-width: 1399.98px) 560px, 640px" class="internet-acquiring-hero__images-phone d-none d-lg-inline" alt="phone"/>
+                  <img src="img/internet-acquiring/hero/hero-image-md.png" srcset="img/internet-acquiring/hero/hero-image-md.png 1x, img/internet-acquiring/hero/hero-image-md@2x.png 2x" class="internet-acquiring__images-phone d-none d-md-inline d-lg-none" alt="phone"/>
+                  <img src="img/internet-acquiring/hero/hero-image-sm.png" srcset="img/internet-acquiring/hero/hero-image-sm.png 1x, img/internet-acquiring/hero/hero-image-sm@2x.png 2x" class="internet-acquiring__images-phone d-md-none" alt="phone"/>
                 </div>
               </div>
             </div>
           </div>
         </div> <!-- /.page-hero -->
 
-        <div class="page-section page-section--top-short">
+        <div class="page-section page-section--top-short info-section">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-xl-6 col-xxl-7 order-xl-last">
+                <div class="info-section__content info-section__content--pl">
+                  <h3 class="info-section__title mb-3 mb-md-4">Що таке інтернет-еквайринг?</h3>
+                  <p>Це технологічна послуга, за допомогою якої інтернет-магазини, служби доставки, фонди можуть організувати приймання платежів на сайті. Користувач може оплатити покупку в будь-який час, ввівши дані своєї картки або скориставшись електронним гаманцем (Apple Pay, Google Pay).</p>
+                  <p class="mb-0">Альтернатива еквайрингу — оплата за реквізитами. Якщо не приєднати платіжну систему до сайту, продавцю необхідно буде виставити рахунок, а клієнту ввести повні реквізити у спеціальній формі. Термін зарахування збільшується до 3 днів, на покупця покладається комісія за переказ коштів.</p>
+                </div>
+              </div>
+              <div class="col-xl-6 col-xxl-5 text-center">
+                <div class="info-section__img bkgr-grey">
+                  <img src="img/internet-acquiring/internet-acquiring-info-1.png" srcset="img/internet-acquiring/internet-acquiring-info-1.png 1x, img/internet-acquiring/internet-acquiring-info-1@2x.png 2x" alt="Image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.info-section -->
+
+        <div class="page-section internet-acquiring-tabs">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-shop-tab" data-bs-toggle="pill" data-bs-target="#pills-shop" type="button" role="tab" aria-controls="pills-shop" aria-selected="true">Для інтернет магазину</button>
+                  </li>
+                  <li class="nav-item ms-3 ms-md-4" role="presentation">
+                    <button class="nav-link" id="pills-client-tab" data-bs-toggle="pill" data-bs-target="#pills-client" type="button" role="tab" aria-controls="pills-client" aria-selected="false">Для клієнта</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+
+                  <div class="tab-pane fade show active" id="pills-shop" role="tabpanel" aria-labelledby="pills-shop-tab">
+                    <div class="row">
+                      <div class="col-md-6 col-lg-4">
+                        <div class="frame-card frame-card--tips-1">
+                          <div class="frame-card__img">
+                            <img src="img/internet-acquiring/tabs/tabs-1.png" srcset="img/internet-acquiring/tabs/tabs-1.png 319w, img/internet-acquiring/tabs/tabs-1@2x.png 638w" sizes="(max-width: 991.98px) 261px, 319px" alt="Icon">
+                          </div>
+                          <div class="frame-card__content">
+                            <p class="mb-2">Особистий кабінет</p>
+                            <p class="mb-0">Усі здійсненні платежі потрапляють до вашого особистого бізнес-кабінету на iPay.ua</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-lg-4 mt-4 mt-md-0">
+                        <div class="frame-card frame-card--tips-2">
+                          <div class="frame-card__img">
+                            <img src="img/internet-acquiring/tabs/tabs-2.png" srcset="img/internet-acquiring/tabs/tabs-2.png 319w, img/internet-acquiring/tabs/tabs-2@2x.png 638w" sizes="(max-width: 991.98px) 261px, 319px" alt="Icon">
+                          </div>
+                          <div class="frame-card__content">
+                            <p class="mb-2">Легке керування</p>
+                            <p class="mb-0">Ви можете оформити повернення коштів або замовити виплату</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-lg-4 mt-4 mt-lg-0">
+                        <div class="frame-card frame-card--tips-3">
+                          <div class="frame-card__img">
+                            <img src="img/internet-acquiring/tabs/tabs-3.png" srcset="img/internet-acquiring/tabs/tabs-3.png 319w, img/internet-acquiring/tabs/tabs-3@2x.png 638w" sizes="(max-width: 991.98px) 261px, 319px" alt="Icon">
+                          </div>
+                          <div class="frame-card__content">
+                            <p class="mb-2">Аналітика</p>
+                            <p class="mb-0">За допомогою фільтрів транзакцій ви можете стежити за аналітикою за періодами</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="pills-client" role="tabpanel" aria-labelledby="pills-client-tab">...</div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.internet-acquiring-tabs -->
+
+        <div class="page-section page-section--dark internet-acquiring-offer">
           <div class="container">
             <div class="row">
               <div class="col-12">
                 <div class="page-section__header">
-                  <h2>Дайте змогу клієнтам обрати зручний <span class="d-md-block">для них спосіб оплати чайових</span></h2>
+                  <h2>Що в комплексі iPay.ua пропонує <span class="d-md-block">для інтернет-магазинів?</span></h2>
+                  <p class="mb-0">Найкращий еквайринг для сайту або програми — це платіжна <span class="d-md-block">сторінка, яка поєднує популярні способи:</span></p>
                 </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6 col-lg-4">
-                <div class="info-card">
-                  <div class="info-card__text">
-                    <h4 class="mb-3">Не потрібна готівка</h4>
-                    <p class="mb-4">клієнт не відчуває незручності не маючи з собою готівки</p>
+                <div class="row">
+                  <div class="col-md-6 col-lg-4">
+                    <div class="info-card">
+                      <div class="info-card__text">
+                        <h4 class="mb-3">Стандартне введення даних картки</h4>
+                        <p class="mb-4">клієнт вносить номер, термін дії та CVV-код, підтверджує переказ коштів за допомогою 3D Secure або Lookupcod</p>
+                      </div>
+                      <div class="info-card__link">
+                        <div class="info-card__link-icon">
+                          <i class="icon-card-2"></i>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="info-card__link">
-                    <div class="info-card__link-icon">
-                      <i class="icon-card-2"></i>
+                  <div class="col-md-6 col-lg-4 mt-4 mt-md-0">
+                    <div class="info-card">
+                      <div class="info-card__text">
+                        <h4 class="mb-3">Apple Pay</h4>
+                        <p class="mb-4">кнопка оплати у покупців на пристроях iOS, які попередньо додали карти у Apple Walletікнопка оплати у покупців на пристроях iOS, які попередньо додали карти у Apple Wallet</p>
+                      </div>
+                      <div class="info-card__link">
+                        <div class="info-card__link-icon">
+                          <img src="img/icons/icon-applepay.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-4 mt-4 mt-lg-0">
+                    <div class="info-card">
+                      <div class="info-card__text">
+                        <h4 class="mb-3">Google Pay</h4>
+                        <p class="mb-4">скористатися можна на будь-якому пристрої після авторизації в Google та додавання карти в Google Гаманець</p>
+                      </div>
+                      <div class="info-card__link">
+                        <div class="info-card__link-icon">
+                          <img src="img/icons/icon-gpay.svg" alt="">
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-6 col-lg-4 mt-4 mt-md-0">
-                <div class="info-card">
-                  <div class="info-card__text">
-                    <h4 class="mb-3">Вибір розміру чайових</h4>
-                    <p class="mb-4">можливість обрати бажаний розмір чайових: 5%, 10% чи 15% - система сама розрахує відповідну суму в залежності від рахунку</p>
-                  </div>
-                  <div class="info-card__link">
-                    <div class="info-card__link-icon">
-                      <i class="icon-document"></i>
+                <div class="internet-acquiring-offer__cards">
+                  <div class="row">
+                    <div class="col-xl-7">
+                      <p class="mb-4">iPay.ua підтримує оплати картками міжнародних платіжних систем Visa та Mastercard, а також української платіжної системи Простір</p>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4 mt-4 mt-lg-0">
-                <div class="info-card">
-                  <div class="info-card__text">
-                    <h4 class="mb-3">Прозора оцінка</h4>
-                    <p class="mb-4">якості обслуговування — при оплаті чайових безготівково фіксується ідентифікатор співробітника, що обслуговував клієнта</p>
-                  </div>
-                  <div class="info-card__link">
-                    <div class="info-card__link-icon">
-                      <i class="icon-shield"></i>
+                  <div class="acquiring-offer-cards">
+                    <div class="acquiring-offer-card">
+                      <img src="img/icons/icon-visa.svg" alt="Visa">
+                    </div>
+                    <div class="acquiring-offer-card">
+                      <img src="img/icons/icon-mastercard.svg" alt="Mastercard">
+                    </div>
+                    <div class="acquiring-offer-card">
+                      <img src="img/icons/icon-prostir.svg" alt="Prostir">
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div> <!-- /.page-section -->
+        </div> <!-- /.internet-acquiring-offer -->
 
         <div class="page-section info-section">
           <div class="container">
             <div class="row align-items-center">
               <div class="col-xl-6 col-xxl-5">
                 <div class="info-section__content info-section__content--pr">
-                  <p class="header-subtitle mb-3 mb-md-4">Відео-інструкція</p>
-                  <h3 class="info-section__title mb-3 mb-md-4">Про роботу сервісу</h3>
-                  <p class="mb-0">Дізнайтесь як працює сервсіс оплати чайових безготівково. У відео показується наочне використання нашого сервізу при підключенні чайових і як це працює</p>
+                  <p class="header-subtitle mb-3 mb-md-4">Отримайте більше з iPay.ua</p>
+                  <h3 class="info-section__title mb-3 mb-md-4">Сторінка оплати у дизайні вашого cайту чи додатку</h3>
+                  <p class="mb-0">iPay.ua реалізує всі методи на єдиній сторінці чекауту. Її брендують під стиль вашого магазину — дотримується кольорова гама та наноситься логотип. Сторінка адаптивно відображається на різних пристроях. Такий підхід збільшує довіру клієнтів до вашого сайту та підвищує конверсію на 30%.</p>
                 </div>
               </div>
               <div class="col-xl-6 col-xxl-7 text-center">
-                <div class="info-section__img bkgr-grey">
-                  <div class="info-video">
-                    <video width="100%" class="info-video__player" controls>
-                      <source src="video/applepay/ApplePay01.mp4" type="video/mp4">
-                    </video>
-                    <button class="info-video__button">
-                      <svg width="57" height="59" viewBox="0 0 57 59" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="57" height="59" rx="28.5" fill="#E84F35"/>
-                        <path d="M34.9224 31.4039L24.2298 37.7057C23.9025 37.8986 23.5311 38.0001 23.1532 38C22.7753 37.9999 22.404 37.8983 22.0767 37.7054C21.7494 37.5125 21.4776 37.235 21.2886 36.9009C21.0996 36.5667 21.0001 36.1877 21 35.8019V23.1981C21.0001 22.8123 21.0996 22.4333 21.2886 22.0991C21.4776 21.765 21.7494 21.4875 22.0767 21.2946C22.404 21.1017 22.7753 21.0001 23.1532 21C23.5311 20.9999 23.9025 21.1014 24.2298 21.2943L34.9224 27.5961C35.25 27.7889 35.5221 28.0663 35.7112 28.4006C35.9004 28.7348 36 29.114 36 29.5C36 29.886 35.9004 30.2652 35.7112 30.5994C35.5221 30.9337 35.25 31.2111 34.9224 31.4039Z" fill="white"/>
-                      </svg>
-                    </button><div class="info-video__bkgr"></div>
-                  </div>
+                <div class="info-section__img img-shadow">
+                  <img src="img/internet-acquiring/internet-acquiring-info-2.png" srcset="img/internet-acquiring/internet-acquiring-info-2.png 1x, img/internet-acquiring/internet-acquiring-info-2@2x.png 2x" alt="Image">
                 </div>
               </div>
             </div>
           </div>
         </div> <!-- /.info-section -->
 
-        <div class="partners">
+        <div class="page-section internet-acquiring-process">
           <div class="container">
             <div class="row">
-              <div class="col-12">
-                <h3 class="partners__title">Наші партнери</h3>
-                <div class="partners-cards">
-                  <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5">
-                    <div class="col">
-                      <div class="partner-card">
-                        <img src="img/homepage/partner-card/partners1.png" srcset="img/homepage/partner-card/partners1.png 1x, img/homepage/partner-card/partners1@2x.png 2x" alt="Ukrsibbank">
-                      </div>
+              <div class="col-lg-auto col-xl-5">
+                <div class="internet-acquiring-process__diagram">
+                  <div class="diagram-row diagram-row--left">
+                    <div class="diagram-card">
+                      <span>Покупець</span>
+                      <img src="img/homepage/payment-avatar.png" srcset="img/homepage/payment-avatar.png 128w" sizes="(max-width: 1199.98px) 56px, (max-width: 991.98px) 48px, 64px" alt="Image">
                     </div>
-                    <div class="col">
-                      <div class="partner-card">
-                        <img src="img/homepage/partner-card/partners2.png" srcset="img/homepage/partner-card/partners2.png 1x, img/homepage/partner-card/partners2@2x.png 2x" alt="Otpbank">
-                      </div>
+                    <div class="diagram-card">
+                      <span>Інтернет-магазин</span>
                     </div>
-                    <div class="col">
-                      <div class="partner-card">
-                        <img src="img/homepage/partner-card/partners3.png" srcset="img/homepage/partner-card/partners3.png 1x, img/homepage/partner-card/partners3@2x.png 2x" alt="Sushiya">
-                      </div>
+                    <div class="w-100 d-md-none"></div>
+                    <div class="diagram-card diagram-card--ipay">
+                      <img src="img/ipay-logo-light.svg" srcset="img/ipay-logo-light.svg 107w" sizes="68px" alt="iPay">
                     </div>
-                    <div class="col">
-                      <div class="partner-card">
-                        <img src="img/homepage/partner-card/partners4.png" srcset="img/homepage/partner-card/partners4.png 1x, img/homepage/partner-card/partners4@2x.png 2x" alt="Pivdenniy Bank">
-                      </div>
+                  </div>
+                  <div class="diagram-row diagram-row--center">
+                    <div class="diagram-card">
+                      <span>Банк-еквайр</span>
                     </div>
-                    <div class="col">
-                      <div class="partner-card">
-                        <img src="img/homepage/partner-card/partners5.png" srcset="img/homepage/partner-card/partners5.png 1x, img/homepage/partner-card/partners5@2x.png 2x" alt="WOG">
-                      </div>
+                    <div class="diagram-card d-none d-lg-flex">
+                      <span>Банк-еквайр</span>
+                    </div>
+                    <div class="diagram-card">
+                      <span>Банк-еквайр</span>
+                    </div>
+                  </div>
+                  <div class="diagram-row diagram-row--right">
+                    <div class="diagram-card">
+                      <span>Платіжні системи</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg col-xl-7">
+                <div class="internet-acquiring-process__content">
+                  <h3>Процесинг від iPay.ua</h3>
+                  <p>На відміну від банків, iPay.ua реалізує каскадний процесинг, що дозволяє підвищити відмовостійкість системи оплати до 100%. Якщо один із банків еквайєрів недоступний у момент оплати, оплата переводиться на інший банк непомітно для користувача</p>
+                  <div class="row">
+                    <div class="col-md-6 col-lg-12 pt-md-3">
+                      <ol class="mb-1">
+                        <li>Сторінка оплати</li>
+                      </ol>
+                      <p class="mb-md-4">На сторінці оплати покупець вводить дані картки, які надходять платіжному провайдеру.</p>
+                    </div>
+                    <div class="col-md-6 col-lg-12 pt-0 pt-md-3 pt-lg-0">
+                      <ol class="mb-1">
+                        <li>Запит у банк-емітент</li>
+                      </ol>
+                      <p class="mb-md-4">Платіжна система передає запит у банк-емітент, який випустив картку клієнта. Він перевіряє рахунок та верифікує платіж</p>
+                    </div>
+                    <div class="col-md-6 col-lg-12">
+                      <ol class="mb-1">
+                        <li>Запит у банк-еквайр</li>
+                      </ol>
+                      <p class="mb-md-4">Провайдер адресує запит на списання вказаної суми у банк-еквайр, який потім спрямовує його на платіжні системи України</p>
+                    </div>
+                    <div class="col-md-6 col-lg-12">
+                      <ol class="mb-1">
+                        <li>Якщо верифікація успішна</li>
+                      </ol>
+                      <p class="mb-0">Процес запускається у зворотному порядку. З картки покупця знімаються кошти. На екрані зображується сповіщення про успішне завершення.</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div> <!-- /.partners -->
+        </div> <!-- /.internet-acquiring-process -->
 
-        <div class="page-section tips-advantages">
+        <div class="page-section internet-acquiring-management">
           <div class="container">
             <div class="row">
-              <div class="col-12">
+              <div class="col-lg-8">
                 <div class="page-section__header">
-                  <h3 class="mb-3 mb-md-4">Переваги впровадження сервісу CashlessTips</h3>
-                  <p class="mb-0">Комплексна інтеграція платіжної системи на сайт дозволяє здійснювати всі <span class="d-md-block">популярні види платежів. З еквайрингом від iPay.ua доступні:</span></p>
+                  <h3 class="mb-3 mb-md-4">Разом з iPay.ua доступне гнучке управління усіма онлайн платежами</h3>
+                  <p class="mb-0">Сьогодні діяльність провайдера складається з 2 основних напрямків:</p>
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="col-md-6 col-lg-4">
-                <div class="frame-card frame-card--tips-1">
-                  <div class="frame-card__img"></div>
-                  <div class="frame-card__content">
-                    <p class="mb-0">Налаштування відрахування процента від всіх чайових закладу для команди кухарів</p>
+              <div class="col-lg-6">
+                <div class="info-card info-card--management-1">
+                  <div class="info-card__text">
+                    <h4 class="mb-3">Холдування</h4>
+                    <p>Оптимізуйте процес оплати, резервуючи суму на картці клієнта перед фактичним списанням. Цей підхід дозволяє переконатися, що ваше замовлення оброблено без сюрпризів, і у разі скасування замовлення сума моментально розблокується.</p>
+                    <p class="mb-4">Така стратегія не тільки забезпечує надійність для клієнтів, а й знижує навантаження на ваші ресурси та заощаджує на комісійних витрата</p>
+                  </div>
+                  <div class="info-card__link">
+                    <div class="info-card__link-icon">
+                      <i class="icon-connection"></i>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-4 mt-4 mt-md-0">
-                <div class="frame-card frame-card--tips-2">
-                  <div class="frame-card__img"></div>
-                  <div class="frame-card__content">
-                    <p class="mb-0">Моніторинг чайових по всій мерёжі ресторанів та по окремим закладам та офіціантам</p>
+              <div class="col-lg-6 mt-4 mt-lg-0">
+                <div class="info-card info-card--management-2">
+                  <div class="info-card__text">
+                    <h4 class="mb-3">Часткове та повне повернення</h4>
+                    <p class="mb-4">Запити на повернення клієнтів не є головним болем з інтернет-еквайрингом iPay.ua. Повертайте всю або частину суми за покупку та підтримуйте лояльність клієнтів на висоті</p>
                   </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4 mt-4 mt-lg-0">
-                <div class="frame-card frame-card--tips-3">
-                  <div class="frame-card__img"></div>
-                  <div class="frame-card__content">
-                    <p class="mb-0">Проведення мотиваційних заходів та конкурсів серед персоналу</p>
+                  <div class="info-card__link">
+                    <div class="info-card__link-icon">
+                      <i class="icon-online-meeting"></i>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div> <!-- /.tips-advantages -->
+        </div> <!-- /.internet-acquiring-management -->
 
-        <div class="page-section info-section">
+        <div class="page-section info-section internet-acquiring-services">
           <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="page-section__header">
+                  <h2>Які послуги доступні від iPay.ua?</h2>
+                  <p class="mb-0">Для максимального комфорту покупців у вашому магазині та збільшення потенційного прибутку розроблено:</p>
+                </div>
+              </div>
+            </div>
             <div class="row align-items-center">
-              <div class="col-xl-6 col-xxl-5 order-xl-last">
-                <div class="info-section__content info-section__content--pl">
-                  <p class="header-subtitle mb-3 mb-md-4">Відгуки наших партнерів</p>
-                  <h3 class="info-section__title mb-3 mb-md-4">Розповідають Пивна Дума та Сушия</h3>
-                  <p class="mb-0">Сервіс CashlessTips від iPay.ua дозволяє офіціантам швидко та зручно приймати чайові без готівки за допомогою оплати карткою будь-якого банку України або платіжним пристроєм з NFC</p>
+              <div class="col-xl-6">
+                <div class="info-section__content info-section__content--pr">
+                  <div class="accordion accordion--type-2" id="accordionServices">
+                    <div class="accordion-item">
+                      <h5 class="accordion-button h5 mb-0" role="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                        Онлайн-інвойсинг
+                      </h5>
+                      <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionServices">
+                        <div class="accordion-body">
+                          Створення для покупця персонального посилання на оплату. Після оплати або за заданий час інвойс стає неактивним. Це зручно для магазинів без власного веб-порталу (інстаграм-магазини, онлайн-чати)
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h5 class="accordion-button h5 mb-0 collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        Токенізація карт
+                      </h5>
+                      <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionServices">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h5 class="accordion-button h5 mb-0 collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                        Регулярні платежі
+                      </h5>
+                      <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionServices">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h5 class="accordion-button h5 mb-0 collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                        Оплата за QR
+                      </h5>
+                      <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionServices">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h5 class="accordion-button h5 mb-0 collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                        Поділ платежів
+                      </h5>
+                      <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionServices">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col-xl-6 col-xxl-7 text-center">
-                <div class="info-section__img">
-                  <div class="info-video">
-                    <video width="100%" class="info-video__player" controls>
-                      <source src="video/applepay/ApplePay01.mp4" type="video/mp4">
-                    </video>
-                    <button class="info-video__button">
-                      <svg width="57" height="59" viewBox="0 0 57 59" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="57" height="59" rx="28.5" fill="#E84F35"/>
-                        <path d="M34.9224 31.4039L24.2298 37.7057C23.9025 37.8986 23.5311 38.0001 23.1532 38C22.7753 37.9999 22.404 37.8983 22.0767 37.7054C21.7494 37.5125 21.4776 37.235 21.2886 36.9009C21.0996 36.5667 21.0001 36.1877 21 35.8019V23.1981C21.0001 22.8123 21.0996 22.4333 21.2886 22.0991C21.4776 21.765 21.7494 21.4875 22.0767 21.2946C22.404 21.1017 22.7753 21.0001 23.1532 21C23.5311 20.9999 23.9025 21.1014 24.2298 21.2943L34.9224 27.5961C35.25 27.7889 35.5221 28.0663 35.7112 28.4006C35.9004 28.7348 36 29.114 36 29.5C36 29.886 35.9004 30.2652 35.7112 30.5994C35.5221 30.9337 35.25 31.2111 34.9224 31.4039Z" fill="white"/>
-                      </svg>
-                    </button><div class="info-video__bkgr"></div>
-                  </div>
+              <div class="col-xl-6 text-center">
+                <div class="info-section__img bkgr-grey">
+                  <img src="img/internet-acquiring/internet-acquiring-info-3.png" srcset="img/internet-acquiring/internet-acquiring-info-3.png 334w, img/internet-acquiring/internet-acquiring-info-3@2x.png 668w" sizes="(max-width: 767.98px) 154px, 334px" alt="Image">
                 </div>
               </div>
             </div>
           </div>
-        </div> <!-- /.info-section -->
+        </div> <!-- /.info-section .internet-acquiring-services -->
 
-        <div class="page-section page-section--bottom-short page-faqs">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <div class="page-section__header">
-                  <h2>Найчастіші питання</h2>
-                  <p>В цьому блоці ви можете знайти найчастіші запитання, котрі найбільше хвилюють клієнтів</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-12">
-                <div class="accordion accordion--type-1" id="accordionFaqs">
-                  <div class="accordion-item">
-                    <h5 class="accordion-button h5 mb-0" role="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                      Що необхідно для співпраці?
-                    </h5>
-                    <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionFaqs">
-                      <div class="accordion-body">
-                        Залишити заявку про співпрацю у нас на сайті. Наші представники зв’яжуться з вами, уточнять деталі, дадуть відповіді на всі Ваші запитання та передадуть запит в банк.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h5 class="accordion-button h5 mb-0 collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                      Як налаштувати термінали для прийому електронних чайових?
-                    </h5>
-                    <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionFaqs">
-                      <div class="accordion-body">
-                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h5 class="accordion-button h5 mb-0 collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                      Яка вартість налаштування електронних чайових?
-                    </h5>
-                    <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionFaqs">
-                      <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h5 class="accordion-button h5 mb-0 collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                      Який розмір комісії?
-                    </h5>
-                    <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionFaqs">
-                      <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h5 class="accordion-button h5 mb-0 collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                      Хто реєструє офіціантів?
-                    </h5>
-                    <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionFaqs">
-                      <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h5 class="accordion-button h5 mb-0 collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                      Як швидко зараховуються кошти офіціанта?
-                    </h5>
-                    <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionFaqs">
-                      <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                      </div>
-                    </div>
-                  </div>
-                </div> <!--  ./accordion -->
-              </div>
-            </div>
-            
-          </div>
-        </div> <!-- /.page-faqs -->
-
-      </main> <!-- /.main .tips -->
+      </main> <!-- /.main .internet-acquiring -->
 
       <footer class="main-footer">
 

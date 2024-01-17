@@ -1,0 +1,101 @@
+.applepay-hero.page-hero {
+  position: relative;
+  padding-top: 8.5rem;
+  padding-bottom: 3.375rem;
+}
+.applepay-hero.page-hero .apple-bkgr {
+  position: absolute;
+  bottom: -164px;
+  left: calc(50% - 24px);
+  width: 549px;
+  height: 543px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgb(232, 79, 53), rgb(232, 79, 53));
+  filter: blur(260px);
+}
+.applepay-hero.page-hero .page-hero__content {
+  max-width: 438px;
+  padding-top: 4.125rem;
+}
+.applepay-hero.page-hero .page-hero__images {
+  padding-left: 143px;
+  padding-right: 193px;
+}
+.applepay-hero.page-hero .applepay-hero__images-watch, .applepay-hero.page-hero .applepay-hero__images-logo {
+  position: absolute;
+}
+.applepay-hero.page-hero .applepay-hero__images-watch {
+  bottom: 44px;
+  left: 0;
+}
+.applepay-hero.page-hero .applepay-hero__images-logo {
+  top: 30px;
+  right: 60px;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .applepay-hero.page-hero .page-hero__images {
+    padding-right: 92px;
+  }
+  .applepay-hero.page-hero .applepay-hero__images-logo {
+    right: 0;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .applepay-hero.page-hero {
+    padding-top: 9.125rem;
+    padding-bottom: 4rem;
+  }
+  .applepay-hero.page-hero .apple-bkgr {
+    bottom: -94px;
+    width: 415px;
+    height: 409px;
+  }
+  .applepay-hero.page-hero .page-hero__content {
+    padding-top: 2.625rem;
+  }
+  .applepay-hero.page-hero .page-hero__images {
+    padding-left: 85px;
+    padding-right: 57px;
+  }
+  .applepay-hero.page-hero .applepay-hero__images-watch {
+    bottom: 60px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .applepay-hero.page-hero {
+    padding-top: 7.625rem;
+    padding-bottom: 0;
+  }
+  .applepay-hero.page-hero .apple-bkgr {
+    bottom: -160px;
+    left: 0;
+  }
+  .applepay-hero.page-hero .page-hero__content {
+    padding-top: 0;
+    padding-bottom: 3.75rem;
+  }
+  .applepay-hero.page-hero .page-hero__images {
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .applepay-hero.page-hero .applepay-hero__images-phone {
+    margin-bottom: -38px;
+  }
+  .applepay-hero.page-hero .applepay-hero__images-watch {
+    align-self: flex-end;
+    position: relative;
+    bottom: 0;
+    margin-right: -24px;
+    margin-bottom: 50px;
+  }
+  .applepay-hero.page-hero .applepay-hero__images-logo {
+    position: relative;
+    top: 0;
+    margin-top: 32px;
+    margin-right: -52px;
+  }
+}/*# sourceMappingURL=applepay-page.css.map */
