@@ -24,14 +24,17 @@ document.addEventListener('DOMContentLoaded', function() {
   // sticky footer
   function scrolledFooter() {
     const stickyFooter = document.querySelector('.sticky-footer');
-    const stickyFooterHeight = stickyFooter.scrollHeight;
-    const mainFooterCoord = document.querySelector('.main-footer').getBoundingClientRect().top;
-    const documentHeight = document.documentElement.clientHeight;
 
-    if (mainFooterCoord > documentHeight) {
-      stickyFooter.style.maxHeight = stickyFooterHeight + 'px';
-    } else {
-      stickyFooter.removeAttribute('style');
+    if (stickyFooter) {
+      const stickyFooterHeight = stickyFooter.scrollHeight;
+      const mainFooterCoord = document.querySelector('.main-footer').getBoundingClientRect().top;
+      const documentHeight = document.documentElement.clientHeight;
+  
+      if (mainFooterCoord > documentHeight) {
+        stickyFooter.style.maxHeight = stickyFooterHeight + 'px';
+      } else {
+        stickyFooter.removeAttribute('style');
+      }
     }
   }
 
