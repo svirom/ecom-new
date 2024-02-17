@@ -48,6 +48,10 @@
   margin-top: 9.375rem;
   margin-bottom: 9.375rem;
 
+  h2 {
+    font-size: 2rem;
+  }
+
   &__header {
     margin-bottom: 3.75rem;
   }
@@ -342,6 +346,10 @@
   .page-section {
     margin-top: 5rem;
     margin-bottom: 5rem;
+
+    h2 {
+      font-size: 1.5rem;
+    }
   
     &__header {
       margin-bottom: 1.875rem;
@@ -365,6 +373,12 @@
   .info-section {
     &__content {
       margin-bottom: 2rem;
+    }
+
+    &__img {
+      &.bkgr-grey {
+        border-radius: 1.5rem;
+      }
     }
   }
 

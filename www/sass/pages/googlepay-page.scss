@@ -1,0 +1,81 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+// hero
+.googlepay-hero {
+  &.page-hero {
+    position: relative;
+    padding-top: 6.625rem;
+    padding-bottom: 3.375rem;
+
+    .google-bkgr {
+      position: absolute;
+      bottom: -164px;
+      left: calc(50% - 24px);
+      width: 549px;
+      height: 543px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(232, 79, 53, 1), rgba(232, 79, 53, 1));
+      filter: blur(260px);
+    }
+
+    .page-hero__content {
+      padding-top: 6rem;
+    }
+  }
+}
+
+.googlepay-methods {
+  &.page-methods {
+    .frame-card.page-methods__page .frame-card__img {
+      background-color: $color-red-1;
+    }
+  } 
+}
+
+@include until($lg) {
+  .googlepay-hero {
+    &.page-hero {
+      padding-top: 9.25rem;
+      padding-bottom: 6.125rem;
+
+      .google-bkgr {
+        bottom: -94px;
+        width: 415px;
+        height: 409px;
+      }
+
+      .page-hero__content {
+        padding-top: 0;
+      }
+
+      .page-hero__images {
+        padding-top: 0.625rem;
+      }
+    }
+  }
+}
+
+@include until($md) {
+  .googlepay-hero {
+    &.page-hero {
+      padding-top: 7.625rem;
+      padding-bottom: 0;
+
+      .google-bkgr {
+        bottom: -160px;
+        left: 0;
+      }
+
+      .page-hero__content {
+        padding-top: 0;
+        padding-bottom: 3.75rem;
+      }
+
+      .page-hero__images {
+        justify-content: center;
+        padding-top: 0;
+      }
+    }
+  }
+}

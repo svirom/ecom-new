@@ -340,9 +340,6 @@
     width: 5rem;
     height: 5rem;
   }
-  .internet-acquiring-offer .info-card__link-icon [class^=icon] {
-    font-size: 1.5rem;
-  }
   .internet-acquiring-offer__cards p {
     font-size: 0.875rem;
   }

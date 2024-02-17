@@ -1,0 +1,75 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+// hero
+.checkout-hero {
+  &.page-hero {
+    position: relative;
+    padding-top: 8.5rem;
+    padding-bottom: 3.375rem;
+
+    .checkout-bkgr {
+      position: absolute;
+      bottom: -164px;
+      left: calc(50% - 24px);
+      width: 549px;
+      height: 543px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(232, 79, 53, 1), rgba(232, 79, 53, 1));
+      filter: blur(260px);
+    }
+
+    .page-hero__content {
+      padding-top: 2.125rem;
+    }
+
+    .page-hero__subtitle {
+      margin-bottom: 2rem;
+    }
+
+    .page-hero__images {
+      justify-content: center;
+    }
+  }
+}
+
+@include until($lg) {
+  .checkout-hero {
+    &.page-hero {
+      padding-top: 7.625rem;
+      padding-bottom: 4.875rem;
+
+      .checkout-bkgr {
+        bottom: -94px;
+        width: 415px;
+        height: 409px;
+      }
+
+      .page-hero__content {
+        padding-top: 0;
+      }
+
+      .page-hero__subtitle {
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
+}
+
+@include until($md) {
+  .checkout-hero {
+    &.page-hero {
+      padding-top: 7.625rem;
+      padding-bottom: 0;
+
+      .checkout-bkgr {
+        bottom: -160px;
+        left: 0;
+      }
+
+      .page-hero__content {
+        padding-bottom: 1.625rem;
+      }
+    }
+  }
+}

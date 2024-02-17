@@ -1,0 +1,75 @@
+.masterpass-hero.page-hero {
+  position: relative;
+  padding-top: 12.625rem;
+  padding-bottom: 13rem;
+}
+.masterpass-hero.page-hero .masterpass-bkgr {
+  position: absolute;
+  bottom: -57px;
+  right: -364px;
+  width: 803px;
+  height: 795px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgb(232, 79, 53), rgb(232, 79, 53));
+  filter: blur(260px);
+}
+.masterpass-hero.page-hero .page-hero__title {
+  white-space: nowrap;
+}
+.masterpass-hero.page-hero .page-hero__subtitle {
+  margin-bottom: 2rem;
+}
+.masterpass-hero.page-hero .page-hero__images {
+  justify-content: center;
+  padding-top: 4rem;
+}
+
+.masterpass-methods.page-methods .frame-card.page-methods__page .frame-card__img {
+  background-color: #E84F35;
+}
+.masterpass-methods.page-methods .frame-card.page-methods__app .frame-card__img {
+  padding-top: 1.25rem;
+  align-items: flex-end;
+  background-color: #FFB967;
+}
+
+@media screen and (max-width: 991.98px) {
+  .masterpass-hero.page-hero {
+    padding-top: 8.75rem;
+    padding-bottom: 4rem;
+  }
+  .masterpass-hero.page-hero .masterpass-bkgr {
+    bottom: -94px;
+  }
+  .masterpass-hero.page-hero .page-hero__title {
+    white-space: initial;
+  }
+  .masterpass-hero.page-hero .page-hero__subtitle {
+    margin-bottom: 2.5rem;
+  }
+  .masterpass-hero.page-hero .page-hero__images {
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .masterpass-hero.page-hero {
+    padding-top: 7.625rem;
+    padding-bottom: 7.625rem;
+  }
+  .masterpass-hero.page-hero .masterpass-bkgr {
+    width: 567px;
+    height: 562px;
+    bottom: 0px;
+    right: auto;
+    left: -98px;
+    bottom: -364px;
+  }
+  .masterpass-hero.page-hero .page-hero__content {
+    padding-bottom: 2.5rem;
+  }
+  .masterpass-hero.page-hero .page-hero__images {
+    justify-content: flex-start;
+    padding-top: 0;
+  }
+}/*# sourceMappingURL=masterpass-page.css.map */

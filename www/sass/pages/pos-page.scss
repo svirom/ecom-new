@@ -1,0 +1,133 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+// hero
+.pos-hero {
+  &.page-hero {
+    position: relative;
+    padding-top: 6.875rem;
+
+    .pos-bkgr {
+      position: absolute;
+      bottom: -164px;
+      left: calc(50% - 24px);
+      width: 549px;
+      height: 543px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(232, 79, 53, 1), rgba(232, 79, 53, 1));
+      filter: blur(260px);
+    }
+
+    .page-hero__content {
+      padding-top: 5.9375rem;
+    }
+
+    .page-hero__subtitle {
+      margin-bottom: 2rem;
+    }
+
+    .page-hero__images {
+      justify-content: center;
+    }
+  }
+}
+
+// advantages
+.pos-advantages {
+  .info-card {
+    height: 24.375rem;
+  }
+
+  &__spacing {
+    margin-top: 3.75rem;
+  }
+}
+
+@include until($xxl) {
+  .pos-advantages {
+    .info-card {
+      height: 29.6875rem;
+    }
+  }
+}
+
+@include until($xl) {
+  .pos-advantages {
+    .info-card {
+      // height: 29.6875rem;
+    }
+
+    &__spacing {
+      margin-top: 1.5rem;
+    }
+
+    .info-card__text-title {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@include until($lg) {
+  .pos-hero {
+    &.page-hero {
+      padding-top: 7.625rem;
+
+      .pos-bkgr {
+        bottom: -94px;
+        width: 415px;
+        height: 409px;
+      }
+
+      .page-hero__content {
+        padding-top: 1.5rem;
+      }
+
+      .page-hero__subtitle {
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
+
+  .pos-advantages {
+    .info-card {
+      padding: 2rem;
+
+      &__text {
+        p {
+          font-size: 1rem;
+        }
+      }
+
+      &__link-icon {
+        flex: 0 0 5rem;
+        width: 5rem;
+        height: 5rem;
+      }
+    }
+
+    &__spacing {
+      // margin-top: 1.5rem;
+    }
+  }
+}
+
+@include until($md) {
+  .pos-hero {
+    &.page-hero {
+      .pos-bkgr {
+        bottom: -160px;
+        left: 0;
+      }
+
+      .page-hero__content {
+        padding-bottom: 2.8125rem;
+      }
+    }
+  }
+
+  .pos-advantages {
+    .page-section__header {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

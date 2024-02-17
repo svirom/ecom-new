@@ -37,6 +37,9 @@
   margin-top: 9.375rem;
   margin-bottom: 9.375rem;
 }
+.page-section h2 {
+  font-size: 2rem;
+}
 .page-section__header {
   margin-bottom: 3.75rem;
 }
@@ -252,6 +255,9 @@
     margin-top: 5rem;
     margin-bottom: 5rem;
   }
+  .page-section h2 {
+    font-size: 1.5rem;
+  }
   .page-section__header {
     margin-bottom: 1.875rem;
   }
@@ -268,6 +274,9 @@
   }
   .info-section__content {
     margin-bottom: 2rem;
+  }
+  .info-section__img.bkgr-grey {
+    border-radius: 1.5rem;
   }
   .page-methods .page-section__header {
     margin-bottom: 2rem;

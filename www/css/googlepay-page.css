@@ -1,0 +1,58 @@
+.googlepay-hero.page-hero {
+  position: relative;
+  padding-top: 6.625rem;
+  padding-bottom: 3.375rem;
+}
+.googlepay-hero.page-hero .google-bkgr {
+  position: absolute;
+  bottom: -164px;
+  left: calc(50% - 24px);
+  width: 549px;
+  height: 543px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgb(232, 79, 53), rgb(232, 79, 53));
+  filter: blur(260px);
+}
+.googlepay-hero.page-hero .page-hero__content {
+  padding-top: 6rem;
+}
+
+.googlepay-methods.page-methods .frame-card.page-methods__page .frame-card__img {
+  background-color: #E84F35;
+}
+
+@media screen and (max-width: 991.98px) {
+  .googlepay-hero.page-hero {
+    padding-top: 9.25rem;
+    padding-bottom: 6.125rem;
+  }
+  .googlepay-hero.page-hero .google-bkgr {
+    bottom: -94px;
+    width: 415px;
+    height: 409px;
+  }
+  .googlepay-hero.page-hero .page-hero__content {
+    padding-top: 0;
+  }
+  .googlepay-hero.page-hero .page-hero__images {
+    padding-top: 0.625rem;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .googlepay-hero.page-hero {
+    padding-top: 7.625rem;
+    padding-bottom: 0;
+  }
+  .googlepay-hero.page-hero .google-bkgr {
+    bottom: -160px;
+    left: 0;
+  }
+  .googlepay-hero.page-hero .page-hero__content {
+    padding-top: 0;
+    padding-bottom: 3.75rem;
+  }
+  .googlepay-hero.page-hero .page-hero__images {
+    justify-content: center;
+    padding-top: 0;
+  }
+}/*# sourceMappingURL=googlepay-page.css.map */

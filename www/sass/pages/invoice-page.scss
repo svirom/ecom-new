@@ -1,0 +1,212 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+// hero
+.invoice-hero {
+  &.page-hero {
+    position: relative;
+    padding-top: 6.625rem;
+    padding-bottom: 1.5rem;
+
+    .invoice-bkgr {
+      position: absolute;
+      bottom: -164px;
+      left: calc(50% - 24px);
+      width: 549px;
+      height: 543px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(232, 79, 53, 1), rgba(232, 79, 53, 1));
+      filter: blur(260px);
+    }
+
+    .page-hero__content {
+      padding-top: 5.3125rem;
+    }
+
+    .page-hero__subtitle {
+      margin-bottom: 2rem;
+    }
+
+    .page-hero__images {
+      justify-content: center;
+    }
+  }
+}
+
+// invoice process
+.invoice-process-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 21.0625rem;
+    height: 21.0625rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: $color-gray-1;
+  }
+
+  &__content {
+    flex-grow: 1;
+    padding-top: 1.5rem;
+  }
+
+  .invoice-process-card__title  {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+
+// solutions
+.invoice-solutions {
+  .invoice-solutions__title {
+    margin-bottom: 1.875rem;
+  }
+}
+
+.solution-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 12.25rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+
+  &__img {
+    flex: 0 0 7.5rem;
+    height: 7.5rem;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__title {
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 1rem 1rem 0;
+    color: $color-blue-1;
+    background-color: #ffffff;
+
+    p {
+      font-size: 1.125rem;
+      line-height: 1.2;
+    }
+  }
+
+  &--shop-online {
+    .solution-card__img {
+      background-image: url("../img/invoice/solution-card/solution-card1@2x.png");
+    }
+  }
+
+  &--business {
+    .solution-card__img {
+      background-image: url("../img/invoice/solution-card/solution-card2@2x.png");
+    }
+  }
+
+  &--carrier {
+    .solution-card__img {
+      background-image: url("../img/invoice/solution-card/solution-card3@2x.png");
+    }
+  }
+
+  &--services {
+    .solution-card__img {
+      background-image: url("../img/invoice/solution-card/solution-card4@2x.png");
+    }
+  }
+
+  &--insurance {
+    .solution-card__img {
+      background-image: url("../img/invoice/solution-card/solution-card5@2x.png");
+    }
+  }
+
+  &--charity {
+    .solution-card__img {
+      background-image: url("../img/invoice/solution-card/solution-card6@2x.png");
+    }
+  }
+}
+
+@include until($lg) {
+  .invoice-hero {
+    &.page-hero {
+      padding-top: 8.875rem;
+      padding-bottom: 6.8125rem;
+
+      .invoice-bkgr {
+        bottom: -94px;
+        width: 415px;
+        height: 409px;
+      }
+
+      .page-hero__content {
+        padding-top: 0;
+      }
+
+      .page-hero__subtitle {
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
+
+  .invoice-process-card {
+    flex-direction: row;
+    height: initial;
+
+    &__img {
+      flex-basis: 23.625rem;
+    }
+
+    &__content {
+      padding-left: 1.875rem;
+    }
+  }
+
+  .solution-card {
+    min-height: 13.5rem;
+  }
+}
+
+@include until($md) {
+  .invoice-hero {
+    &.page-hero {
+      padding-top: 3.625rem;
+      padding-bottom: 0;
+
+      .invoice-bkgr {
+        bottom: -160px;
+        left: 0;
+      }
+
+      .page-hero__content {
+        padding-bottom: 3.1875rem;
+      }
+    }
+  }
+
+  .invoice-process-card {
+    flex-direction: column;
+
+    &__img {
+      flex-basis: 18.75rem;
+      height: 18.75rem;
+    }
+
+    &__content {
+      padding-left: 0;
+      padding-top: 1.875rem;
+    }
+
+    .invoice-process-card__title  {
+      font-size: 1.25rem;
+    }
+  }
+}
