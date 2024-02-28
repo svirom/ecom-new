@@ -1,0 +1,132 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+// hero
+.recurrent-hero {
+  &.page-hero {
+    padding-top: 5.125rem;
+    padding-bottom: 1.5rem;
+
+    &.light {
+      background-color: #ffffff;
+    }
+
+    .page-hero__content {
+      padding-top: 11.875rem;
+    }
+
+    .page-hero__subtitle {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+// work
+.recurrent-work {
+  &.page-methods {
+    .frame-card {
+      &.page-methods__app {
+        .frame-card__img {
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+@include until($xxl) {
+  .recurrent-hero {
+    &.page-hero {
+      .page-hero__content {
+        padding-top: 6.25rem;
+      }
+    }
+  }
+}
+
+@include until($lg) {
+  .recurrent-hero {
+    &.page-hero {
+      padding-top: 7.1875rem;
+      padding-bottom: 3.4375rem;
+
+      .page-hero__content {
+        padding-top: 1rem;
+      }
+
+      .page-hero__subtitle {
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
+
+  .recurrent-work {
+    &.page-section--dark {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+  }
+
+  .recurrent-advantages {
+    .info-card {
+      height: 22.5rem;
+      padding: 2rem;
+
+      h4 {
+        font-size: 1.5rem;
+      }
+
+      &__link-icon {
+        flex-basis: 5rem;
+        height: 5rem;
+      }
+    }
+  }
+}
+
+@include until($md) {
+  .recurrent-hero {
+    &.page-hero {
+      padding-top: 7.625rem;
+      padding-bottom: 0;
+
+      .page-hero__content {
+        padding-top: 0;
+        padding-bottom: 2.5rem;
+      }
+
+      .page-hero__images {
+        justify-content: center;
+      }
+    }
+  }
+
+  .recurrent-work {
+    &.page-methods {
+      .frame-card {
+        &.page-methods__page {
+          .frame-card__img {
+            padding-top: 0;
+            padding-bottom: 0;
+          }
+        }
+
+        &.page-methods__app {
+          .frame-card__img {
+            padding: 1.375rem 3rem 0.375rem 0;
+          }
+        }
+      }
+    }
+  }
+
+  .recurrent-advantages {
+    .info-card {
+      height: 20rem;
+      
+      h4 {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}

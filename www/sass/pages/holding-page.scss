@@ -1,0 +1,271 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+// hero
+.holding-hero {
+  &.page-hero {
+    padding-top: 6.625rem;
+    // padding-bottom: 1.5rem;
+
+    &.light {
+      background-color: #ffffff;
+    }
+
+    .page-hero__content {
+      padding-top: 6.75rem;
+    }
+
+    .page-hero__subtitle {
+      margin-bottom: 2.5rem;
+    }
+  }
+}
+
+// work
+.holding-work {
+  &.page-methods {
+    .frame-card {
+      &__content {
+        h4 {
+          color: $color-blue-8;
+        }
+      }
+
+      &.page-methods__app {
+        .frame-card__img {
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  &__auth {
+    .frame-card__img {
+      background-color: #AEE6F8;
+
+      img {
+        align-self: flex-end;
+      }
+    }
+  }
+
+  &__debit {
+    .frame-card__img {
+      background-color: #C7E8C2;
+    }
+  }
+}
+
+// advantages
+.holding-advantages {
+  .info-card__text {
+    h4 {
+      color: $color-blue-8;
+    }
+  }
+
+  &__card {
+    padding: 2.5rem 0;
+    border-radius: 2rem;
+    background-color: $color-gray-1;
+
+    & > .row {
+      --bs-gutter-x: 5rem;
+    }
+  }
+
+  &__card-content {
+    max-width: 547px;
+  }
+
+  .holding-advantages__card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: $color-blue-8;
+  }
+
+  &__img {
+    img {
+      filter: drop-shadow(0 40px 60px rgba(50, 50, 93, 0.1));
+    }
+  }
+}
+
+// clients
+.client-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 24rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+
+  .client-card__title {
+    font-weight: 600;
+    color: $color-black-1;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  &__img {
+    flex: 0 0 11.25rem;
+    height: 11.25rem;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__content {
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 2rem;
+    background-color: #ffffff;
+  }
+
+  &--prepayment {
+    .client-card__img {
+      background-image: url('../../img/holding/client-card/client-card1@2x.png');
+    }
+  }
+
+  &--hotel {
+    .client-card__img {
+      background-image: url('../../img/holding/client-card/client-card2@2x.png');
+    }
+  }
+
+  &--delivery {
+    .client-card__img {
+      background-image: url('../../img/holding/client-card/client-card3@2x.png');
+    }
+  }
+
+  &--taxi {
+    .client-card__img {
+      background-image: url('../../img/holding/client-card/client-card4@2x.png');
+    }
+  }
+}
+
+@include until($xxl) {
+  .holding-advantages {
+    .info-card {
+      height: 23.75rem;
+    }
+  }
+}
+
+@include until($xl) {
+  .holding-advantages {
+    .info-card {
+      height: 21.25rem;
+    }
+
+    .info-card__text {
+      h4 {
+        font-size: 1.5rem;
+      }
+    }
+
+    &__card-content {
+      max-width: 547px;
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+@include until($lg) {
+  .holding-hero {
+    &.page-hero {
+      padding-top: 7.1875rem;
+      padding-bottom: 0.9375rem;
+
+      .page-hero__content {
+        padding-top: 1.75rem;
+      }
+    }
+  }
+
+  .holding-work {
+    &.page-section--dark {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+  }
+
+  .holding-advantages {
+    .info-card {
+      padding: 2rem;
+
+      &__link-icon {
+        flex-basis: 5rem;
+        height: 5rem;
+      }
+    }
+
+    &__card {
+      padding: 2.5rem 2rem;
+    }
+
+    &__card-content {
+      max-width: none;
+    }
+  }
+}
+
+@include until($md) {
+  .holding-hero {
+    &.page-hero {
+      padding-top: 7.625rem;
+      padding-bottom: 0;
+
+      .page-hero__content {
+        padding-top: 0;
+        padding-bottom: 2.5rem;
+      }
+
+      .page-hero__images {
+        justify-content: center;
+      }
+    }
+  }
+
+  .holding-advantages {
+    .page-section__header {
+      margin-bottom: 2.5rem;
+    }
+
+    .info-card__text {
+      h4 {
+        font-size: 1.25rem;
+      }
+    }
+
+    .holding-advantages__card-title {
+      font-size: 1.25rem;
+    }
+
+    &__card-content {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  .holding-clients {
+    .page-section__header {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  .client-card {
+    min-height: 22.5rem;
+
+    .client-card__title {
+      font-size: 1.25rem;
+    }
+  }
+}
