@@ -55,28 +55,32 @@ body {
 }
 
 h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
-  line-height: 1.1;
-  color: #001535;
+  color: #000F26;
 }
 
 h1, .h1 {
-  font-size: 4rem;
+  font-size: 3.25rem;
+  line-height: 1.2;
 }
 
 h2, .h2 {
   font-size: 2.5rem;
+  line-height: 1.4;
 }
 
 h3, .h3 {
   font-size: 2rem;
+  line-height: 1.3;
 }
 
 h4, .h4 {
   font-size: 1.5rem;
+  line-height: 1.3;
 }
 
 h5, .h5 {
   font-size: 1.25rem;
+  line-height: 1.3;
 }
 
 p, li, a {
@@ -87,6 +91,7 @@ p, li, a {
 @media screen and (max-width: 1199.98px) {
   h1, .h1 {
     font-size: 2.5rem;
+    line-height: 1.3;
   }
   h2, .h2 {
     font-size: 2rem;
@@ -102,6 +107,7 @@ p, li, a {
   }
   p, li, a {
     font-size: 1rem;
+    line-height: 1.6;
   }
 }
 .header-subtitle {
@@ -118,7 +124,7 @@ p, li, a {
 }
 @media screen and (max-width: 767.98px) {
   h1, .h1 {
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
   h2, .h2 {
     font-size: 1.5rem;
@@ -400,7 +406,7 @@ textarea.form-control::-webkit-scrollbar-thumb {
   font-size: 1.5rem;
   line-height: 1.3;
   font-weight: 600;
-  color: #17171C;
+  color: #000F26;
 }
 .product-card__content p {
   font-size: 1rem;
@@ -419,8 +425,8 @@ textarea.form-control::-webkit-scrollbar-thumb {
   background-color: #F3F5F9;
 }
 .product-card__icon > [class^=icon-] {
-  font-size: 1.5rem;
-  color: #17171C;
+  font-size: 2.5rem;
+  color: #000F26;
 }
 @media screen and (max-width: 1199.98px) {
   .product-card {
@@ -438,7 +444,7 @@ textarea.form-control::-webkit-scrollbar-thumb {
     height: 3.75rem;
   }
   .product-card__icon > [class^=icon-] {
-    font-size: 1rem;
+    font-size: 2rem;
   }
   .product-card__icon > img {
     max-width: 2rem;
@@ -464,8 +470,6 @@ textarea.form-control::-webkit-scrollbar-thumb {
 }
 .info-card__text h4 {
   font-weight: 600;
-  line-height: 1.3;
-  color: #17171C;
 }
 .info-card__text p {
   font-size: 1rem;
@@ -493,8 +497,8 @@ textarea.form-control::-webkit-scrollbar-thumb {
   background-color: #FFFFFF;
 }
 .info-card__link-icon [class^=icon] {
-  font-size: 1.5rem;
-  color: #000000;
+  font-size: 2.5rem;
+  color: #000F26;
 }
 @media screen and (max-width: 991.98px) {
   .info-card {
@@ -507,16 +511,19 @@ textarea.form-control::-webkit-scrollbar-thumb {
   .info-card__link a {
     font-size: 0.875rem;
   }
-  .info-card__link-icon {
-    flex: 0 0 3.75rem;
-    width: 3.75rem;
-    height: 3.75rem;
-  }
 }
 @media screen and (max-width: 767.98px) {
   .info-card {
     height: 17.5rem;
     border-radius: 1.5rem;
+  }
+  .info-card__link-icon {
+    flex: 0 0 4rem;
+    width: 4rem;
+    height: 4rem;
+  }
+  .info-card__link-icon [class^=icon] {
+    font-size: 1.5rem;
   }
 }
 

@@ -1,0 +1,169 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+// hero
+.split-hero {
+  &.page-hero {
+    padding-top: 10rem;
+
+    &.light {
+      background-color: #ffffff;
+    }
+
+    .page-hero__content {
+      padding-top: 2.75rem;
+    }
+  }
+}
+
+// info
+.split-info {
+  p {
+    font-size: 1.25rem;
+  }
+}
+
+// work
+.split-work-list {
+  margin-bottom: 3.75rem;
+
+  &__card {
+    display: flex;
+    align-items: center;
+  }
+
+  &__number {
+    flex: 0 0 2.5rem;
+    max-width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.125rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+    color: $color-blue-8;
+    text-align: center;
+    border-radius: 0.5rem;
+    background-color: $color-blue-6;
+  }
+
+  &__text {
+    padding-left: 1rem;
+    font-size: 1.125rem;
+    line-height: 1.8;
+  }
+}
+
+// advantages
+.split-advantages {
+  .info-card {
+    height: auto;
+    min-height: 20rem;
+
+    &__text {
+      p {
+        font-size: 1.125rem;
+        line-height: 1.8;
+      }
+    }
+  }
+}
+
+@include until($xl) {
+  .split-info {
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  }
+
+  .split-advantages {
+    .info-card {
+      min-height: 23.75rem;
+    }
+  }
+}
+
+@include until($lg) {
+  .split-hero {
+    &.page-hero {
+      padding-top: 7.1875rem;
+
+      .page-hero__content {
+        padding-top: 1.75rem;
+      }
+    }
+  }
+
+  .split-info {
+    &.page-section {
+      margin-top: 3.75rem;
+    }
+  }
+
+  .split-work {
+    &.page-section--dark {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+  }
+
+  .split-work-list {
+    margin-bottom: 2.5rem;
+  }
+
+  .split-advantages {
+    .info-card {
+      min-height: 25.625rem;
+    }
+  }
+}
+
+@include until($md) {
+  .split-hero {
+    &.page-hero {
+      padding-top: 7.625rem;
+      padding-bottom: 0;
+
+      .page-hero__content {
+        padding-top: 0;
+        padding-bottom: 2.5rem;
+      }
+
+      .page-hero__images {
+        justify-content: center;
+      }
+    }
+  }
+
+  .split-work {
+    &.page-section--dark {
+      padding: 1.5rem 0.75rem;
+    }
+  }
+
+  .split-work-list {
+    &__text {
+      font-size: 1rem;
+    }
+  }
+
+  .split-advantages {
+    .page-section__header {
+      margin-bottom: 2.5rem;
+    }
+
+    .info-card {
+      min-height: 20.625rem;
+
+      &__text {
+        h4 {
+          font-size: 1.125rem;
+        }
+
+        p {
+          font-size: 1rem;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+}

@@ -18,14 +18,12 @@
 
   .main-hero__title {
     margin-bottom: 2.5rem;
-    font-size: 3.25rem;
-    line-height: 1;
     letter-spacing: 0.5px;
     color: #ffffff;
   }
 
   ul {
-    margin-bottom: 3.75rem;
+    margin-bottom: 2.5rem;
   }
 
   &__list {
@@ -95,7 +93,7 @@
 // connect widget
 .main-connect {
   &.connect-widget {
-    margin-top: 11.25rem;
+    margin-top: 6.25rem;
     margin-bottom: 7.5rem;
   }
 }
@@ -126,11 +124,6 @@
   h3 {
     margin-bottom: 1.5rem;
     font-weight: 600;
-
-    & ~ p {
-      font-size: 1.25rem;
-      color: $color-blue-1;
-    }
   }
 }
 
@@ -145,8 +138,8 @@
   .nav {
     --bs-nav-link-padding-y: calc(1rem - 1px);
     --bs-nav-link-padding-x: calc(1rem - 1px);
-    --bs-nav-link-color: #17171C;
-    --bs-nav-link-hover-color: #17171C;
+    --bs-nav-link-color: #000F26;
+    --bs-nav-link-hover-color: #000F26;
     --bs-nav-link-font-weight: 600;
     --bs-nav-pills-border-radius: 1rem;
     --bs-nav-pills-link-active-bg: #001535;
@@ -191,13 +184,16 @@
 
     .payment-card__title {
       margin-bottom: 1.25rem;
-      font-size: 1.5rem;
       font-weight: 600;
+      color: $color-blue-1;
     }
 
     p {
-      margin-bottom: 1.25rem;
       font-size: 1.125rem;
+
+      &:last-of-type {
+        margin-bottom: 1.25rem;
+      }
     }
 
     .payment-card__help-text {
@@ -218,11 +214,49 @@
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
     border-radius: 1rem;
-    background-color: $color-gray-4;
 
     img {
       max-width: 100%;
       max-height: 100%;
+    }
+  }
+
+  &--site {
+    .payment-card__img {
+      background-color: #CFD7E8;
+    }
+  }
+
+  &--app {
+    .payment-card__img {
+      background-color: #AFDBBB;
+    }
+  }
+
+  &--social {
+    .payment-card__img {
+      background-color: #9BB8F0;
+    }
+  }
+
+  &--bot {
+    .payment-card__img {
+      background-color: #7F67B1;
+    }
+  }
+
+  &--qr {
+    .payment-card__img {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  &--terminal {
+    .payment-card__img {
+      align-items: flex-end;
+      padding-bottom: 0;
+      background-color: #CFD7E8;
     }
   }
 }
@@ -267,44 +301,11 @@
   background-color: $color-blue-1;
 
   .solutions__title {
-    margin-bottom: 1.875rem;
-    font-size: 3rem;
     color: #ffffff;
   }
 
   &__cards {
     margin-top: 2.5rem;
-    margin-bottom: 5rem;
-  }
-
-  &__cms {
-    p {
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-  }
-
-  &__logos {
-    margin-top: 2.5rem;
-    
-    &-magento {
-      height: 2.5rem;
-    }
-
-    &-woocommerce {
-      height: 2.5rem;
-    }
-
-    &-shopify {
-      height: 2.5rem;
-    }
-  }
-
-  &__logos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 18.75rem;
   }
 }
 
@@ -868,10 +869,6 @@
   }
 
   .payment-process {
-    .payment-process__title {
-      font-size: 2.5rem;
-    }
-
     &__header {
       margin-bottom: 1.75rem;
     }
@@ -968,8 +965,6 @@
     }
 
     .about-section__title {
-      font-size: 2.5rem;
-
       & ~ p {
         font-size: 1.125rem;
       }
@@ -1033,24 +1028,8 @@
   }
 
   .solutions {
-    .solutions__title {
-      margin-bottom: 1rem;
-      font-size: 2.5rem;
-    }
-
-    &__logos {
-      margin-top: 3rem;
-    }
-
     &__cards {
       margin-top: 2.5rem;
-      margin-bottom: 3.75rem;
-    }
-
-    &__cms {
-      p {
-        font-size: 0.875rem;
-      }
     }
   }
 
@@ -1093,10 +1072,6 @@
   }
 
   .payment-process {
-    .payment-process__title {
-      font-size: 2rem;
-    }
-
     &__header {
       margin-bottom: 3.75rem;
 
@@ -1227,8 +1202,6 @@
     }
 
     .about-section__title {
-      font-size: 2rem;
-
       & ~ p {
         font-size: 1rem;
       }
@@ -1364,11 +1337,8 @@
 
   .solutions {
     margin-bottom: 3.75rem;
-    padding-top: 3.125rem;
-
-    .solutions__title {
-      font-size: 1.75rem;
-    }
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
 
     &__cards {
       margin-top: 0.625rem;
@@ -1380,11 +1350,6 @@
           margin-top: 0.75rem;
         }
       }
-    }
-
-    &__logos {
-      max-width: 14.625rem;
-      margin-top: 1.5rem;
     }
   }
 
@@ -1423,11 +1388,6 @@
   }
 
   .payment-process {
-    .payment-process__title {
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
-    }
-
     &__header {
       margin-bottom: 2.5rem;
     }
@@ -1559,10 +1519,6 @@
   .about-section {
     .header-subtitle {
       font-size: 0.75rem;
-    }
-
-    .about-section__title {
-      font-size: 1.5rem;
     }
   }
 

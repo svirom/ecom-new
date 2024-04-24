@@ -1,0 +1,143 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+// hero
+.payments-charity-hero {
+  &.page-hero {
+    position: relative;
+    padding-top: 5.875rem;
+    padding-bottom: 2.5rem;
+
+    .page-hero__content {
+      max-width: 569px;
+      padding-top: 6.6875rem;
+    }
+
+    .page-hero__subtitle {
+      margin-bottom: 3.75rem;
+    }
+  }
+}
+
+.payments-charity {
+  h2 {
+    font-size: 2rem;
+  }
+
+  .page-section {    
+    &__header {
+      p {
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  .info-card {
+    height: 21.875rem;
+
+    &__text {
+      p {
+        font-size: 1.125rem;
+        line-height: 1.8;
+      }
+    }
+  }
+}
+
+@include until($xxl) {
+  .payments-charity {
+    .info-card {
+      height: auto;
+      min-height: 23.75rem;
+    }
+  }
+}
+
+@include until($xl) {
+  .payments-charity {
+    h2 {
+      font-size: 1.75rem;
+    }
+
+    .page-section {
+      h3 {
+        font-size: 1.75rem;
+      }
+
+      &__header {
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .info-card {
+      min-height: 28.75rem;
+    }
+
+    .info-section {
+      .info-section__title {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@include until($lg) {
+  .payments-charity-hero {
+    &.page-hero {
+      .page-hero__content {
+        padding-top: 5rem;
+      }
+
+      .page-hero__subtitle {
+        margin-bottom: 2.5rem;
+      }
+
+      .page-hero__images {
+        padding-left: 1.75rem;
+      }
+    }
+  }
+}
+
+@include until($md) {
+  .payments-charity-hero {
+    &.page-hero {
+      padding-top: 7.625rem;
+      padding-bottom: 0;
+
+      .page-hero__content {
+        padding-top: 0;
+        padding-bottom: 3.75rem;
+      }
+
+      .page-hero__images {
+        justify-content: center;
+        padding-left: 0;
+      }
+    }
+  }
+
+  .payments-charity {
+    h2 {
+      font-size: 1.25rem;
+    }
+    .page-section {
+      h3 {
+        font-size: 1.25rem;
+      }
+    }
+
+    .info-card {
+      min-height: 21.875rem;
+
+      &__text {
+        p {
+          font-size: 1rem;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+}

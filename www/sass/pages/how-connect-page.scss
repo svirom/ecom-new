@@ -1,0 +1,221 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.how-connect {
+  h2 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  .page-section {
+    margin-top: 4.375rem;
+    margin-bottom: 4.375rem;
+  }
+
+  .how-connect-process {
+    margin-top: 11.3125rem;
+  }
+}
+
+.how-connect-process {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1.4;
+  }
+
+  &__card {
+    & + .how-connect-process__card {
+      margin-top: 1.875rem;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+  }
+
+  &__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 2rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.875rem;
+    line-height: 1;
+    font-weight: 600;
+    color: $color-blue-1;
+    border-radius: 0.5rem;
+    background-color: $color-blue-6;
+  }
+
+  .how-connect-process__title {
+    flex-grow: 1;
+    padding-left: 1rem;
+    font-size: 1.125rem;
+    line-height: 1.3;
+    font-weight: 600;
+    color: $color-blue-8;
+  }
+} 
+
+.how-connect-alert {
+  padding: 2.5rem;
+  border-radius: 2rem;
+  background-color: $color-gray-2;
+
+  p {
+    font-size: 1.25rem;
+    line-height: 1.4;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    color: $color-blue-8;
+  }
+}
+
+.how-connect-clients {
+  .how-connect-clients__title {
+    margin-bottom: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .info-card {
+    height: 15rem;
+
+    &__text {
+      h4 {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+.how-connect-limitations {
+  padding-bottom: 1.875rem;
+
+  .how-connect-limitations__subtitle {
+    margin-bottom: 3rem;
+  }
+}
+
+@include until($xl) {
+  .how-connect {
+    h2 {
+      font-size: 1.75rem;
+    }
+  }
+
+  .how-connect-process {
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.125rem;
+    }
+  }
+
+  .how-connect-clients {
+    .how-connect-clients__title {
+      font-size: 1.25rem;
+    }
+  
+    .info-card {
+      height: 15rem;
+  
+      &__text {
+        h4 {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+
+  .how-connect-limitations {  
+    .how-connect-limitations__subtitle {
+      & + p {
+        font-size: 1.125rem;
+      }
+    }
+  }
+}
+
+@include until($lg) {
+  .how-connect {  
+    .page-section {
+      margin-top: 3.75rem;
+      margin-bottom: 3.75rem;
+    }
+
+    .how-connect-process {
+      margin-top: 7.375rem;
+    }
+  }
+
+  .how-connect-limitations {
+    padding-bottom: 0;
+  }
+}
+
+@include until($md) {
+  .how-connect {
+    h2 {
+      font-size: 1.25rem;
+    }
+  }
+
+  .how-connect-process {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .how-connect-process__title {
+      font-size: 1rem;
+      line-height: 1.6;
+      font-weight: 700;
+    }
+  }
+
+  .how-connect-alert {
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      font-weight: 500;
+      letter-spacing: normal;
+    }
+  }
+
+  .how-connect-clients {
+    .how-connect-clients__title {
+      font-size: 1.125rem;
+    }
+
+    .info-card {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      height: 7rem;
+
+      &__text {
+        flex-grow: 1;
+        padding-right: 4rem;
+
+        h4 {
+          font-size: 1.125rem;
+        }
+      }
+
+      &__link {
+        flex: 0 0 auto;
+        width: auto;
+      }
+    }
+  }
+}

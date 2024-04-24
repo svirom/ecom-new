@@ -1,0 +1,225 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+// hero
+.return-hero {
+  &.page-hero {
+    padding-top: 10rem;
+
+    &.light {
+      background-color: #ffffff;
+    }
+
+    .page-hero__content {
+      max-width: 540px;
+      padding-top: 1.875rem;
+    }
+  }
+}
+
+// info
+.return-info {
+  .page-section__header {
+    p {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+// work
+.return-work-list {
+  margin-bottom: 3.75rem;
+
+  &__card {
+    display: flex;
+    align-items: center;
+  }
+
+  &__number {
+    flex: 0 0 2.5rem;
+    max-width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.125rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+    color: $color-blue-8;
+    text-align: center;
+    border-radius: 0.5rem;
+    background-color: $color-blue-6;
+  }
+
+  &__text {
+    padding-left: 1rem;
+    font-size: 1.125rem;
+    line-height: 1.8;
+  }
+}
+
+// advantages
+.return-advantages {
+  .info-card {
+    height: auto;
+    min-height: 24.375rem;
+
+    &__text {
+      p {
+        font-size: 1.125rem;
+        line-height: 1.8;
+      }
+    }
+  }
+}
+
+@include at-least($md) {
+  .return-info {
+    &__cards {
+      & > .row {
+        --bs-gutter-x: 3.75rem;
+      }
+    }
+  }
+}
+
+@include until($xl) {
+  .return-info {
+    &__cards {
+      h4 {
+        font-size: 1.5rem;
+      }
+    }
+    p {
+      font-size: 1.125rem;
+      line-height: 1.8;
+    }
+  }
+
+  .return-advantages {
+    .info-card {
+      min-height: 27.5rem;
+    }
+  }
+}
+
+@include until($lg) {
+  .return-hero {
+    &.page-hero {
+      padding-top: 5.8125rem;
+      padding-bottom: 3.4375rem;
+
+      .page-hero__content {
+        padding-top: 0;
+      }
+
+      .page-hero__images {
+        padding-top: 1.375rem;
+      }
+    }
+  }
+
+  .return-info {
+    &.page-section {
+      margin-top: 3.75rem;
+    }
+
+    .page-section__header {
+      p {
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+    }
+  }
+
+  .return-work {
+    &.page-section--dark {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+  }
+
+  .return-work-list {
+    margin-bottom: 2.5rem;
+  }
+
+  .return-advantages {
+    .info-card {
+      min-height: 23.75rem;
+    }
+  }
+}
+
+@include until($md) {
+  .return-hero {
+    &.page-hero {
+      padding-top: 7.625rem;
+      padding-bottom: 0;
+
+      .page-hero__content {
+        padding-top: 0;
+        padding-bottom: 1.5rem;
+      }
+
+      .page-hero__images {
+        justify-content: center;
+        padding-top: 0;
+      }
+    }
+  }
+
+  .return-info {
+    .page-section__header {
+      margin-bottom: 2.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    &__cards {
+      h4 {
+        font-size: 1.25rem;
+      }
+
+      & > .row {
+        & > .return-info__card {
+          & + .return-info__card {
+            margin-top: 3.75rem;
+          }
+        }
+      }
+    }
+  }
+
+  .return-work {
+    &.page-section--dark {
+      padding: 1.5rem 0.75rem;
+    }
+  }
+
+  .return-work-list {
+    &__text {
+      font-size: 1rem;
+    }
+  }
+
+  .return-advantages {
+    .page-section__header {
+      margin-bottom: 2.5rem;
+    }
+
+    .info-card {
+      min-height: 18.75rem;
+
+      &__text {
+        h4 {
+          font-size: 1.125rem;
+        }
+
+        p {
+          font-size: 1rem;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+}

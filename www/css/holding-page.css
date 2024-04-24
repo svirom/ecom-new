@@ -11,6 +11,10 @@
   margin-bottom: 2.5rem;
 }
 
+.holding-info p {
+  font-size: 1.25rem;
+}
+
 .holding-work.page-methods .frame-card__content h4 {
   color: #000F26;
 }
@@ -111,6 +115,12 @@
     margin-bottom: 5rem;
   }
 }
+@media screen and (max-width: 1199.98px) {
+  .holding-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
 @media screen and (max-width: 991.98px) {
   .holding-hero.page-hero {
     padding-top: 7.1875rem;
@@ -125,10 +135,6 @@
   }
   .holding-advantages .info-card {
     padding: 2rem;
-  }
-  .holding-advantages .info-card__link-icon {
-    flex-basis: 5rem;
-    height: 5rem;
   }
   .holding-advantages__card {
     padding: 2.5rem 2rem;

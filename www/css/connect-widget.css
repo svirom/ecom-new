@@ -5,10 +5,11 @@
   height: 19.375rem;
 }
 .connect-widget .info-card__link-icon [class^=icon] {
+  font-size: 1.5rem;
   color: #17171C;
 }
 .connect-widget__form {
-  margin-top: 2.625rem;
+  margin-top: 1.5rem;
   padding: 2.5rem 3.75rem;
   border-radius: 2rem;
   background-color: #001535;

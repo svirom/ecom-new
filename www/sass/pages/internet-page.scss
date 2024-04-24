@@ -1,0 +1,209 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+// hero
+.internet-hero {
+  &.page-hero {
+    position: relative;
+    padding-top: 9.3125rem;
+    padding-bottom: 8.5625rem;
+
+    .page-hero__content {
+      max-width: 569px;
+      padding-top: 3.25rem;
+    }
+
+    .page-hero__subtitle {
+      margin-bottom: 3.75rem;
+    }
+
+    .page-hero__images {
+      padding-left: 1.75rem;
+    }
+
+    .internet-hero__images-icon {
+      position: absolute;
+      bottom: -2.375rem;
+      left: 0;
+      filter: drop-shadow(0 4px 44px rgba(#5073A9, 25%));
+      z-index: 2;
+    }
+
+    .internet-hero__images-tablet {
+      filter: drop-shadow(0 28px 42px rgba(#32325D, 10%));
+    }
+
+    .internet-hero__images-phone {
+      position: absolute;
+      bottom: -1.5rem;
+      right: -1.25rem;
+    }
+  }
+}
+
+.internet {
+  .page-section {
+    margin-top: 7.5rem;
+    margin-bottom: 7.5rem;
+
+    &__header {
+      p {
+        font-size: 1.25rem;
+      }
+    }
+
+    &--top-short {
+      margin-top: 5rem;
+    }
+
+    &--bottom-short {
+      margin-bottom: 5rem;
+    }
+  }
+
+  .info-card {
+    height: 21.875rem;
+
+    &__text {
+      p {
+        font-size: 1.125rem;
+      }
+    }
+  }
+}
+
+.internet-billing {
+  .page-section__header {
+    margin-bottom: 1.625rem;
+  }
+
+  &__card {
+    text-align: center;
+  }
+}
+
+@include until($xl) {
+  .internet-hero {
+    &.page-hero {
+      padding-top: 7.8125rem;
+      padding-bottom: 0;
+
+      .page-hero__subtitle {
+        margin-bottom: 2.5rem;
+      }
+
+      .page-hero__images {
+        justify-content: flex-end;
+        padding-left: 1.75rem;
+        padding-right: 1.75rem;
+      }
+
+      .internet-hero__images-icon {
+        bottom: 30px;
+        left: auto;
+        right: 10.25rem;
+      }
+
+      .internet-hero__images-phone {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        margin-bottom: -1.625rem;
+      }
+    }
+  }
+
+  .internet {
+    .page-section {
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+
+      h3 {
+        font-size: 1.75rem;
+      }
+
+      &__header {
+        p {
+          font-size: 1rem;
+        }
+      }
+  
+      &--top-short {
+        margin-top: 3.75rem;
+      }
+  
+      &--bottom-short {
+        margin-bottom: 3.75rem;
+      }
+    }
+  }
+}
+
+@include until($lg) {
+  .internet-hero {
+    &.page-hero {
+      .page-hero__content {
+        padding-top: 0;
+      }
+
+      .page-hero__images {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .internet {
+    .info-card {
+      height: auto;
+      min-height: 26.25rem;
+    }
+  }
+}
+
+@include until($md) {
+  .internet-hero {
+    &.page-hero {
+      padding-top: 7.625rem;
+
+      .page-hero__content {
+        padding-bottom: 2.5rem;
+      }
+
+      .page-hero__subtitle {
+        padding-top: 0.5rem;
+      }
+
+      .page-hero__images {
+        justify-content: center;
+        padding-right: 7.5rem;
+      }
+
+      .internet-hero__images-icon {
+        bottom: 54px;
+        left: auto;
+        right: calc(50% - 8.375rem);
+      }
+
+      .internet-hero__images-phone {
+        margin-bottom: -4.5rem;
+      }
+    }
+  }
+
+  .internet {
+    .page-section {
+      h3 {
+        font-size: 1.25rem;
+      }
+    }
+    .info-card {
+      min-height: 21.875rem;
+
+      &__text {
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

@@ -238,6 +238,26 @@
   padding-bottom: 0;
 }
 
+.internet-acquiring-advantages .page-section__header {
+  margin-bottom: 1.75rem;
+}
+.internet-acquiring-advantages .page-section__header p {
+  font-size: 1.25rem;
+}
+.internet-acquiring-advantages .info-card {
+  height: 100%;
+  min-height: 25.8125rem;
+  border: 1px solid #DFE8F8;
+  background-color: #fff;
+}
+.internet-acquiring-advantages .info-card__text p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+.internet-acquiring-advantages .info-card__link-icon {
+  background-color: #F3F5F9;
+}
+
 @media screen and (max-width: 1199.98px) {
   .internet-acquiring-hero.page-hero .page-hero__subtitle {
     margin-bottom: 2.5rem;
@@ -308,6 +328,20 @@
   .internet-acquiring-services .page-section__header h2 {
     margin-bottom: 1.5rem;
     font-size: 2.5rem;
+  }
+  .internet-acquiring-advantages .page-section__header h3, .internet-acquiring-advantages .page-section__header .h3 {
+    font-size: 1.75rem;
+  }
+  .internet-acquiring-advantages .page-section__header p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  .internet-acquiring-advantages .info-card h4, .internet-acquiring-advantages .info-card .h4 {
+    font-size: 1.5rem;
+  }
+  .internet-acquiring-advantages .info-card__text p {
+    font-size: 1.125rem;
+    line-height: 1.8;
   }
 }
 @media screen and (max-width: 991.98px) {
@@ -416,6 +450,10 @@
   }
   .internet-acquiring-process .diagram-card > span ~ img {
     margin-top: 0.5rem;
+  }
+  .internet-acquiring-advantages .info-card {
+    min-height: auto;
+    height: auto;
   }
 }
 @media screen and (max-width: 767.98px) {
@@ -547,6 +585,16 @@
     font-size: 1.75rem;
   }
   .internet-acquiring-services .page-section__header p {
+    line-height: 1.6;
+  }
+  .internet-acquiring-advantages .page-section__header h3, .internet-acquiring-advantages .page-section__header .h3 {
+    font-size: 1.25rem;
+  }
+  .internet-acquiring-advantages .info-card h4, .internet-acquiring-advantages .info-card .h4 {
+    font-size: 1.25rem;
+  }
+  .internet-acquiring-advantages .info-card__text p {
+    font-size: 1rem;
     line-height: 1.6;
   }
 }/*# sourceMappingURL=internet-acquiring-page.css.map */

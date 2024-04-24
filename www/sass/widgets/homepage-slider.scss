@@ -63,10 +63,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    height: 400px;
+    margin-left: 2px;
+    margin-right: 2px;
     text-align: center;
     border-radius: 1.5rem;
     background-color: #fff;
+    overflow: hidden;
 
     img {
       max-width: 100%;

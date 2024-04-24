@@ -1,0 +1,88 @@
+.payments-charity-hero.page-hero {
+  position: relative;
+  padding-top: 5.875rem;
+  padding-bottom: 2.5rem;
+}
+.payments-charity-hero.page-hero .page-hero__content {
+  max-width: 569px;
+  padding-top: 6.6875rem;
+}
+.payments-charity-hero.page-hero .page-hero__subtitle {
+  margin-bottom: 3.75rem;
+}
+
+.payments-charity h2 {
+  font-size: 2rem;
+}
+.payments-charity .page-section__header p {
+  font-size: 1.25rem;
+}
+.payments-charity .info-card {
+  height: 21.875rem;
+}
+.payments-charity .info-card__text p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+@media screen and (max-width: 1399.98px) {
+  .payments-charity .info-card {
+    height: auto;
+    min-height: 23.75rem;
+  }
+}
+@media screen and (max-width: 1199.98px) {
+  .payments-charity h2 {
+    font-size: 1.75rem;
+  }
+  .payments-charity .page-section h3 {
+    font-size: 1.75rem;
+  }
+  .payments-charity .page-section__header p {
+    font-size: 1rem;
+  }
+  .payments-charity .info-card {
+    min-height: 28.75rem;
+  }
+  .payments-charity .info-section .info-section__title {
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .payments-charity-hero.page-hero .page-hero__content {
+    padding-top: 5rem;
+  }
+  .payments-charity-hero.page-hero .page-hero__subtitle {
+    margin-bottom: 2.5rem;
+  }
+  .payments-charity-hero.page-hero .page-hero__images {
+    padding-left: 1.75rem;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .payments-charity-hero.page-hero {
+    padding-top: 7.625rem;
+    padding-bottom: 0;
+  }
+  .payments-charity-hero.page-hero .page-hero__content {
+    padding-top: 0;
+    padding-bottom: 3.75rem;
+  }
+  .payments-charity-hero.page-hero .page-hero__images {
+    justify-content: center;
+    padding-left: 0;
+  }
+  .payments-charity h2 {
+    font-size: 1.25rem;
+  }
+  .payments-charity .page-section h3 {
+    font-size: 1.25rem;
+  }
+  .payments-charity .info-card {
+    min-height: 21.875rem;
+  }
+  .payments-charity .info-card__text p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}/*# sourceMappingURL=payments-charity-page.css.map */

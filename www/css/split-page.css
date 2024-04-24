@@ -1,0 +1,110 @@
+.split-hero.page-hero {
+  padding-top: 10rem;
+}
+.split-hero.page-hero.light {
+  background-color: #ffffff;
+}
+.split-hero.page-hero .page-hero__content {
+  padding-top: 2.75rem;
+}
+
+.split-info p {
+  font-size: 1.25rem;
+}
+
+.split-work-list {
+  margin-bottom: 3.75rem;
+}
+.split-work-list__card {
+  display: flex;
+  align-items: center;
+}
+.split-work-list__number {
+  flex: 0 0 2.5rem;
+  max-width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.125rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  color: #000F26;
+  text-align: center;
+  border-radius: 0.5rem;
+  background-color: #E5F2F8;
+}
+.split-work-list__text {
+  padding-left: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.split-advantages .info-card {
+  height: auto;
+  min-height: 20rem;
+}
+.split-advantages .info-card__text p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .split-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  .split-advantages .info-card {
+    min-height: 23.75rem;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .split-hero.page-hero {
+    padding-top: 7.1875rem;
+  }
+  .split-hero.page-hero .page-hero__content {
+    padding-top: 1.75rem;
+  }
+  .split-info.page-section {
+    margin-top: 3.75rem;
+  }
+  .split-work.page-section--dark {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .split-work-list {
+    margin-bottom: 2.5rem;
+  }
+  .split-advantages .info-card {
+    min-height: 25.625rem;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .split-hero.page-hero {
+    padding-top: 7.625rem;
+    padding-bottom: 0;
+  }
+  .split-hero.page-hero .page-hero__content {
+    padding-top: 0;
+    padding-bottom: 2.5rem;
+  }
+  .split-hero.page-hero .page-hero__images {
+    justify-content: center;
+  }
+  .split-work.page-section--dark {
+    padding: 1.5rem 0.75rem;
+  }
+  .split-work-list__text {
+    font-size: 1rem;
+  }
+  .split-advantages .page-section__header {
+    margin-bottom: 2.5rem;
+  }
+  .split-advantages .info-card {
+    min-height: 20.625rem;
+  }
+  .split-advantages .info-card__text h4 {
+    font-size: 1.125rem;
+  }
+  .split-advantages .info-card__text p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}/*# sourceMappingURL=split-page.css.map */

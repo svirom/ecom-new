@@ -341,6 +341,34 @@
   }
 }
 
+.internet-acquiring-advantages {
+  .page-section__header {
+    margin-bottom: 1.75rem;
+
+    p {
+      font-size: 1.25rem;
+    }
+  }
+
+  .info-card {
+    height: 100%;
+    min-height: 25.8125rem;
+    border: 1px solid #DFE8F8;
+    background-color: #fff;
+
+    &__text {
+      p {
+        font-size: 1.125rem;
+        line-height: 1.8;
+      }
+    }
+
+    &__link-icon {
+      background-color: #F3F5F9;
+    }
+  }
+}
+
 @include until($xl) {
   .internet-acquiring-hero {
     &.page-hero {
@@ -474,6 +502,32 @@
       h2 {
         margin-bottom: 1.5rem;
         font-size: 2.5rem;
+      }
+    }
+  }
+
+  .internet-acquiring-advantages {
+    .page-section__header {
+      h3, .h3 {
+        font-size: 1.75rem;
+      }
+  
+      p {
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+    }
+  
+    .info-card {
+      h4, .h4 {
+        font-size: 1.5rem;
+      }
+  
+      &__text {
+        p {
+          font-size: 1.125rem;
+          line-height: 1.8;
+        }
       }
     }
   }
@@ -643,6 +697,13 @@
           margin-top: 0.5rem;
         }
       }
+    }
+  }
+
+  .internet-acquiring-advantages {  
+    .info-card {
+      min-height: auto;
+      height: auto;
     }
   }
 }
@@ -837,6 +898,27 @@
 
       p {
         line-height: 1.6;
+      }
+    }
+  }
+
+  .internet-acquiring-advantages {
+    .page-section__header {
+      h3, .h3 {
+        font-size: 1.25rem;
+      }
+    }
+  
+    .info-card {      
+      h4, .h4 {
+        font-size: 1.25rem;
+      }
+  
+      &__text {
+        p {
+          font-size: 1rem;
+          line-height: 1.6;
+        }
       }
     }
   }
