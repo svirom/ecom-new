@@ -1,0 +1,146 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.payments-security {
+  padding-bottom: 12rem;
+}
+
+.security-header {
+  padding-top: 11.3125rem;
+}
+
+.security-promo-img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 4.75rem;
+  margin-bottom: 5rem;
+  padding-top: 3.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 1.5rem;
+  background-color: #F3F5F9;
+}
+
+.security-pci-dss {
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 21.25rem;
+    border-radius: 2rem;
+
+    img {
+      max-height: 100%;
+    }
+
+    &--pcidss {
+      background-color: #F1FBF2;
+    }
+
+    &--mcvisa {
+      background-color: #F3F5F9;
+    }
+  }
+
+  h4, .h4, h5, .h5 {
+    margin-top: 4.375rem;
+  }
+
+  &__mcvisa-card {
+    flex: 0 0 12.5rem;
+    max-width: 12.5rem;
+    height: 12.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    background-color: #ffffff;
+
+    & + .security-pci-dss__mcvisa-card {
+      margin-left: 2.5rem;
+    }
+  }
+}
+
+.security-safety {
+  margin-top: 4.75rem;
+}
+
+.security-alert {
+  margin-top: 4.75rem;
+  padding: 2.5rem;
+  border-radius: 2rem;
+  background-color: #001535;
+
+  p {
+    font-size: 1.25rem;
+    line-height: 1.4;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+  }
+}
+
+@include until($xl) {
+  .security-pci-dss {
+    h3, .h3 {
+      font-size: 1.75rem;
+    }
+  }
+}
+
+@include until($lg) {
+  .payments-security {
+    padding-bottom: 5rem;
+  }
+
+  .security-header {
+    padding-top: 7.375rem;
+  }
+
+  .security-pci-dss {
+    &__img {
+      height: 17rem;
+    }
+  }
+}
+
+@include until($md) {
+  .security-promo-img {
+    margin-top: 3.4375rem;
+  }
+
+  .security-pci-dss {
+    h3, .h3 {
+      font-size: 1.25rem;
+    }
+
+    h4, .h4, h5, .h5 {
+      font-size: 1.25rem;
+    }
+
+    &__img {
+      height: 8.25rem;
+      border-radius: 1rem;
+
+      &--pcidss {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+      }
+    }
+
+    &__mcvisa-card {
+      flex: 0 0 6.125rem;
+      max-width: 6.125rem;
+      height: 6.125rem;
+      padding: 0.5rem;
+      border-radius: 1rem;
+      
+      & + .security-pci-dss__mcvisa-card {
+        margin-left: 1.25rem;
+        padding: 1.5rem;
+      }
+    }
+  }
+}

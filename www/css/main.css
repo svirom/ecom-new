@@ -1053,6 +1053,10 @@ textarea.form-control::-webkit-scrollbar-thumb {
   }
 }
 @media screen and (max-width: 767.98px) {
+  .header-nav {
+    padding-top: 1.0625rem;
+    padding-bottom: calc(1.0625rem - 1px);
+  }
   .lang-nav {
     display: none;
   }

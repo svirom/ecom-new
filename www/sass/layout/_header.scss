@@ -484,6 +484,10 @@
 }
 
 @include until($md) {
+  .header-nav {
+    padding-top: 1.0625rem;
+    padding-bottom: calc(1.0625rem - 1px);
+  }
   .lang-nav {
     display: none;
   }
