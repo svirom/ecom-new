@@ -31,7 +31,7 @@
   }
 
   &__link {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     color: $color-blue-1;
 
@@ -55,6 +55,10 @@
 
       & ~ .form-label {
         top: 1rem;
+      }
+
+      &.is-invalid {
+        border-color: #dc3545;
       }
     }
 
