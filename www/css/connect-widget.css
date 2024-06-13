@@ -14,7 +14,7 @@
   border-radius: 2rem;
   background-color: #001535;
 }
-.connect-widget__form h3 {
+.connect-widget__form h3, .connect-widget__form .h3 {
   margin-bottom: 1.25rem;
   line-height: 1.2;
   color: #FFFFFF;
@@ -50,7 +50,7 @@
   .connect-widget .connect-widget__subtext {
     font-size: 1.125rem;
   }
-  .connect-widget__form h3 {
+  .connect-widget__form h3, .connect-widget__form .h3 {
     font-size: 2rem;
   }
 }
@@ -67,7 +67,7 @@
   .connect-widget__form {
     margin-top: 3.75rem;
   }
-  .connect-widget__form h3 {
+  .connect-widget__form h3, .connect-widget__form .h3 {
     font-size: 2rem;
   }
   .connect-widget__form .form-group {
@@ -90,7 +90,7 @@
     padding: 1.5rem;
     border-radius: 1.5rem;
   }
-  .connect-widget__form h3 {
+  .connect-widget__form h3, .connect-widget__form .h3 {
     font-size: 1.5rem;
   }
   .connect-widget__form .btn {

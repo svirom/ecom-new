@@ -15,7 +15,7 @@
   font-size: 1.25rem;
 }
 
-.holding-work.page-methods .frame-card__content h4 {
+.holding-work.page-methods .frame-card__content h4, .holding-work.page-methods .frame-card__content .h4 {
   color: #000F26;
 }
 .holding-work.page-methods .frame-card.page-methods__app .frame-card__img {
@@ -31,7 +31,7 @@
   background-color: #C7E8C2;
 }
 
-.holding-advantages .info-card__text h4 {
+.holding-advantages .info-card__text h4, .holding-advantages .info-card__text .h4 {
   color: #000F26;
 }
 .holding-advantages__card {
@@ -107,7 +107,7 @@
   .holding-advantages .info-card {
     height: 21.25rem;
   }
-  .holding-advantages .info-card__text h4 {
+  .holding-advantages .info-card__text h4, .holding-advantages .info-card__text .h4 {
     font-size: 1.5rem;
   }
   .holding-advantages__card-content {
@@ -158,7 +158,7 @@
   .holding-advantages .page-section__header {
     margin-bottom: 2.5rem;
   }
-  .holding-advantages .info-card__text h4 {
+  .holding-advantages .info-card__text h4, .holding-advantages .info-card__text .h4 {
     font-size: 1.25rem;
   }
   .holding-advantages .holding-advantages__card-title {

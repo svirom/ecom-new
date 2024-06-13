@@ -83,7 +83,7 @@
 @include until($xl) {
   .return-info {
     &__cards {
-      h4 {
+      h4, .h4 {
         font-size: 1.5rem;
       }
     }
@@ -176,7 +176,7 @@
     }
 
     &__cards {
-      h4 {
+      h4, .h4 {
         font-size: 1.25rem;
       }
 
@@ -211,7 +211,7 @@
       min-height: 18.75rem;
 
       &__text {
-        h4 {
+        h4, .h4 {
           font-size: 1.125rem;
         }
 

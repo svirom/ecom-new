@@ -100,7 +100,7 @@
   .split-advantages .info-card {
     min-height: 20.625rem;
   }
-  .split-advantages .info-card__text h4 {
+  .split-advantages .info-card__text h4, .split-advantages .info-card__text .h4 {
     font-size: 1.125rem;
   }
   .split-advantages .info-card__text p {

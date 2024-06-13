@@ -53,7 +53,7 @@
   }
 }
 @media screen and (max-width: 1199.98px) {
-  .return-info__cards h4 {
+  .return-info__cards h4, .return-info__cards .h4 {
     font-size: 1.5rem;
   }
   .return-info p {
@@ -113,7 +113,7 @@
     font-size: 1rem;
     line-height: 1.6;
   }
-  .return-info__cards h4 {
+  .return-info__cards h4, .return-info__cards .h4 {
     font-size: 1.25rem;
   }
   .return-info__cards > .row > .return-info__card + .return-info__card {
@@ -131,7 +131,7 @@
   .return-advantages .info-card {
     min-height: 18.75rem;
   }
-  .return-advantages .info-card__text h4 {
+  .return-advantages .info-card__text h4, .return-advantages .info-card__text .h4 {
     font-size: 1.125rem;
   }
   .return-advantages .info-card__text p {

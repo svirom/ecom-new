@@ -60,7 +60,7 @@
     height: auto;
     min-height: 15.875rem;
   }
-  .tips-advantages .page-section__header h3 {
+  .tips-advantages .page-section__header h3, .tips-advantages .page-section__header .h3 {
     font-weight: 600;
   }
 }

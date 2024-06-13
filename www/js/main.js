@@ -67,15 +67,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
   infoVideo.forEach(function(video) {
     const playButton = video.querySelector('.info-video__button');
+    const playIframe = video.querySelector('.info-video__iframe');
     const playVideo = video.querySelector('.info-video__player');
     const playBkgr = video.querySelector('.info-video__bkgr');
-    
-    playButton.addEventListener('click', function(e) {
-      e.preventDefault();
-      playVideo.play();
-      playButton.classList.add('d-none');
-      playBkgr.classList.add('d-none');
-    })
+
+    if (playIframe) {
+      playButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        playIframe.querySelector('iframe').src += "&autoplay=1";
+        playButton.classList.add('d-none');
+        playBkgr.classList.add('d-none');
+      })
+    } else {
+      playButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        playVideo.play();
+        playButton.classList.add('d-none');
+        playBkgr.classList.add('d-none');
+      })
+    }
   })
 
 })

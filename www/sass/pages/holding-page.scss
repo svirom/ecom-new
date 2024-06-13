@@ -32,7 +32,7 @@
   &.page-methods {
     .frame-card {
       &__content {
-        h4 {
+        h4, .h4 {
           color: $color-blue-8;
         }
       }
@@ -65,7 +65,7 @@
 // advantages
 .holding-advantages {
   .info-card__text {
-    h4 {
+    h4, .h4 {
       color: $color-blue-8;
     }
   }
@@ -173,7 +173,7 @@
     }
 
     .info-card__text {
-      h4 {
+      h4, .h4 {
         font-size: 1.5rem;
       }
     }
@@ -251,7 +251,7 @@
     }
 
     .info-card__text {
-      h4 {
+      h4, .h4 {
         font-size: 1.25rem;
       }
     }

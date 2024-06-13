@@ -85,7 +85,7 @@
     height: 15rem;
 
     &__text {
-      h4 {
+      h4, .h4 {
         font-size: 1.25rem;
       }
     }
@@ -126,7 +126,7 @@
       height: 15rem;
   
       &__text {
-        h4 {
+        h4, .h4 {
           font-size: 1.25rem;
         }
       }
@@ -207,7 +207,7 @@
         flex-grow: 1;
         padding-right: 4rem;
 
-        h4 {
+        h4, .h4 {
           font-size: 1.125rem;
         }
       }
