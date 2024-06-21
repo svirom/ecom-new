@@ -781,13 +781,20 @@ textarea.form-control::-webkit-scrollbar-thumb {
   font-weight: 700;
   color: #001535;
 }
-.main-nav .dropdown .main-nav__services ~ .dropdown-menu ul a:hover, .main-nav .dropdown .main-nav__services ~ .dropdown-menu ul a:focus, .main-nav .dropdown .main-nav__services ~ .dropdown-menu ul a:active {
-  background-color: #F3F5F9;
-}
 .main-nav .dropdown .main-nav__services ~ .dropdown-menu .dropdown-services-list a {
   margin-bottom: 0.5rem;
 }
 .main-nav .dropdown .main-nav__services ~ .dropdown-menu .dropdown-services-list a ~ span {
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #7C9CAC;
+}
+.main-nav .dropdown .main-nav__services ~ .dropdown-menu .dropdown-services-list a span {
+  display: inline-block;
+}
+.main-nav .dropdown .main-nav__services ~ .dropdown-menu .dropdown-services-list a .dropdown-services-list__descr {
+  margin-top: 0.5rem;
   font-size: 1rem;
   line-height: 1.2;
   font-weight: 400;

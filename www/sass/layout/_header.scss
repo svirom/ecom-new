@@ -105,7 +105,7 @@
             color: $color-blue-1;
 
             &:hover, &:focus, &:active {
-              background-color: $color-gray-1;
+              // background-color: $color-gray-1;
             }
           }
         }
@@ -115,6 +115,18 @@
             margin-bottom: 0.5rem;
 
             & ~ span {
+              font-size: 1rem;
+              line-height: 1.2;
+              font-weight: 400;
+              color: $color-blue-3;
+            }
+
+            span {
+              display: inline-block;
+            }
+
+            .dropdown-services-list__descr {
+              margin-top: 0.5rem;
               font-size: 1rem;
               line-height: 1.2;
               font-weight: 400;
