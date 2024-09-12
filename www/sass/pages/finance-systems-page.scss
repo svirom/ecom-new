@@ -1,0 +1,290 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+// finance systems
+.finance-systems {
+  .page-section {
+    margin-top: 7.5rem;
+    margin-bottom: 7.5rem;
+
+    &__header {
+      p {
+        font-size: 1.25rem;
+      }
+    }
+
+    &--top-short {
+      margin-top: 5rem;
+    }
+
+    &--bottom-short {
+      margin-bottom: 5rem;
+    }
+
+    .info-card {  
+      &__text {
+        p {
+          font-size: 1.125rem;
+          line-height: 1.8;
+        }
+      }
+    }
+  }
+
+  .connect-widget__form {
+    margin-top: 0;
+  }
+}
+
+// hero
+.finance-systems-hero {
+  &.page-hero {
+    padding-top: 8.8125rem;
+
+    .page-hero__content {
+      max-width: 520px;
+      padding-top: 4.25rem;
+    }
+
+    .page-hero__subtitle {
+      margin-bottom: 3.75rem;
+    }
+
+    .page-hero__images {
+      padding-right: 3.25rem;
+    }
+  }
+}
+
+// info section
+.finance-systems-info {
+  .info-section__content {
+    padding-top: 1.75rem;
+  }
+}
+
+// offer
+.finance-systems-offer {
+  .info-card {
+    height: 100%;
+    min-height: 22.5rem;
+
+    &__text {
+      p {
+        color: $color-blue-2;
+      }
+    }
+  }
+
+  &__card-last {
+    .info-card {
+      min-height: 18.75rem;
+    }
+  }
+}
+
+// advantages
+.finance-systems-advantages {
+  .info-card {
+    height: 100%;
+    min-height: 18.75rem;
+  }
+}
+
+// solutions
+.finance-systems-solutions {
+  .info-card {
+    height: 100%;
+    min-height: 23.875rem;
+    border: 1px solid #DFE8F8;
+    background-color: #fff;
+
+    &__link-icon {
+      background-color: #F3F5F9;
+    }
+  }
+}
+
+// how it works
+.finance-systems-works {
+  .info-card {
+    height: 100%;
+    min-height: 32.4375rem;
+    padding: calc(2rem - 1px);
+    border: 1px solid $color-gray-2;
+  }
+
+  &__icon {
+    flex: 100%;
+  }
+}
+
+@include until($xxl) {
+  .finance-systems-hero {
+    &.page-hero {
+      .page-hero__subtitle {
+        margin-bottom: 2.5rem;
+      }
+
+      .page-hero__content {
+        padding-top: 2.5rem;
+      }
+    }
+  }
+}
+
+@include until($xl) {
+  .finance-systems {
+    .page-section {
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+
+      p {
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+  
+      &--top-short {
+        margin-top: 3.75rem;
+      }
+  
+      &--bottom-short {
+        margin-bottom: 3.75rem;
+      }
+
+      .info-card {
+        h4, .h4 {
+          font-size: 1.5rem;
+        }
+    
+        &__text {
+          p {
+            font-size: 1.125rem;
+            line-height: 1.8;
+          }
+        }
+      }
+    }
+  }
+
+  .finance-systems-hero {
+    &.page-hero {
+      .page-hero__images {
+        padding-right: 0;
+      }
+    }
+  }
+
+  .finance-systems-info {
+    .info-section__content {
+      padding-top: 0;
+    }
+  }
+}
+
+@include until($lg) {
+  .finance-systems-hero {
+    &.page-hero {
+      padding-top: 7.625rem;
+
+      .page-hero__content {
+        padding-top: 0;
+      }
+
+      .page-hero__images {
+        padding-top: 4.25rem;
+      }
+    }
+  }
+
+  .finance-systems-offer {  
+    .info-card {
+      min-height: auto;
+
+      &__link-icon {
+        flex: 0 0 5rem;
+        width: 5rem;
+        height: 5rem;
+      }
+    }
+  }
+
+  .finance-systems-advantages {  
+    .info-card {
+      min-height: 21.875rem;
+    }
+  }
+
+  .finance-systems-solutions {  
+    .info-card {
+      min-height: auto;
+    }
+  }
+}
+
+@include until($md) {
+  .finance-systems {
+    .page-section {
+      .info-card {      
+        h4, .h4 {
+          font-size: 1.125rem;
+        }
+    
+        &__text {
+          p {
+            font-size: 1rem;
+            line-height: 1.6;
+          }
+        }
+  
+        &__link-icon {
+          flex: 0 0 5rem;
+          width: 5rem;
+          height: 5rem;
+        }
+      }
+    }
+  }
+
+  .finance-systems-hero {
+    &.page-hero {      
+      .page-hero__content {
+        padding-bottom: 3rem;
+      }
+
+      .page-hero__images {
+        justify-content: center;
+        padding-top: 0;
+      }
+    }
+  }
+
+  .finance-systems-offer {
+    .page-section__header {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  .finance-systems-advantages {
+    .page-section__header {
+      h2, .h2 {
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  .finance-systems-solutions {
+    .page-section__header {
+      h3, .h3 {
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  .finance-systems-works {  
+    .info-card {
+      min-height: 25.375rem;
+    }
+  }
+}
+
